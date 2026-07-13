@@ -480,7 +480,7 @@
           "cta_label": "",
           "cta_href": "https://calendly.com/segreteriacampa/beauty-consultant?month=2026-07",
           "scarcity": "",
-          "photo": "/images/1783076406610-foto-staff-landing-5.webp",
+          "photo": "",
           "features": "",
           "cta2_label": "",
           "embed_form": true
@@ -562,29 +562,6 @@
           "c3": ""
         }
       ]
-    },
-    {
-      "type": "cta_form",
-      "id": "lead",
-      "title_a": "Write to us",
-      "title_accent": "now",
-      "body": "Fill in this form and Dr. Domenico Campa's team will contact you right away.",
-      "perks": [],
-      "form_title": "Fill in the Form",
-      "form_subtitle": "",
-      "treatments": [
-        "Rinoplastica",
-        "Blefaroplastica",
-        "Mastoplastica",
-        "Medicina Estetica"
-      ],
-      "submit_label": "send request",
-      "success_title": "Form sent.",
-      "success_body": "Thank you — one of our experts will contact you shortly",
-      "style": {
-        "text": "#ffffff",
-        "accent": "#ff6b2d"
-      }
     }
   ],
   "footer": {
@@ -670,7 +647,7 @@
         "new_tab": true,
         "icon": "star",
         "google_brand": true,
-        "strong_part": "2,264"
+        "strong_part": "2.238"
       },
       {
         "label": "85 people booked in the last 7 days",
