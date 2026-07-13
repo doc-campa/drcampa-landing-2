@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Dr. Domenico Campa — Chirurgia Estetica",
-    "meta_description": "Dr. Domenico Campa — Chirurgia plastica ed estetica. Bellezza autentica, risultati reali, percorsi su misura.",
+    "title": "Filler e Botox — Dr. Domenico Campa",
+    "meta_description": "Filler e botox con il Dr. Domenico Campa: valutazione clinica, risultati naturali e percorsi su misura.",
     "logo_text": "",
     "colors": {
       "primary": "#000000"
@@ -45,7 +45,7 @@
       "headline_main": "of",
       "headline_accent": "Yourself",
       "subtitle_em": "",
-      "subtitle": "\"𝐷𝑖𝑒𝑡𝑟𝑜 𝑢𝑛 𝑖𝑛𝑡𝑒𝑟𝑣𝑒𝑛𝑡𝑜 𝑑𝑖 𝐶ℎ𝑖𝑟𝑢𝑟𝑔𝑖𝑎 𝐸𝑠𝑡𝑒𝑡𝑖𝑐𝑎 𝑠𝑝𝑒𝑠𝑠𝑜 𝑐’𝑒̀ 𝑚𝑜𝑙𝑡𝑜 𝑑𝑖 𝑝𝑖𝑢̀. 𝑈𝑛 𝑑𝑖𝑠𝑎𝑔𝑖𝑜 𝑐ℎ𝑒 𝑐𝑖 𝑐𝑜𝑛𝑑𝑖𝑧𝑖𝑜𝑛𝑎 𝑛𝑒𝑙 𝑝𝑟𝑜𝑓𝑜𝑛𝑑𝑜 𝑐ℎ𝑒 𝑐𝑖 𝑖𝑚𝑝𝑒𝑑𝑖𝑠𝑐𝑒 𝑑𝑖 𝑑𝑖𝑣𝑒𝑛𝑡𝑎𝑟𝑒 𝑙𝑎 𝑣𝑒𝑟𝑠𝑖𝑜𝑛𝑒 𝑚𝑖𝑔𝑙𝑖𝑜𝑟𝑒 𝑑𝑖 𝑛𝑜𝑖 𝑠𝑡𝑒𝑠𝑠𝑖\"<br>\nDr. Campa",
+      "subtitle": "\"Dietro un filler o un trattamento botox c'è spesso molto di più: il desiderio di piacersi, con un risultato naturale che nessuno nota ma tutti vedono.\"<br>\nDott. Campa",
       "cta_label": "Prenota consulenza",
       "cta_href": "#prenota",
       "mission_label_strong": "LA NOSTRA MISSIONE:",
@@ -86,15 +86,15 @@
       "items": [
         {
           "prefix": ">",
-          "number": "10000",
-          "suffix": "",
-          "label": "𝘐𝘯𝘵𝘦𝘳𝘷𝘦𝘯𝘵𝘪 𝘤𝘩𝘪𝘳𝘶𝘳𝘨𝘪𝘤𝘪"
-        },
-        {
-          "prefix": ">",
           "number": "35000",
           "suffix": "",
           "label": "𝘛𝘳𝘢𝘵𝘵𝘢𝘮𝘦𝘯𝘵𝘪 𝘥𝘪 𝘮𝘦𝘥𝘪𝘤𝘪𝘯𝘢 𝘦𝘴𝘵𝘦𝘵𝘪𝘤𝘢"
+        },
+        {
+          "prefix": ">",
+          "number": "10000",
+          "suffix": "",
+          "label": "𝘐𝘯𝘵𝘦𝘳𝘷𝘦𝘯𝘵𝘪 𝘤𝘩𝘪𝘳𝘶𝘳𝘨𝘪𝘤𝘪"
         },
         {
           "prefix": ">",
@@ -136,6 +136,24 @@
       "title_italic": "Fiducia",
       "items": [
         {
+          "name": "Grazia Pisani",
+          "date": "7 mesi fa",
+          "text_strong": "",
+          "text": "Ho effettuato un filler correttivo dal dottor Campa, sono stata da lui per la prima volta. Che dire, lui e il suo staff sono molto dolci e gentili, sanno metterti a tuo agio dal primo momento. Risultato naturale ed elegante."
+        },
+        {
+          "name": "Sara Esposito",
+          "date": "3 mesi fa",
+          "text_strong": "",
+          "text": "Mi sono affidata al Dottor Campa per un filler alle labbra e non potrei essere più felice della scelta fatta. Fin dalla prima visita mi sono sentita ascoltata e seguita con attenzione. Risultato naturale e armonioso."
+        },
+        {
+          "name": "Valentina De Liso",
+          "date": "5 mesi fa",
+          "text_strong": "",
+          "text": "Il dottor Campa ha trasformato una semplice iniezione in un momento sorprendentemente speciale: preciso, delicato e con un senso estetico che fa sentire subito a proprio agio."
+        },
+        {
           "name": "Claudia Leonardi",
           "date": "3 mesi fa",
           "text_strong": "Prima esperienza dal doc Campa positivissima!",
@@ -148,28 +166,10 @@
           "text": "Professionalità, precisione e umanità sono solo alcune delle qualità che lo distinguono. Lo studio è sempre accogliente e curato in ogni dettaglio."
         },
         {
-          "name": "Grazia Pisani",
-          "date": "7 mesi fa",
-          "text_strong": "",
-          "text": "Ho effettuato un filler correttivo dal dottor Campa, sono stata da lui per la prima volta. Che dire, lui e il suo staff sono molto dolci e gentili, sanno metterti a tuo agio dal primo momento. Risultato naturale ed elegante."
-        },
-        {
-          "name": "Nunzia Landolfo",
-          "date": "5 mesi fa",
-          "text_strong": "",
-          "text": "Sono stata per la prima volta dal dottore ed inizialmente, a causa di un percorso non andato al meglio in passato, avevo non poche remore. Il dottor Campa e il suo staff mi hanno messo subito a mio agio. Risultato eccellente."
-        },
-        {
           "name": "Lucrezia Stacchini",
           "date": "5 mesi fa",
           "text_strong": "Impossibile descrivere il dottore e il suo staff con una parola.",
           "text": "Dico solo che da quando li ho conosciuti mi fido solo di loro. Personale attento al dettaglio e percorso clinico curato in ogni passaggio."
-        },
-        {
-          "name": "Sara Esposito",
-          "date": "3 mesi fa",
-          "text_strong": "",
-          "text": "Mi sono affidata al Dottor Campa per un filler alle labbra e non potrei essere più felice della scelta fatta. Fin dalla prima visita mi sono sentita ascoltata e seguita con attenzione. Risultato naturale e armonioso."
         },
         {
           "name": "Felicya Salcino",
@@ -184,10 +184,10 @@
           "text": "Oggi posso sorridere alla vita con gratitudine e serenità, ed è grazie al Dottor Campa. Non esistono davvero parole sufficienti per descrivere la sua straordinaria professionalità e umanità."
         },
         {
-          "name": "Valentina De Liso",
+          "name": "Nunzia Landolfo",
           "date": "5 mesi fa",
           "text_strong": "",
-          "text": "Il dottor Campa ha trasformato una semplice iniezione in un momento sorprendentemente speciale: preciso, delicato e con un senso estetico che fa sentire subito a proprio agio."
+          "text": "Sono stata per la prima volta dal dottore ed inizialmente, a causa di un percorso non andato al meglio in passato, avevo non poche remore. Il dottor Campa e il suo staff mi hanno messo subito a mio agio. Risultato eccellente."
         }
       ],
       "subtitle": "Le testimonianze dei pazienti dello Studio Campa, pubblicate direttamente su **Google**. Tutte verificate.",
@@ -214,8 +214,8 @@
       "type": "wake_videos",
       "id": "risvegli",
       "eyebrow": "",
-      "title_a": "Cosa ti spaventa <br> DI UN<br>",
-      "title_accent": "Intervento?",
+      "title_a": "Cosa ti spaventa <br> DEI<br>",
+      "title_accent": "Filler Labbra?",
       "subtitle": "Questi sono i Video Risposta a tutte le tue domande.",
       "items": [
         {
@@ -227,8 +227,9 @@
             "controls": true
           },
           "poster": "",
-          "name": "E se non mi risveglio?",
-          "treatment": ""
+          "name": "E se il risultato non è naturale?",
+          "treatment": "",
+          "src": ""
         },
         {
           "video": {
@@ -239,8 +240,9 @@
             "controls": true
           },
           "poster": "",
-          "name": "Come è andata l'anestesia?",
-          "treatment": ""
+          "name": "Fa male? Quanto dura?",
+          "treatment": "",
+          "src": ""
         },
         {
           "video": {
@@ -251,8 +253,9 @@
             "controls": true
           },
           "poster": "",
-          "name": "Posso parlare con l'anestesista?",
-          "treatment": ""
+          "name": "E se poi non mi piace?",
+          "treatment": "",
+          "src": ""
         }
       ],
       "style": {
@@ -270,37 +273,37 @@
       "disclaimer": "Le immagini sono pubblicate previo consenso esplicito scritto dei pazienti, ai sensi del DPR n. 137/2012 e del codice deontologico FNOMCeO. Ogni caso clinico è unico: i risultati mostrati non costituiscono garanzia di esiti analoghi in altri pazienti.",
       "items": [
         {
-          "label": "MASTOPLASTICA additiva",
+          "label": "FILLER LABBRA",
           "image": "/images/1783076034081-img-1424.png"
         },
         {
-          "label": "rinoplastica",
+          "label": "botox",
           "image": "/images/1783076002047-img-1428.jpg"
         },
         {
-          "label": "rinoplastica",
+          "label": "filler zigomi",
           "image": "/images/1783076053948-img-1430.png",
           "caption": ""
         },
         {
           "image": "/images/1783096490872-landing-campa-4-2.png",
-          "label": "rinoplastica"
+          "label": "FILLER LABBRA"
         },
         {
           "image": "/images/1783098600798-img-1583.png",
-          "label": "mastoplastica additiva"
+          "label": "rinofiller"
         },
         {
           "image": "/images/1783098687081-foto-eleonora.png",
-          "label": "rinoplastica"
+          "label": "botox"
         },
         {
           "image": "/images/1783098747794-eleonora-2.png",
-          "label": "MASTOPLASTICA ADDITIVA"
+          "label": "FILLER LABBRA"
         },
         {
           "image": "/images/1783098760226-img-1580.png",
-          "label": "mastoplastica additiva",
+          "label": "filler mento",
           "caption": ""
         }
       ],
@@ -320,220 +323,66 @@
       "footer_note": "",
       "categories": [
         {
-          "name": "Interventi",
-          "icon": "body",
-          "description": "",
-          "treatments": [
-            {
-              "name": "Mastoplastica Additiva",
-              "href": ""
-            },
-            {
-              "name": "Mastopessi senza protesi",
-              "href": ""
-            },
-            {
-              "name": "Mastopessi con protesi",
-              "href": ""
-            },
-            {
-              "name": "Mastoplastica Riduttiva",
-              "href": ""
-            },
-            {
-              "name": "Rinoplastica",
-              "href": ""
-            },
-            {
-              "name": "Addominoplastica",
-              "href": ""
-            },
-            {
-              "name": "Liposuzione",
-              "href": ""
-            },
-            {
-              "name": "Lifting Viso MACS",
-              "href": ""
-            },
-            {
-              "name": "Lifting Cosce",
-              "href": ""
-            },
-            {
-              "name": "Lifting Braccia",
-              "href": ""
-            },
-            {
-              "name": "Blefaroplastica completa, superiore o inferiore",
-              "href": ""
-            },
-            {
-              "name": "Otoplastica",
-              "href": ""
-            },
-            {
-              "name": "Split Lobo",
-              "href": ""
-            },
-            {
-              "name": "Lifting Temporale (Foxy eyes)",
-              "href": ""
-            },
-            {
-              "name": "Gluteoplastica con protesi",
-              "href": ""
-            },
-            {
-              "name": "Liplift",
-              "href": ""
-            }
-          ]
-        },
-        {
-          "name": "Medicina Estetica",
+          "name": "Filler",
           "icon": "syringe",
-          "description": "",
           "treatments": [
             {
-              "name": "Filler (labbra, naso, zigomi, mento, contorno mandibolare, glutei, occhiaie)",
+              "name": "Filler labbra",
               "href": ""
             },
             {
-              "name": "Botox",
+              "name": "Filler zigomi",
               "href": ""
             },
             {
-              "name": "Biorivitalizzazione",
+              "name": "Rinofiller (filler naso)",
+              "href": ""
+            },
+            {
+              "name": "Filler mento",
+              "href": ""
+            },
+            {
+              "name": "Filler jawline",
+              "href": ""
+            },
+            {
+              "name": "Filler occhiaie",
+              "href": ""
+            },
+            {
+              "name": "Filler glutei",
               "href": ""
             }
           ]
         },
         {
-          "name": "Medicina Rigenerativa",
-          "icon": "heart",
-          "description": "",
-          "treatments": [
-            {
-              "name": "PRP",
-              "href": ""
-            },
-            {
-              "name": "PRF",
-              "href": ""
-            },
-            {
-              "name": "PRX T33",
-              "href": ""
-            },
-            {
-              "name": "Filler Autologo",
-              "href": ""
-            }
-          ]
-        },
-        {
-          "name": "Macchinari Corpo e Viso",
-          "icon": "legs",
-          "description": "",
-          "treatments": [
-            {
-              "name": "Exion Body",
-              "href": ""
-            },
-            {
-              "name": "Exion Viso",
-              "href": ""
-            },
-            {
-              "name": "Exion RF",
-              "href": ""
-            },
-            {
-              "name": "Emtone",
-              "href": ""
-            },
-            {
-              "name": "Emsculpt neo",
-              "href": ""
-            },
-            {
-              "name": "Carbossiterapia",
-              "href": ""
-            }
-          ]
-        },
-        {
-          "name": "Laser",
+          "name": "Botox",
           "icon": "sparkle",
-          "description": "",
           "treatments": [
             {
-              "name": "Teleangectasie Viso",
+              "name": "Rughe della fronte",
               "href": ""
             },
             {
-              "name": "Cicatrici Chirurgiche e non Chirurgiche",
+              "name": "Rughe glabellari",
               "href": ""
             },
             {
-              "name": "Capillari Corpo",
+              "name": "Zampe di gallina",
               "href": ""
             },
             {
-              "name": "Lentigo solari viso e corpo",
+              "name": "Gummy smile",
               "href": ""
             },
             {
-              "name": "Cheratosi seborroiche e attiniche",
+              "name": "Bruxismo",
               "href": ""
             },
             {
-              "name": "Angiomi viso e corpo",
+              "name": "Iperidrosi (sudorazione eccessiva)",
               "href": ""
-            },
-            {
-              "name": "Melasma",
-              "href": ""
-            },
-            {
-              "name": "Rosacea",
-              "href": ""
-            },
-            {
-              "name": "Acne e Cicatrici da acne",
-              "href": ""
-            },
-            {
-              "name": "Colore Occhiaie",
-              "href": ""
-            },
-            {
-              "name": "Fotoringiovanimento",
-              "href": ""
-            },
-            {
-              "name": "Poichelodermia di Civatte",
-              "href": ""
-            },
-            {
-              "name": "Light and Bright",
-              "href": ""
-            },
-            {
-              "name": "Tatuaggi (+ Microblading)",
-              "href": ""
-            },
-            {
-              "name": "Porosità della pelle",
-              "href": ""
-            },
-            {
-              "name": "Epilazione Viso e corpo",
-              "href": ""
-            },
-            {
-              "name": "Glacè Candela Viso"
             }
           ]
         }
@@ -589,7 +438,7 @@
           "who": "",
           "format": "",
           "value_line": "Conosci direttamente il <br>Dott. Domenico Campa.",
-          "price": "300€",
+          "price": "400€",
           "icon": "",
           "featured": "",
           "free": false,
@@ -607,7 +456,7 @@
           "who": "",
           "format": "",
           "value_line": "Conosci la Dott.ssa Mansi.<br> Primo aiuto del Dott. Campa",
-          "price": "200€",
+          "price": "350€",
           "icon": "",
           "featured": "",
           "free": false,
@@ -620,19 +469,21 @@
           "features": "Valutazione clinica completa\nAnalisi avanzata e approfondita\nSimulazione del risultato con software avanzati\nPiano pre definitivo di trattamento (revisione finale con il dott.Campa)\nIndicazioni complete\nOnline o in studio"
         },
         {
-          "name": "Videocall con una Beauty Consultant",
+          "name": "Richiedi Informazioni",
           "who": "",
           "format": "",
-          "value_line": "Conosci la Beauty Consultant che ti accompagnerà per tutto il percorso.",
-          "price": "Gratis",
+          "value_line": "Compila il form: verrai ricontattata/o subito dal team del Dott. Campa.",
+          "price": "",
           "icon": "",
           "featured": "",
           "free": false,
-          "cta_label": "Prenota la videocall",
+          "cta_label": "",
           "cta_href": "https://calendly.com/segreteriacampa/beauty-consultant?month=2026-07",
           "scarcity": "",
           "photo": "/images/1783076406610-foto-staff-landing-5.webp",
-          "features": "Un primo Orientamento Gratuito\nindividuazione preliminare delle tue esigenze\nSimulazione del risultato con software avanzati\nPiano Pre-Definitivo di trattamento (Revisione finale con il Dott. Campa)\nIndicazioni di carattere generale\nEsclusivamente Online"
+          "features": "",
+          "cta2_label": "",
+          "embed_form": true
         },
         {
           "name": "Scrivici su WhatsApp",
@@ -717,7 +568,7 @@
       "id": "lead",
       "title_a": "Scrivici",
       "title_accent": "ora",
-      "body": "Se desidera puoi compilare questo form e verrai Subito contattata/o da una delle Beauty\nConsultant del Dott. Domenico Campa",
+      "body": "Compila questo form: verrai subito ricontattata/o dal team del Dott. Domenico Campa.",
       "perks": [],
       "form_title": "Compila il Form",
       "form_subtitle": "",
@@ -737,25 +588,25 @@
     }
   ],
   "footer": {
-    "about_text": "Studio di Chirurgia Plastica ed Estetica. Cura della persona, attenzione clinica, risultati pensati per durare nel tempo.",
+    "about_text": "Studio di Chirurgia e Medicina Estetica. Filler e botox con cura personale, attenzione clinica e risultati naturali.",
     "columns": [
       {
         "title": "Trattamenti",
         "links": [
           {
-            "label": "Rinoplastica",
+            "label": "Filler labbra",
             "href": "#trattamenti"
           },
           {
-            "label": "Blefaroplastica",
+            "label": "Botox",
             "href": "#trattamenti"
           },
           {
-            "label": "Mastoplastica",
+            "label": "Filler zigomi",
             "href": "#trattamenti"
           },
           {
-            "label": "Medicina estetica",
+            "label": "Rinofiller",
             "href": "#trattamenti"
           }
         ]
