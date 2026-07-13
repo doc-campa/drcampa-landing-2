@@ -1091,6 +1091,7 @@ const SECTION_SCHEMA = {
       ['value_line', 'Frase di valore (perché sceglierlo)', 'textarea', 'La leva di vendita: cosa ottiene davvero la persona.'],
       ['social_proof', 'Prova sociale (opzionale)', 'text', 'Es: \"Scelto dal 78% dei pazienti\". Appare con 5 stelle nella card premium.'],
       ['features', 'Cosa include (un punto per riga)', 'textarea', 'Scrivi un vantaggio per ogni riga: diventano elenco con spunta ✓. Più punti = più valore percepito. Es:\nValutazione clinica completa\nPiano personalizzato\nPriorità in agenda'],
+      ['embed_form', 'Mini-form contatti nella scheda', 'boolean', 'Se attivo, la scheda mostra Nome, Cognome, Email e Telefono con invio diretto (al posto di prezzo e bottoni).'],
       ['price', 'Prezzo', 'text', 'Es: "300€" oppure "Gratis". Scrivendo "Gratis" il prezzo diventa verde.'],
       ['price_compare', 'Prezzo barrato / valore reale (opzionale)', 'text', 'Es: \"550€\". Appare sbarrato sopra il prezzo nella card premium.'],
       ['scarcity', 'Scarsità (opzionale)', 'text', 'Es: "Solo 8 posti questo mese". Appare solo nel livello in evidenza.'],
@@ -1312,7 +1313,7 @@ async function saveContent(){
    ===================================================================== */
 const TR_SKIP_KEYS = new Set(['href','src','image','poster','photo','logo_url','bg_image','video','icon','id','type',
   'layout','service','style','colors','new_tab','google_brand','featured','free','autoplay','loop','muted','controls',
-  'c1','c2','c3','mission_percent','mobile_title_gap','title_offset','bg_position','bg_position_mobile','bg_zoom',
+  'embed_form','c1','c2','c3','mission_percent','mobile_title_gap','title_offset','bg_position','bg_position_mobile','bg_zoom',
   'bg_zoom_mobile','play_x','play_y','player_width','player_ratio','label_size','intro_size','scale','number',
   'prefix','suffix','strong_part','enabled','watermark']);
 function trSkipKey(k){ return TR_SKIP_KEYS.has(k) || /(_href|_link)$/.test(k); }
@@ -2249,7 +2250,16 @@ const previewTemplates = {
       const ctaA = t.cta_label?`<span class="bl-cta">${esc(t.cta_label)}</span>`:'';
       const ctaB = t.cta2_label?`<span class="bl-cta bl-cta-alt">${esc(t.cta2_label)}</span>`:'';
       const ctaWrap = (ctaA||ctaB)?`<div class="bl-cta-pair">${ctaA}${ctaB}</div>`:'';
-      return `<div class="${cls}">
+      const formHtml = t.embed_form ? `
+        <form class="bl-lead-form">
+          <input type="text" placeholder="Nome" disabled>
+          <input type="text" placeholder="Cognome" disabled>
+          <input type="email" placeholder="Email" disabled>
+          <input type="tel" placeholder="Telefono" disabled>
+          <label class="bl-consent"><input type="checkbox" disabled><span>Ho letto e accetto l\u2019informativa privacy\u2026</span></label>
+          <span class="bl-cta">Invia richiesta</span>
+        </form>` : '';
+      return `<div class="${cls}${t.embed_form?' bl-has-form':''}">
         ${(compareMode&&t.photo) ? '' : (t.icon ? `<div class="bl-icon">${icon}</div>` : '')}
         <div class="bl-tier-body">
           ${t.badge?`<span class="bl-badge">${esc(t.badge)}</span>`:''}
@@ -2257,13 +2267,15 @@ const previewTemplates = {
           ${t.who?`<p class="bl-tier-who">${richText(t.who)}</p>`:''}
           ${t.format?`<p class="bl-tier-format">${richText(t.format)}</p>`:''}
           ${t.value_line?`<p class="bl-value">${richText(t.value_line)}</p>`:''}
-          ${feats}
+          ${t.embed_form ? '' : feats}
           ${t.scarcity?`<span class="bl-scarcity">${esc(t.scarcity)}</span>`:''}
         </div>
-        <div class="bl-tier-action">
+        ${t.embed_form
+          ? `<div class="bl-tier-action bl-tier-action-form">${formHtml}</div>`
+          : `<div class="bl-tier-action">
           <div class="bl-price${priceIsFree?' is-free':''}">${esc(priceRaw||'')}</div>
           ${ctaWrap}
-        </div>
+        </div>`}
       </div>`;
     };
     const renderButton = (t)=>{
