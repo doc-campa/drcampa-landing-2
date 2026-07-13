@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Dr. Domenico Campa — Aesthetic Surgery",
-    "meta_description": "Dr. Domenico Campa — Plastic and aesthetic surgery. Authentic beauty, real results, tailored journeys.",
+    "title": "Fillers & Botox — Dr. Domenico Campa",
+    "meta_description": "Fillers and Botox with Dr. Domenico Campa: clinical assessment, natural results and tailored treatment plans.",
     "logo_text": "",
     "colors": {
       "primary": "#000000"
@@ -43,9 +43,9 @@
       "watermark": "",
       "headline_pre": "\"Be the best version",
       "headline_main": "of",
-      "headline_accent": "Yourself\"",
+      "headline_accent": "Yourself",
       "subtitle_em": "",
-      "subtitle": "\"Behind an aesthetic surgery procedure there is often much more: a deep-seated discomfort that holds us back from becoming the best version of ourselves.\"<br>\nDr. Campa",
+      "subtitle": "\"Behind a filler or a Botox treatment there is often much more: the desire to feel good about yourself, with a natural result nobody notices but everybody sees.\"<br>\nDr. Campa",
       "cta_label": "Book a consultation",
       "cta_href": "#prenota",
       "mission_label_strong": "OUR MISSION:",
@@ -86,15 +86,15 @@
       "items": [
         {
           "prefix": ">",
-          "number": "10000",
-          "suffix": "",
-          "label": "Surgical procedures"
-        },
-        {
-          "prefix": ">",
           "number": "35000",
           "suffix": "",
           "label": "Aesthetic medicine treatments"
+        },
+        {
+          "prefix": ">",
+          "number": "10000",
+          "suffix": "",
+          "label": "Surgical procedures"
         },
         {
           "prefix": ">",
@@ -136,6 +136,24 @@
       "title_italic": "Trust",
       "items": [
         {
+          "name": "Grazia Pisani",
+          "date": "7 months ago",
+          "text_strong": "",
+          "text": "I had a corrective filler with Dr. Campa — it was my first time with him. He and his staff are very sweet and kind, and they put you at ease from the very first moment. A natural, elegant result."
+        },
+        {
+          "name": "Sara Esposito",
+          "date": "3 months ago",
+          "text_strong": "",
+          "text": "I chose Dr. Campa for a lip filler and I could not be happier with my choice. From the very first visit I felt listened to and carefully looked after. A natural, harmonious result."
+        },
+        {
+          "name": "Valentina De Liso",
+          "date": "5 months ago",
+          "text_strong": "",
+          "text": "Dr. Campa turned a simple injection into a surprisingly special moment: precise, gentle, and with an aesthetic sense that makes you feel at ease right away."
+        },
+        {
           "name": "Claudia Leonardi",
           "date": "3 months ago",
           "text_strong": "My first experience with Dr. Campa was extremely positive!",
@@ -148,28 +166,10 @@
           "text": "Professionalism, precision and humanity are just some of the qualities that set him apart. The clinic is always welcoming and cared for in every detail."
         },
         {
-          "name": "Grazia Pisani",
-          "date": "7 months ago",
-          "text_strong": "",
-          "text": "I had a corrective filler with Dr. Campa — it was my first time with him. He and his staff are very sweet and kind, and they put you at ease from the very first moment. A natural, elegant result."
-        },
-        {
-          "name": "Nunzia Landolfo",
-          "date": "5 months ago",
-          "text_strong": "",
-          "text": "It was my first visit and, after a past experience that had not gone well, I had quite a few doubts. Dr. Campa and his staff immediately put me at ease. An excellent result."
-        },
-        {
           "name": "Lucrezia Stacchini",
           "date": "5 months ago",
           "text_strong": "It is impossible to describe the doctor and his staff in one word.",
           "text": "All I can say is that since I met them, they are the only ones I trust. A team attentive to every detail, and a clinical journey cared for at every step."
-        },
-        {
-          "name": "Sara Esposito",
-          "date": "3 months ago",
-          "text_strong": "",
-          "text": "I chose Dr. Campa for a lip filler and I could not be happier with my choice. From the very first visit I felt listened to and carefully looked after. A natural, harmonious result."
         },
         {
           "name": "Felicya Salcino",
@@ -184,10 +184,10 @@
           "text": "Today I can smile at life with gratitude and serenity, and it is thanks to Dr. Campa. There truly are no words to describe his extraordinary professionalism and humanity."
         },
         {
-          "name": "Valentina De Liso",
+          "name": "Nunzia Landolfo",
           "date": "5 months ago",
           "text_strong": "",
-          "text": "Dr. Campa turned a simple injection into a surprisingly special moment: precise, gentle, and with an aesthetic sense that makes you feel at ease right away."
+          "text": "It was my first visit and, after a past experience that had not gone well, I had quite a few doubts. Dr. Campa and his staff immediately put me at ease. An excellent result."
         }
       ],
       "subtitle": "Reviews from Studio Campa patients, published directly on **Google**. All verified.",
@@ -215,7 +215,7 @@
       "id": "risvegli",
       "eyebrow": "",
       "title_a": "What scares you <br> ABOUT<br>",
-      "title_accent": "Surgery?",
+      "title_accent": "Lip Fillers?",
       "subtitle": "These Video Answers address all of your questions.",
       "items": [
         {
@@ -227,8 +227,9 @@
             "controls": true
           },
           "poster": "",
-          "name": "What if I don't wake up?",
-          "treatment": ""
+          "name": "What if the result doesn't look natural?",
+          "treatment": "",
+          "src": ""
         },
         {
           "video": {
@@ -239,8 +240,9 @@
             "controls": true
           },
           "poster": "",
-          "name": "How did the anaesthesia go?",
-          "treatment": ""
+          "name": "Does it hurt? How long does it last?",
+          "treatment": "",
+          "src": ""
         },
         {
           "video": {
@@ -251,8 +253,9 @@
             "controls": true
           },
           "poster": "",
-          "name": "Can I talk to the anaesthetist?",
-          "treatment": ""
+          "name": "What if I don't like it afterwards?",
+          "treatment": "",
+          "src": ""
         }
       ],
       "style": {
@@ -270,37 +273,37 @@
       "disclaimer": "Images are published with the patients' explicit written consent, pursuant to Italian Presidential Decree no. 137/2012 and the FNOMCeO code of medical ethics. Every clinical case is unique: the results shown are no guarantee of similar outcomes in other patients.",
       "items": [
         {
-          "label": "BREAST augmentation",
+          "label": "LIP FILLER",
           "image": "/images/1783076034081-img-1424.png"
         },
         {
-          "label": "rhinoplasty",
+          "label": "botox",
           "image": "/images/1783076002047-img-1428.jpg"
         },
         {
-          "label": "rhinoplasty",
+          "label": "cheek filler",
           "image": "/images/1783076053948-img-1430.png",
           "caption": ""
         },
         {
           "image": "/images/1783096490872-landing-campa-4-2.png",
-          "label": "rhinoplasty"
+          "label": "LIP FILLER"
         },
         {
           "image": "/images/1783098600798-img-1583.png",
-          "label": "breast augmentation"
+          "label": "non-surgical rhinoplasty"
         },
         {
           "image": "/images/1783098687081-foto-eleonora.png",
-          "label": "rhinoplasty"
+          "label": "botox"
         },
         {
           "image": "/images/1783098747794-eleonora-2.png",
-          "label": "BREAST AUGMENTATION"
+          "label": "LIP FILLER"
         },
         {
           "image": "/images/1783098760226-img-1580.png",
-          "label": "breast augmentation",
+          "label": "chin filler",
           "caption": ""
         }
       ],
@@ -320,220 +323,66 @@
       "footer_note": "",
       "categories": [
         {
-          "name": "Surgical Procedures",
-          "icon": "body",
-          "description": "",
-          "treatments": [
-            {
-              "name": "Breast Augmentation",
-              "href": ""
-            },
-            {
-              "name": "Breast Lift without implants",
-              "href": ""
-            },
-            {
-              "name": "Breast Lift with implants",
-              "href": ""
-            },
-            {
-              "name": "Breast Reduction",
-              "href": ""
-            },
-            {
-              "name": "Rhinoplasty",
-              "href": ""
-            },
-            {
-              "name": "Tummy Tuck (Abdominoplasty)",
-              "href": ""
-            },
-            {
-              "name": "Liposuction",
-              "href": ""
-            },
-            {
-              "name": "MACS Face Lift",
-              "href": ""
-            },
-            {
-              "name": "Thigh Lift",
-              "href": ""
-            },
-            {
-              "name": "Arm Lift",
-              "href": ""
-            },
-            {
-              "name": "Full, upper or lower Blepharoplasty",
-              "href": ""
-            },
-            {
-              "name": "Otoplasty (Ear Surgery)",
-              "href": ""
-            },
-            {
-              "name": "Split Earlobe Repair",
-              "href": ""
-            },
-            {
-              "name": "Temporal Lift (Foxy Eyes)",
-              "href": ""
-            },
-            {
-              "name": "Buttock Augmentation with implants",
-              "href": ""
-            },
-            {
-              "name": "Lip Lift",
-              "href": ""
-            }
-          ]
-        },
-        {
-          "name": "Aesthetic Medicine",
+          "name": "Fillers",
           "icon": "syringe",
-          "description": "",
           "treatments": [
             {
-              "name": "Fillers (lips, nose, cheekbones, chin, jawline, buttocks, under-eye area)",
+              "name": "Lip filler",
               "href": ""
             },
             {
-              "name": "Botox",
+              "name": "Cheek filler",
               "href": ""
             },
             {
-              "name": "Bio-revitalisation",
+              "name": "Non-surgical rhinoplasty (nose filler)",
+              "href": ""
+            },
+            {
+              "name": "Chin filler",
+              "href": ""
+            },
+            {
+              "name": "Jawline filler",
+              "href": ""
+            },
+            {
+              "name": "Tear trough filler",
+              "href": ""
+            },
+            {
+              "name": "Buttock filler",
               "href": ""
             }
           ]
         },
         {
-          "name": "Regenerative Medicine",
-          "icon": "heart",
-          "description": "",
-          "treatments": [
-            {
-              "name": "PRP",
-              "href": ""
-            },
-            {
-              "name": "PRF",
-              "href": ""
-            },
-            {
-              "name": "PRX T33",
-              "href": ""
-            },
-            {
-              "name": "Autologous Filler",
-              "href": ""
-            }
-          ]
-        },
-        {
-          "name": "Body & Face Technologies",
-          "icon": "legs",
-          "description": "",
-          "treatments": [
-            {
-              "name": "Exion Body",
-              "href": ""
-            },
-            {
-              "name": "Exion Face",
-              "href": ""
-            },
-            {
-              "name": "Exion RF",
-              "href": ""
-            },
-            {
-              "name": "Emtone",
-              "href": ""
-            },
-            {
-              "name": "Emsculpt Neo",
-              "href": ""
-            },
-            {
-              "name": "Carboxytherapy",
-              "href": ""
-            }
-          ]
-        },
-        {
-          "name": "Laser",
+          "name": "Botox",
           "icon": "sparkle",
-          "description": "",
           "treatments": [
             {
-              "name": "Facial Telangiectasia",
+              "name": "Forehead lines",
               "href": ""
             },
             {
-              "name": "Surgical and non-surgical scars",
+              "name": "Frown lines (glabella)",
               "href": ""
             },
             {
-              "name": "Body capillaries",
+              "name": "Crow's feet",
               "href": ""
             },
             {
-              "name": "Sun spots (face and body)",
+              "name": "Gummy smile",
               "href": ""
             },
             {
-              "name": "Seborrheic and actinic keratoses",
+              "name": "Teeth grinding (bruxism)",
               "href": ""
             },
             {
-              "name": "Angiomas (face and body)",
+              "name": "Hyperhidrosis (excessive sweating)",
               "href": ""
-            },
-            {
-              "name": "Melasma",
-              "href": ""
-            },
-            {
-              "name": "Rosacea",
-              "href": ""
-            },
-            {
-              "name": "Acne and acne scars",
-              "href": ""
-            },
-            {
-              "name": "Under-eye discolouration",
-              "href": ""
-            },
-            {
-              "name": "Photorejuvenation",
-              "href": ""
-            },
-            {
-              "name": "Poikiloderma of Civatte",
-              "href": ""
-            },
-            {
-              "name": "Light and Bright",
-              "href": ""
-            },
-            {
-              "name": "Tattoos (+ Microblading)",
-              "href": ""
-            },
-            {
-              "name": "Skin porosity",
-              "href": ""
-            },
-            {
-              "name": "Face and body hair removal",
-              "href": ""
-            },
-            {
-              "name": "Glacè Candela Face"
             }
           ]
         }
@@ -589,7 +438,7 @@
           "who": "",
           "format": "",
           "value_line": "Meet <br>Dr. Domenico Campa in person.",
-          "price": "€300",
+          "price": "€400",
           "icon": "",
           "featured": "",
           "free": false,
@@ -598,7 +447,7 @@
           "cta2_label": "Book a video consultation",
           "cta2_href": "https://calendly.com/segreteriacampa/video-consulenza-con-dottoressa-federicamansi",
           "scarcity": "",
-          "photo": "/images/1783073643380-campa-1-landing.webp",
+          "photo": "/images/1783591439149-img-0220-2.webp",
           "price_compare": "",
           "features": "Complete clinical assessment\nAdvanced, in-depth analysis\nResult simulation with advanced software\nDefinitive treatment plan\nDirect discussion with Dr. Campa\nComplete guidance\nOnline or at the clinic"
         },
@@ -607,7 +456,7 @@
           "who": "",
           "format": "",
           "value_line": "Meet Dr. Mansi,<br> Dr. Campa's first assistant",
-          "price": "€200",
+          "price": "€350",
           "icon": "",
           "featured": "",
           "free": false,
@@ -620,19 +469,21 @@
           "features": "Complete clinical assessment\nAdvanced, in-depth analysis\nResult simulation with advanced software\nPreliminary treatment plan (final review with Dr. Campa)\nComplete guidance\nOnline or at the clinic"
         },
         {
-          "name": "Video call with a Beauty Consultant",
+          "name": "Request Information",
           "who": "",
           "format": "",
-          "value_line": "Meet the Beauty Consultant who will guide you through the whole journey.",
-          "price": "Free",
+          "value_line": "Fill in the form and Dr. Campa's team will get back to you right away.",
+          "price": "",
           "icon": "",
           "featured": "",
           "free": false,
-          "cta_label": "Book the video call",
+          "cta_label": "",
           "cta_href": "https://calendly.com/segreteriacampa/beauty-consultant?month=2026-07",
           "scarcity": "",
           "photo": "/images/1783076406610-foto-staff-landing-5.webp",
-          "features": "A first orientation, free of charge\npreliminary assessment of your needs\nResult simulation with advanced software\nPreliminary treatment plan (final review with Dr. Campa)\nGeneral guidance\nOnline only"
+          "features": "",
+          "cta2_label": "",
+          "embed_form": true
         },
         {
           "name": "Message us on WhatsApp",
@@ -648,7 +499,7 @@
           "cta2_label": ""
         }
       ],
-      "footer_note": "No commitment. No pressure. Just the **clarity** of knowing the right step for you.",
+      "footer_note": "",
       "style": {
         "bg": "#000105",
         "accent": "#fe6a2d",
@@ -717,9 +568,9 @@
       "id": "lead",
       "title_a": "Write to us",
       "title_accent": "now",
-      "body": "Fill in this form and Dr. Domenico Campa's team will contact you right away",
+      "body": "Fill in this form and Dr. Domenico Campa's team will contact you right away.",
       "perks": [],
-      "form_title": "fill in the form",
+      "form_title": "Fill in the Form",
       "form_subtitle": "",
       "treatments": [
         "Rinoplastica",
@@ -737,25 +588,25 @@
     }
   ],
   "footer": {
-    "about_text": "Plastic and Aesthetic Surgery practice. Personal care, clinical attention, results designed to last.",
+    "about_text": "Plastic Surgery and Aesthetic Medicine practice. Fillers and Botox with personal care, clinical attention and natural results.",
     "columns": [
       {
         "title": "Treatments",
         "links": [
           {
-            "label": "Rhinoplasty",
+            "label": "Lip filler",
             "href": "#trattamenti"
           },
           {
-            "label": "Blepharoplasty",
+            "label": "Botox",
             "href": "#trattamenti"
           },
           {
-            "label": "Breast surgery",
+            "label": "Cheek filler",
             "href": "#trattamenti"
           },
           {
-            "label": "Aesthetic medicine",
+            "label": "Non-surgical rhinoplasty",
             "href": "#trattamenti"
           }
         ]
@@ -814,12 +665,12 @@
     "enabled": true,
     "items": [
       {
-        "label": "5.0 · 2,238 Google reviews",
+        "label": "5.0 · 2,264 Google reviews",
         "href": "https://www.google.com/search?q=dottore+domenico+campa",
         "new_tab": true,
         "icon": "star",
         "google_brand": true,
-        "strong_part": "2.238"
+        "strong_part": "2,264"
       },
       {
         "label": "85 people booked in the last 7 days",
@@ -1022,6 +873,43 @@
     "compila il form": "fill in the form",
     "individuazione preliminare delle tue esigenze": "preliminary assessment of your needs",
     "invia richiesta": "send request",
-    "ora": "now"
+    "ora": "now",
+    "Filler e Botox — Dr. Domenico Campa": "Fillers & Botox — Dr. Domenico Campa",
+    "Filler e botox con il Dr. Domenico Campa: valutazione clinica, risultati naturali e percorsi su misura.": "Fillers and Botox with Dr. Domenico Campa: clinical assessment, natural results and tailored treatment plans.",
+    "\"Dietro un filler o un trattamento botox c'è spesso molto di più: il desiderio di piacersi, con un risultato naturale che nessuno nota ma tutti vedono.\"<br>\nDott. Campa": "\"Behind a filler or a Botox treatment there is often much more: the desire to feel good about yourself, with a natural result nobody notices but everybody sees.\"<br>\nDr. Campa",
+    "Cosa ti spaventa <br> DEI<br>": "What scares you <br> ABOUT<br>",
+    "Filler Labbra?": "Lip Fillers?",
+    "E se il risultato non è naturale?": "What if the result doesn't look natural?",
+    "Fa male? Quanto dura?": "Does it hurt? How long does it last?",
+    "E se poi non mi piace?": "What if I don't like it afterwards?",
+    "FILLER LABBRA": "LIP FILLER",
+    "botox": "botox",
+    "filler zigomi": "cheek filler",
+    "rinofiller": "non-surgical rhinoplasty",
+    "filler mento": "chin filler",
+    "Filler": "Fillers",
+    "Filler labbra": "Lip filler",
+    "Filler zigomi": "Cheek filler",
+    "Rinofiller (filler naso)": "Non-surgical rhinoplasty (nose filler)",
+    "Filler mento": "Chin filler",
+    "Filler jawline": "Jawline filler",
+    "Filler occhiaie": "Tear trough filler",
+    "Filler glutei": "Buttock filler",
+    "Rughe della fronte": "Forehead lines",
+    "Rughe glabellari": "Frown lines (glabella)",
+    "Zampe di gallina": "Crow's feet",
+    "Gummy smile": "Gummy smile",
+    "Bruxismo": "Teeth grinding (bruxism)",
+    "Iperidrosi (sudorazione eccessiva)": "Hyperhidrosis (excessive sweating)",
+    "Richiedi Informazioni": "Request Information",
+    "Compila il form: verrai ricontattata/o subito dal team del Dott. Campa.": "Fill in the form and Dr. Campa's team will get back to you right away.",
+    "Compila questo form: verrai subito ricontattata/o dal team del Dott. Domenico Campa.": "Fill in this form and Dr. Domenico Campa's team will contact you right away.",
+    "Studio di Chirurgia e Medicina Estetica. Filler e botox con cura personale, attenzione clinica e risultati naturali.": "Plastic Surgery and Aesthetic Medicine practice. Fillers and Botox with personal care, clinical attention and natural results.",
+    "Yourself": "Yourself",
+    "400€": "€400",
+    "350€": "€350",
+    "Compila il Form": "Fill in the Form",
+    "Rinofiller": "Non-surgical rhinoplasty",
+    "5,0 · 2.264 recensioni Google": "5.0 · 2,264 Google reviews"
   }
 }
