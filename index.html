@@ -3212,6 +3212,29 @@ body.js-ready section.testimonials.fx-in .test-badge:nth-child(3) .tb-stars { an
   border:1.5px solid rgba(232,82,15,.55); background:rgba(232,82,15,.07); color:#E8520F;
 }
 
+/* ===== MINI-FORM nella scheda prenotazioni (embed_form) ===== */
+.bl-lead-form{ display:flex; flex-direction:column; gap:10px; width:100%; text-align:left; }
+.bl-lead-form input[type="text"], .bl-lead-form input[type="email"], .bl-lead-form input[type="tel"]{
+  width:100%; box-sizing:border-box; padding:12px 14px; border-radius:10px;
+  border:1px solid rgba(255,255,255,.18); background:#1E2023; color:#EDEAE3;
+  font-family:inherit; font-size:.92rem;
+}
+.bl-lead-form input::placeholder{ color:rgba(237,234,227,.45); }
+.bl-lead-form input:focus{ outline:none; border-color:#FF6B2C; }
+.bl-consent{ display:flex; align-items:flex-start; gap:8px; font-size:.72rem; line-height:1.45; opacity:.85; cursor:pointer; }
+.bl-consent input{ width:auto; margin:2px 0 0; flex:0 0 auto; accent-color:#FF6B2C; }
+.bl-consent a{ color:inherit; text-decoration:underline; }
+.bl-lead-form .bl-cta{ border:none; cursor:pointer; font-family:inherit; }
+.bl-form-ok{ margin:6px 0 0; font-weight:700; color:#FF6B2C; text-align:center; }
+.booking-ladder.bl-columns .bl-tier-action-form{ min-height:0; }
+.booking-ladder.bl-columns .bl-has-form .bl-cta-pair{ min-height:0; }
+:root[data-theme="light"] .bl-lead-form input[type="text"],
+:root[data-theme="light"] .bl-lead-form input[type="email"],
+:root[data-theme="light"] .bl-lead-form input[type="tel"]{
+  background:#FFFFFF; border-color:#D9D4C8; color:#1B2433;
+}
+:root[data-theme="light"] .bl-lead-form input::placeholder{ color:#9AA0AC; }
+
 /* ===== WHATSAPP: bottone verde pieno + mini-form ===== */
 .booking-ladder .bl-button-wa{
   background:#1DA851 !important; border:1.5px solid #1DA851 !important;
@@ -3342,6 +3365,7 @@ const I18N = SITE_LANG==='en' ? {
   fName:'First name', fSurname:'Last name', fEmail:'Email', fPhone:'Phone',
   fInterest:'What are you interested in', fSelect:'Select\u2026', fMessage:'What are you interested in?',
   fMsgPh:'Write your request or your needs here\u2026',
+  blSend:'Send request', blOk:'Request sent! We\u2019ll get back to you shortly.',
   fConsent:'I have read and accept the <a href="/privacy.html" target="_blank" rel="noopener">privacy policy</a> and consent to the processing of my data in order to be contacted.'
 } : {
   videoSoon:'Video in arrivo',
@@ -3356,6 +3380,7 @@ const I18N = SITE_LANG==='en' ? {
   fName:'Nome', fSurname:'Cognome', fEmail:'Email', fPhone:'Telefono',
   fInterest:'Cosa ti interessa', fSelect:'Seleziona\u2026', fMessage:'A cosa sei interessato/a?',
   fMsgPh:'Scrivi qui la tua richiesta o la tua esigenza..',
+  blSend:'Invia richiesta', blOk:'Richiesta inviata! Ti ricontatteremo a breve.',
   fConsent:'Ho letto e accetto l\u2019<a href="/privacy.html" target="_blank" rel="noopener">informativa privacy</a> e acconsento al trattamento dei dati per essere ricontattato.'
 };
 
@@ -4178,7 +4203,17 @@ const templates = {
       const ctaA = t.cta_label?`<a class="bl-cta" href="${esc(t.cta_href||'#contatti')}"${extAttr(t.cta_href)}>${esc(t.cta_label)}</a>`:'';
       const ctaB = t.cta2_label?`<a class="bl-cta bl-cta-alt" href="${esc(t.cta2_href||'#contatti')}"${extAttr(t.cta2_href)}>${esc(t.cta2_label)}</a>`:'';
       const ctaWrap = (ctaA||ctaB)?`<div class="bl-cta-pair">${ctaA}${ctaB}</div>`:'';
-      return `<div class="${cls}">
+      const formHtml = t.embed_form ? `
+        <form class="bl-lead-form" name="contatti" method="POST">
+          <input type="text" name="firstName" placeholder="${I18N.fName}" required>
+          <input type="text" name="lastName" placeholder="${I18N.fSurname}" required>
+          <input type="email" name="email" placeholder="${I18N.fEmail}" required>
+          <input type="tel" name="phone" placeholder="${I18N.fPhone}" required>
+          <label class="bl-consent"><input type="checkbox" required><span>${I18N.fConsent}</span></label>
+          <button type="submit" class="bl-cta">${I18N.blSend}</button>
+          <p class="bl-form-ok" hidden>${I18N.blOk}</p>
+        </form>` : '';
+      return `<div class="${cls}${t.embed_form?' bl-has-form':''}">
         ${(compareMode&&t.photo) ? '' : (t.icon ? `<div class="bl-icon">${icon}</div>` : '')}
         <div class="bl-tier-body">
           ${t.badge?`<span class="bl-badge">${esc(t.badge)}</span>`:''}
@@ -4186,13 +4221,15 @@ const templates = {
           ${t.who?`<p class="bl-tier-who">${richText(t.who)}</p>`:''}
           ${t.format?`<p class="bl-tier-format">${richText(t.format)}</p>`:''}
           ${t.value_line?`<p class="bl-value">${richText(t.value_line)}</p>`:''}
-          ${feats}
+          ${t.embed_form ? '' : feats}
           ${t.scarcity?`<span class="bl-scarcity">${esc(t.scarcity)}</span>`:''}
         </div>
-        <div class="bl-tier-action">
+        ${t.embed_form
+          ? `<div class="bl-tier-action bl-tier-action-form">${formHtml}</div>`
+          : `<div class="bl-tier-action">
           <div class="bl-price${priceIsFree?' is-free':''}">${esc(priceRaw||'')}</div>
           ${ctaWrap}
-        </div>
+        </div>`}
       </div>`;
     };
     const renderButton = (t)=>{
@@ -4876,6 +4913,32 @@ function initBehaviors(){
 
   // ---- TREATMENTS TABS ----
   initTreatmentsTabs();
+
+  // ---- MINI-FORM nelle schede prenotazione ----
+  document.querySelectorAll('.bl-lead-form').forEach(function(f){
+    f.addEventListener('submit', async function(e){
+      e.preventDefault();
+      var btn = f.querySelector('button[type="submit"]');
+      var lb = btn ? btn.textContent : '';
+      if(btn){ btn.disabled = true; btn.textContent = '\u2026'; }
+      var fd = Object.fromEntries(new FormData(f).entries());
+      try{
+        var res = await fetch('/', {
+          method:'POST',
+          headers:{ 'Content-Type':'application/x-www-form-urlencoded' },
+          body: new URLSearchParams({ 'form-name':'contatti', message:'', ...fd }).toString()
+        });
+        if(!res.ok) throw new Error('HTTP '+res.status);
+        Array.prototype.forEach.call(f.querySelectorAll('input,button,.bl-consent'), function(el){ el.style.display='none'; });
+        var ok = f.querySelector('.bl-form-ok'); if(ok) ok.hidden = false;
+        try{ if(window.gtag) gtag('event','lead_submit',{ origin:'booking_card' }); }catch(err){}
+        try{ if(window.fbq) fbq('track','Lead'); }catch(err){}
+      }catch(err){
+        if(btn){ btn.disabled = false; btn.textContent = lb; }
+        alert('Invio non riuscito. Riprova tra qualche istante.');
+      }
+    });
+  });
 
   // ---- LINGUA ----
   var lt=document.getElementById('langToggle');
