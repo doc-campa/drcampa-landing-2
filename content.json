@@ -480,7 +480,7 @@
           "cta_label": "",
           "cta_href": "https://calendly.com/segreteriacampa/beauty-consultant?month=2026-07",
           "scarcity": "",
-          "photo": "/images/1783076406610-foto-staff-landing-5.webp",
+          "photo": "",
           "features": "",
           "cta2_label": "",
           "embed_form": true
@@ -562,29 +562,6 @@
           "c3": ""
         }
       ]
-    },
-    {
-      "type": "cta_form",
-      "id": "lead",
-      "title_a": "Scrivici",
-      "title_accent": "ora",
-      "body": "Compila questo form: verrai subito ricontattata/o dal team del Dott. Domenico Campa.",
-      "perks": [],
-      "form_title": "Compila il Form",
-      "form_subtitle": "",
-      "treatments": [
-        "Rinoplastica",
-        "Blefaroplastica",
-        "Mastoplastica",
-        "Medicina Estetica"
-      ],
-      "submit_label": "invia richiesta",
-      "success_title": "Form inviato.",
-      "success_body": "Grazie, un esperto ti contatterà a breve",
-      "style": {
-        "text": "#ffffff",
-        "accent": "#ff6b2d"
-      }
     }
   ],
   "footer": {
