@@ -1989,7 +1989,7 @@ section.testimonials .test-stars { color:#F5A623 !important; }
 }
 /* ===== Trattamenti: layout a LISTA / accordion ===== */
 /* ===== MAPPA VISO filler / botox ===== */
-.tl-facemap{ display:grid; grid-template-columns:1fr 1fr; gap:24px; max-width:1120px; margin:0 auto 18px; }
+.tl-facemap{ display:grid; grid-template-columns:1fr; gap:22px; max-width:940px; margin:0 auto 18px; }
 .fm-card{ margin:0; padding:26px 18px 20px; border-radius:22px;
   border:1px solid rgba(255,255,255,.16); background:rgba(255,255,255,.03); }
 .fm-head{ text-align:center; margin-bottom:2px; }
@@ -1997,26 +1997,22 @@ section.testimonials .test-stars { color:#F5A623 !important; }
   font-size:1.6rem; margin:0; text-transform:uppercase; }
 .fm-sub{ margin:3px 0 0; font-size:.72rem; letter-spacing:.09em; text-transform:uppercase; opacity:.55; }
 .fm-svg{ display:block; width:100%; height:auto; margin:4px auto 0; }
-.fm-art path{ fill:none; stroke:currentColor; stroke-linecap:round; stroke-linejoin:round; opacity:.62; }
-.fm-art .fm-hair{ stroke-width:2.6; }
-.fm-art .fm-face{ stroke-width:2.2; }
-.fm-art .fm-brow{ stroke-width:2.8; }
-.fm-art .fm-lid{ stroke-width:2.4; }
-.fm-art .fm-fine{ stroke-width:1.5; }
-.fm-art .fm-soft{ stroke-width:1.6; opacity:.24; }
-.fm-art .fm-lip{ fill:currentColor; fill-opacity:.72; stroke:currentColor; stroke-width:1.6; opacity:.9; }
-.fm-art .fm-lead{ fill:none; stroke:#FF6B2C; stroke-width:1.5; opacity:.8; }
+.fm-art .fm-photo{ filter:invert(1); opacity:.92; }
+:root[data-theme="light"] .fm-art .fm-photo{ filter:none; opacity:.9; }
+.fm-art .fm-lead{ fill:none; stroke:#FF6B2C; stroke-width:3; opacity:.85; }
 .fm-art .fm-dot{ fill:#FF6B2C; stroke:none; }
-.fm-lbl{ fill:currentColor; font-family:var(--font-sans); font-size:13.5px; font-weight:700; letter-spacing:.06em; opacity:.88; }
+.fm-lbl{ fill:currentColor; font-family:var(--font-sans); font-size:28px; font-weight:700; letter-spacing:1.4px; opacity:.9; }
 .fm-extra{ margin:12px 0 0; padding-top:12px; text-align:center;
   border-top:1px solid rgba(255,255,255,.1); font-size:.8rem; opacity:.6; }
 .fm-note{ max-width:1120px; margin:0 auto 34px; text-align:center; font-size:.76rem; line-height:1.5; opacity:.5; }
 :root[data-theme="light"] .fm-card{ background:#FFFFFF; border-color:rgba(232,82,15,.28); }
 :root[data-theme="light"] .fm-extra{ border-top-color:rgba(20,28,46,.12); }
 @media (max-width:860px){
-  .tl-facemap{ grid-template-columns:1fr; gap:16px; }
+  .tl-facemap{ gap:16px; }
   .fm-card{ padding:20px 10px 16px; }
-  .fm-lbl{ font-size:16px; }
+  .fm-lbl{ font-size:46px; letter-spacing:1px; }
+  .fm-art .fm-dot{ r:20; }
+  .fm-art .fm-lead{ stroke-width:4; }
   .fm-title{ font-size:1.4rem; }
 }
 .tl-accordion{ max-width:920px; margin:0 auto; display:flex; flex-direction:column; gap:12px; }
@@ -3421,53 +3417,23 @@ const I18N = SITE_LANG==='en' ? {
    quindi si adatta da solo a tema chiaro e scuro).
    ========================================================== */
 const FACE_ART =
-  '<path class="fm-hair" d="M358,110 C316,78 260,86 234,134"/>' +
-  '<path class="fm-hair" d="M234,134 C202,192 196,274 220,344"/>' +
-  '<path class="fm-fine" d="M246,138 C216,196 210,272 232,336"/>' +
-  '<path class="fm-hair" d="M368,118 C392,166 398,242 382,306"/>' +
-  '<path class="fm-fine" d="M360,136 C380,184 384,246 370,302"/>' +
-  '<path class="fm-fine" d="M220,344 C206,358 196,354 192,342"/>' +
-  '<path class="fm-fine" d="M382,306 C388,324 382,338 372,342"/>' +
-  '<path class="fm-face" d="M300,378 C288,372 270,358 252,332 C226,292 218,238 222,182 C226,130 252,92 300,92 C348,92 374,130 378,182 C382,238 374,292 348,332 C330,358 312,372 300,378 Z"/>' +
-  '<path class="fm-brow" d="M234,170 C250,150 282,148 298,162"/>' +
-  '<path class="fm-brow" d="M366,170 C350,150 318,148 302,162"/>' +
-  '<path class="fm-lid" d="M246,206 C260,222 284,224 296,210"/>' +
-  '<path class="fm-lid" d="M354,206 C340,222 316,224 304,210"/>' +
-  '<path class="fm-fine" d="M246,207 C238,212 232,218 228,224"/>' +
-  '<path class="fm-fine" d="M252,213 C246,219 241,226 238,232"/>' +
-  '<path class="fm-fine" d="M259,218 C254,225 250,232 248,238"/>' +
-  '<path class="fm-fine" d="M354,207 C362,212 368,218 372,224"/>' +
-  '<path class="fm-fine" d="M348,213 C354,219 359,226 362,232"/>' +
-  '<path class="fm-fine" d="M341,218 C346,225 350,232 352,238"/>' +
-  '<path class="fm-soft" d="M300,218 C296,250 294,262 292,270"/>' +
-  '<path class="fm-fine" d="M282,276 C285,270 291,270 294,274"/>' +
-  '<path class="fm-fine" d="M318,276 C315,270 309,270 306,274"/>' +
-  '<path class="fm-fine" d="M294,280 C298,284 302,284 306,280"/>' +
-  '<path class="fm-lip" d="M264,312 C274,300 286,304 294,309 C297,311 303,311 306,309 C314,304 326,300 336,312 C322,318 278,318 264,312 Z"/>' +
-  '<path class="fm-face" d="M268,316 C282,336 318,336 332,316"/>' +
-  '<path class="fm-fine" d="M264,312 C284,316 316,316 336,312"/>' +
-  '<path class="fm-soft" d="M232,250 C238,288 252,314 270,330"/>' +
-  '<path class="fm-soft" d="M368,250 C362,288 348,314 330,330"/>' +
-  '<path class="fm-face" d="M260,358 C258,388 254,404 246,418"/>' +
-  '<path class="fm-face" d="M340,358 C342,388 346,404 354,418"/>' +
-  '<path class="fm-hair" d="M190,452 C216,426 234,418 246,418"/>' +
-  '<path class="fm-hair" d="M410,452 C384,426 366,418 354,418"/>';
+  '<image class="fm-photo" href="/images/viso-lineart.png" x="340" y="0" width="706" height="834" preserveAspectRatio="xMidYMid meet"/>';
 
 const FACE_GEO = {
   filler: [
-    ['M266,236 L196,214 L156,214', 272,236, 152,214,'end'],
-    ['M234,266 L190,272 L156,272', 240,264, 152,272,'end'],
-    ['M240,328 L192,332 L156,332', 246,324, 152,332,'end'],
-    ['M308,248 L384,220 L428,220', 300,250, 432,220,'start'],
-    ['M322,314 L386,300 L428,300', 316,314, 432,300,'start'],
-    ['M306,358 L386,366 L428,366', 300,356, 432,366,'start']
+    ['M553,344 L370,300 L320,300', 565,342, 310,300,'end'],
+    ['M521,389 L370,400 L320,400', 533,387, 310,400,'end'],
+    ['M537,542 L370,560 L320,560', 549,540, 310,560,'end'],
+    ['M682,376 L1010,330 L1056,330', 670,378, 1066,330,'start'],
+    ['M761,475 L1010,470 L1056,470', 749,475, 1066,470,'start'],
+    ['M682,568 L1010,610 L1056,610', 670,566, 1066,610,'start']
   ],
   botox: [
-    ['M262,150 L196,138 L156,138', 268,150, 152,138,'end'],
-    ['M234,210 L194,182 L156,182', 240,210, 152,182,'end'],
-    ['M240,308 L192,320 L156,320', 246,306, 152,320,'end'],
-    ['M308,176 L386,158 L428,158', 300,178, 432,158,'start'],
-    ['M308,302 L386,270 L428,270', 300,302, 432,270,'start']
+    ['M616,150 L370,140 L320,140', 628,148, 310,140,'end'],
+    ['M472,303 L370,290 L320,290', 484,301, 310,290,'end'],
+    ['M521,506 L370,530 L320,530', 533,504, 310,530,'end'],
+    ['M682,223 L1010,200 L1056,200', 670,225, 1066,200,'start'],
+    ['M682,450 L1010,430 L1056,430', 670,450, 1066,430,'start']
   ]
 };
 
@@ -3488,12 +3454,12 @@ const FACE_TXT = (typeof SITE_LANG !== 'undefined' && SITE_LANG === 'en') ? {
 function faceMapCard(key){
   const c = FACE_TXT[key], geo = FACE_GEO[key];
   const marks = geo.map((g, i) =>
-    `<path class="fm-lead" d="${g[0]}"/><circle class="fm-dot" cx="${g[1]}" cy="${g[2]}" r="5.5"/>` +
+    `<path class="fm-lead" d="${g[0]}"/><circle class="fm-dot" cx="${g[1]}" cy="${g[2]}" r="15"/>` +
     `<text class="fm-lbl" x="${g[3]}" y="${g[4]}" dy=".33em" text-anchor="${g[5]}">${esc((c.labels[i]||'').toUpperCase())}</text>`
   ).join('');
   return `<figure class="fm-card">
     <figcaption class="fm-head"><h3 class="fm-title">${esc(c.title)}</h3><p class="fm-sub">${esc(c.sub)}</p></figcaption>
-    <svg class="fm-svg" viewBox="0 0 600 470" role="img" aria-label="${esc(c.title)}"><g class="fm-art">${FACE_ART}${marks}</g></svg>
+    <svg class="fm-svg" viewBox="0 0 1360 834" role="img" aria-label="${esc(c.title)}"><g class="fm-art">${FACE_ART}${marks}</g></svg>
     ${c.extra?`<p class="fm-extra">+ ${esc(c.extra)}</p>`:''}
   </figure>`;
 }
