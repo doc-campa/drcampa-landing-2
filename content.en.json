@@ -522,7 +522,8 @@
         "bg": "#000105",
         "accent": "#fe6a2d",
         "text": "#F7F3EC"
-      }
+      },
+      "hide_accordion": true
     },
     {
       "type": "stats",
