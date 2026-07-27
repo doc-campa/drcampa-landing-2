@@ -4165,7 +4165,7 @@ const templates = {
             ${s.subtitle?`<p class="tl-subtitle">${richText(s.subtitle)}</p>`:''}
           </div>
           ${s.hide_face_map ? '' : faceMapHtml()}
-          <div class="tl-accordion">${items}</div>
+          ${s.hide_accordion ? '' : `<div class="tl-accordion">${items}</div>`}
           ${s.footer_note?`<p class="tl-footer-note">${richText(s.footer_note)}</p>`:''}
         </div>
       </section>`;
