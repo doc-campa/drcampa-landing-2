@@ -1997,10 +1997,14 @@ section.testimonials .test-stars { color:#F5A623 !important; }
   font-size:1.6rem; margin:0; text-transform:uppercase; }
 .fm-sub{ margin:3px 0 0; font-size:.72rem; letter-spacing:.09em; text-transform:uppercase; opacity:.55; }
 .fm-svg{ display:block; width:100%; height:auto; margin:4px auto 0; }
-.fm-art path{ fill:none; stroke:currentColor; stroke-width:2.1; stroke-linecap:round; stroke-linejoin:round; opacity:.5; }
-.fm-art .fm-soft{ opacity:.22; }
-.fm-art .fm-iris{ fill:none; stroke:currentColor; stroke-width:2; opacity:.5; }
-.fm-art .fm-pupil{ fill:currentColor; stroke:none; opacity:.5; }
+.fm-art path{ fill:none; stroke:currentColor; stroke-linecap:round; stroke-linejoin:round; opacity:.62; }
+.fm-art .fm-hair{ stroke-width:2.6; }
+.fm-art .fm-face{ stroke-width:2.2; }
+.fm-art .fm-brow{ stroke-width:2.8; }
+.fm-art .fm-lid{ stroke-width:2.4; }
+.fm-art .fm-fine{ stroke-width:1.5; }
+.fm-art .fm-soft{ stroke-width:1.6; opacity:.24; }
+.fm-art .fm-lip{ fill:currentColor; fill-opacity:.72; stroke:currentColor; stroke-width:1.6; opacity:.9; }
 .fm-art .fm-lead{ fill:none; stroke:#FF6B2C; stroke-width:1.5; opacity:.8; }
 .fm-art .fm-dot{ fill:#FF6B2C; stroke:none; }
 .fm-lbl{ fill:currentColor; font-family:var(--font-sans); font-size:13.5px; font-weight:700; letter-spacing:.06em; opacity:.88; }
@@ -3417,45 +3421,53 @@ const I18N = SITE_LANG==='en' ? {
    quindi si adatta da solo a tema chiaro e scuro).
    ========================================================== */
 const FACE_ART =
-  '<path d="M260,372 C236,366 217,347 205,320 C194,295 188,262 187,226 C186,186 194,140 212,113 C228,88 242,76 260,76 C278,76 292,88 308,113 C326,140 334,186 333,226 C332,262 326,295 315,320 C303,347 284,366 260,372 Z"/>' +
-  '<path d="M187,208 C160,158 164,86 214,52 C240,34 280,34 306,52 C356,86 360,158 333,208"/>' +
-  '<path d="M189,152 C168,206 162,276 172,336 C176,362 184,382 193,396"/>' +
-  '<path d="M331,152 C352,206 358,276 348,336 C344,362 336,382 327,396"/>' +
-  '<path d="M206,146 C217,110 236,94 260,94 C284,94 303,110 314,146"/>' +
-  '<path d="M204,172 C217,154 242,150 254,163"/>' +
-  '<path d="M266,163 C278,150 303,154 316,172"/>' +
-  '<path d="M206,200 C219,182 242,180 251,197 C242,212 219,214 206,200 Z"/>' +
-  '<path d="M314,200 C301,182 278,180 269,197 C278,212 301,214 314,200 Z"/>' +
-  '<path d="M206,197 L196,190"/><path d="M210,189 L203,180"/><path d="M218,184 L214,174"/>' +
-  '<path d="M314,197 L324,190"/><path d="M310,189 L317,180"/><path d="M302,184 L306,174"/>' +
-  '<path d="M260,210 L252,250 C247,262 253,269 260,269 C267,269 273,262 268,250"/>' +
-  '<path d="M244,266 C251,274 269,274 276,266"/>' +
-  '<path d="M228,300 C238,288 250,293 255,297 C257,299 263,299 265,297 C270,293 282,288 292,300"/>' +
-  '<path d="M228,300 C241,320 279,320 292,300"/>' +
-  '<path d="M228,300 C248,305 272,305 292,300"/>' +
-  '<path class="fm-soft" d="M198,240 C203,266 211,284 222,297"/>' +
-  '<path class="fm-soft" d="M322,240 C317,266 309,284 298,297"/>' +
-  '<path class="fm-soft" d="M248,336 C254,342 266,342 272,336"/>' +
-  '<path d="M226,348 L221,398"/><path d="M294,348 L299,398"/>' +
-  '<path d="M166,418 C196,400 210,398 221,398"/><path d="M354,418 C324,400 310,398 299,398"/>' +
-  '<circle class="fm-iris" cx="228" cy="196" r="8"/><circle class="fm-pupil" cx="228" cy="196" r="3.4"/>' +
-  '<circle class="fm-iris" cx="292" cy="196" r="8"/><circle class="fm-pupil" cx="292" cy="196" r="3.4"/>';
+  '<path class="fm-hair" d="M358,110 C316,78 260,86 234,134"/>' +
+  '<path class="fm-hair" d="M234,134 C202,192 196,274 220,344"/>' +
+  '<path class="fm-fine" d="M246,138 C216,196 210,272 232,336"/>' +
+  '<path class="fm-hair" d="M368,118 C392,166 398,242 382,306"/>' +
+  '<path class="fm-fine" d="M360,136 C380,184 384,246 370,302"/>' +
+  '<path class="fm-fine" d="M220,344 C206,358 196,354 192,342"/>' +
+  '<path class="fm-fine" d="M382,306 C388,324 382,338 372,342"/>' +
+  '<path class="fm-face" d="M300,378 C288,372 270,358 252,332 C226,292 218,238 222,182 C226,130 252,92 300,92 C348,92 374,130 378,182 C382,238 374,292 348,332 C330,358 312,372 300,378 Z"/>' +
+  '<path class="fm-brow" d="M234,170 C250,150 282,148 298,162"/>' +
+  '<path class="fm-brow" d="M366,170 C350,150 318,148 302,162"/>' +
+  '<path class="fm-lid" d="M246,206 C260,222 284,224 296,210"/>' +
+  '<path class="fm-lid" d="M354,206 C340,222 316,224 304,210"/>' +
+  '<path class="fm-fine" d="M246,207 C238,212 232,218 228,224"/>' +
+  '<path class="fm-fine" d="M252,213 C246,219 241,226 238,232"/>' +
+  '<path class="fm-fine" d="M259,218 C254,225 250,232 248,238"/>' +
+  '<path class="fm-fine" d="M354,207 C362,212 368,218 372,224"/>' +
+  '<path class="fm-fine" d="M348,213 C354,219 359,226 362,232"/>' +
+  '<path class="fm-fine" d="M341,218 C346,225 350,232 352,238"/>' +
+  '<path class="fm-soft" d="M300,218 C296,250 294,262 292,270"/>' +
+  '<path class="fm-fine" d="M282,276 C285,270 291,270 294,274"/>' +
+  '<path class="fm-fine" d="M318,276 C315,270 309,270 306,274"/>' +
+  '<path class="fm-fine" d="M294,280 C298,284 302,284 306,280"/>' +
+  '<path class="fm-lip" d="M264,312 C274,300 286,304 294,309 C297,311 303,311 306,309 C314,304 326,300 336,312 C322,318 278,318 264,312 Z"/>' +
+  '<path class="fm-face" d="M268,316 C282,336 318,336 332,316"/>' +
+  '<path class="fm-fine" d="M264,312 C284,316 316,316 336,312"/>' +
+  '<path class="fm-soft" d="M232,250 C238,288 252,314 270,330"/>' +
+  '<path class="fm-soft" d="M368,250 C362,288 348,314 330,330"/>' +
+  '<path class="fm-face" d="M260,358 C258,388 254,404 246,418"/>' +
+  '<path class="fm-face" d="M340,358 C342,388 346,404 354,418"/>' +
+  '<path class="fm-hair" d="M190,452 C216,426 234,418 246,418"/>' +
+  '<path class="fm-hair" d="M410,452 C384,426 366,418 354,418"/>';
 
 const FACE_GEO = {
   filler: [
-    ['M232,216 L178,192 L152,192', 238,216, 148,192,'end'],
-    ['M206,246 L172,250 L152,250', 212,244, 148,250,'end'],
-    ['M198,308 L170,318 L152,318', 203,306, 148,318,'end'],
-    ['M270,236 L344,206 L368,206', 263,238, 372,206,'start'],
-    ['M278,302 L346,288 L368,288', 272,302, 372,288,'start'],
-    ['M266,350 L344,354 L368,354', 260,348, 372,354,'start']
+    ['M266,236 L196,214 L156,214', 272,236, 152,214,'end'],
+    ['M234,266 L190,272 L156,272', 240,264, 152,272,'end'],
+    ['M240,328 L192,332 L156,332', 246,324, 152,332,'end'],
+    ['M308,248 L384,220 L428,220', 300,250, 432,220,'start'],
+    ['M322,314 L386,300 L428,300', 316,314, 432,300,'start'],
+    ['M306,358 L386,366 L428,366', 300,356, 432,366,'start']
   ],
   botox: [
-    ['M224,132 L176,124 L152,124', 230,132, 148,124,'end'],
-    ['M194,196 L172,214 L152,214', 200,194, 148,214,'end'],
-    ['M200,294 L170,306 L152,306', 206,292, 148,306,'end'],
-    ['M267,174 L346,150 L368,150', 260,176, 372,150,'start'],
-    ['M268,288 L346,256 L368,256', 260,288, 372,256,'start']
+    ['M262,150 L196,138 L156,138', 268,150, 152,138,'end'],
+    ['M234,210 L194,182 L156,182', 240,210, 152,182,'end'],
+    ['M240,308 L192,320 L156,320', 246,306, 152,320,'end'],
+    ['M308,176 L386,158 L428,158', 300,178, 432,158,'start'],
+    ['M308,302 L386,270 L428,270', 300,302, 432,270,'start']
   ]
 };
 
@@ -3481,7 +3493,7 @@ function faceMapCard(key){
   ).join('');
   return `<figure class="fm-card">
     <figcaption class="fm-head"><h3 class="fm-title">${esc(c.title)}</h3><p class="fm-sub">${esc(c.sub)}</p></figcaption>
-    <svg class="fm-svg" viewBox="0 0 560 430" role="img" aria-label="${esc(c.title)}"><g transform="translate(20,0)" class="fm-art">${FACE_ART}${marks}</g></svg>
+    <svg class="fm-svg" viewBox="0 0 600 470" role="img" aria-label="${esc(c.title)}"><g class="fm-art">${FACE_ART}${marks}</g></svg>
     ${c.extra?`<p class="fm-extra">+ ${esc(c.extra)}</p>`:''}
   </figure>`;
 }
