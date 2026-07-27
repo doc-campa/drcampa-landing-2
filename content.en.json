@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Fillers — Dr. Domenico Campa",
-    "meta_description": "Lip, cheek, tear trough and nose fillers with Dr. Domenico Campa: clinical assessment, result simulation and tailored treatment plans.",
+    "title": "Aesthetic Medicine — Dr. Domenico Campa",
+    "meta_description": "Fillers, Botox, bio-revitalisation and facial aesthetic treatments with Dr. Domenico Campa: clinical assessment, result simulation and tailored treatment plans.",
     "logo_text": "",
     "colors": {
       "primary": "#000000"
@@ -45,8 +45,8 @@
       "headline_main": "of",
       "headline_accent": "Yourself",
       "subtitle_em": "",
-      "subtitle": "\"Behind a request for a filler there is almost always something more: the wish to find harmony again and to like what you see in the mirror. The right result is the one nobody notices, but everybody sees.\"<br>\nDr. Campa",
-      "cta_label": "Book your filler consultation",
+      "subtitle": "\"Behind a request for an aesthetic treatment there is almost always something more: the wish to find harmony again and to like what you see in the mirror. The right result is the one nobody notices, but everybody sees.\"<br>\nDr. Campa",
+      "cta_label": "Book your consultation",
       "cta_href": "#prenota",
       "mission_label_strong": "OUR MISSION:",
       "mission_label_text": "HELPING 15,000 PEOPLE BECOME THE BEST VERSION OF THEMSELVES BY 2030",
@@ -58,7 +58,7 @@
       "cta_price_compare": "",
       "cta_secondary_label": "",
       "cta_secondary_href": "#prenota",
-      "cta_secondary_hint": "Filler consultation at the clinic or online, with no obligation.",
+      "cta_secondary_hint": "Consultation at the clinic or online, with no obligation.",
       "cta_tertiary_label": "",
       "cta_tertiary_href": "",
       "style": {
@@ -190,7 +190,7 @@
           "text": "It was my first visit and, after a past experience that had not gone well, I had quite a few doubts. Dr. Campa and his staff immediately put me at ease. An excellent result."
         }
       ],
-      "subtitle": "Reviews from Studio Campa patients, many of them after a filler, published directly on **Google**. All verified.",
+      "subtitle": "Reviews from Studio Campa patients, many of them after an aesthetic treatment, published directly on **Google**. All verified.",
       "reviews_rating": "5,0",
       "reviews_count": "2.238",
       "reviews_link": "https://www.google.com/search?sca_esv=423685a90e5df121&q=dottore+domenico+campa",
@@ -215,8 +215,8 @@
       "id": "risvegli",
       "eyebrow": "",
       "title_a": "What scares you <br> ABOUT<br>",
-      "title_accent": "Lip Fillers?",
-      "subtitle": "Dr. Campa answers the questions we are asked most often about fillers.",
+      "title_accent": "Aesthetic Treatments?",
+      "subtitle": "Dr. Campa answers the questions we are asked most often.",
       "items": [
         {
           "video": {
@@ -319,7 +319,7 @@
       "id": "trattamenti",
       "title_a": "Our",
       "title_italic": "Treatments",
-      "subtitle": "Fillers and Botox, area by area: here you can see where they work and what we can harmonise.",
+      "subtitle": "Facial and body aesthetic medicine: here you can see where the treatments work and what we can harmonise.",
       "footer_note": "Every treatment is preceded by a clinical assessment. Absorbable products, personalised dosages.",
       "categories": [
         {
@@ -387,6 +387,135 @@
             }
           ],
           "description": "It relaxes the muscles that create expression lines. A natural, temporary effect that keeps your facial expressions intact."
+        },
+        {
+          "name": "Regenerative Medicine",
+          "icon": "heart",
+          "treatments": [
+            {
+              "name": "PRP",
+              "href": ""
+            },
+            {
+              "name": "PRF",
+              "href": ""
+            },
+            {
+              "name": "PRX T33",
+              "href": ""
+            },
+            {
+              "name": "Autologous filler",
+              "href": ""
+            }
+          ],
+          "description": "Treatments that stimulate tissue regeneration using the patient's own growth factors."
+        },
+        {
+          "name": "Face & Body Technologies",
+          "icon": "legs",
+          "treatments": [
+            {
+              "name": "Exion Body",
+              "href": ""
+            },
+            {
+              "name": "Exion Face",
+              "href": ""
+            },
+            {
+              "name": "Exion RF",
+              "href": ""
+            },
+            {
+              "name": "Emtone",
+              "href": ""
+            },
+            {
+              "name": "Emsculpt Neo",
+              "href": ""
+            },
+            {
+              "name": "Carboxytherapy",
+              "href": ""
+            }
+          ],
+          "description": "Non-invasive technologies to tone, reshape and improve skin quality, with no needles."
+        },
+        {
+          "name": "Facial Laser",
+          "icon": "sparkle",
+          "treatments": [
+            {
+              "name": "Facial telangiectasia",
+              "href": ""
+            },
+            {
+              "name": "Surgical and non-surgical scars",
+              "href": ""
+            },
+            {
+              "name": "Body capillaries",
+              "href": ""
+            },
+            {
+              "name": "Sun spots (face and body)",
+              "href": ""
+            },
+            {
+              "name": "Seborrheic and actinic keratoses",
+              "href": ""
+            },
+            {
+              "name": "Angiomas (face and body)",
+              "href": ""
+            },
+            {
+              "name": "Melasma",
+              "href": ""
+            },
+            {
+              "name": "Rosacea",
+              "href": ""
+            },
+            {
+              "name": "Acne and acne scars",
+              "href": ""
+            },
+            {
+              "name": "Under-eye discolouration",
+              "href": ""
+            },
+            {
+              "name": "Photorejuvenation",
+              "href": ""
+            },
+            {
+              "name": "Poikiloderma of Civatte",
+              "href": ""
+            },
+            {
+              "name": "Light and Bright",
+              "href": ""
+            },
+            {
+              "name": "Tattoos (+ Microblading)",
+              "href": ""
+            },
+            {
+              "name": "Skin porosity",
+              "href": ""
+            },
+            {
+              "name": "Face and body hair removal",
+              "href": ""
+            },
+            {
+              "name": "Glacè Candela face",
+              "href": ""
+            }
+          ],
+          "description": "Latest-generation lasers for pigmentation, thread veins, scars and skin texture. Short sessions, immediate recovery."
         }
       ],
       "style": {
@@ -433,7 +562,7 @@
       "title_a": "",
       "title_accent": "Choose how to begin .",
       "subtitle": "Every face starts from a different point. That is why you can choose the path\nthat best suits your needs.",
-      "urgency": "The fastest way to book your filler consultation.",
+      "urgency": "The fastest way to book your consultation.",
       "tiers": [
         {
           "name": "Consultation with Dr. Campa",
@@ -451,7 +580,7 @@
           "scarcity": "",
           "photo": "/images/1783591439149-img-0220-2.webp",
           "price_compare": "",
-          "features": "Complete clinical assessment of the face\nAnalysis of proportions and asymmetries\nResult simulation with advanced software\nDefinitive filler plan, area by area\nDirect discussion with Dr. Campa\nGuidance on duration, follow-ups and maintenance\nOnline or at the clinic"
+          "features": "Complete clinical assessment of the face\nAnalysis of proportions and asymmetries\nResult simulation with advanced software\nDefinitive treatment plan, area by area\nDirect discussion with Dr. Campa\nGuidance on duration, follow-ups and maintenance\nOnline or at the clinic"
         },
         {
           "name": "Consultation with Dr. Mansi",
@@ -468,13 +597,13 @@
           "cta2_href": "https://calendly.com/segreteriacampa/video-consulenza-con-dottoressa-federicamansi?month=2026-07",
           "scarcity": "",
           "photo": "/images/1783097121005-mansi-1-landing-2.png",
-          "features": "Complete clinical assessment of the face\nAnalysis of proportions and asymmetries\nResult simulation with advanced software\nDefinitive filler plan, area by area\nGuidance on duration, follow-ups and maintenance\nOnline or at the clinic"
+          "features": "Complete clinical assessment of the face\nAnalysis of proportions and asymmetries\nResult simulation with advanced software\nDefinitive treatment plan, area by area\nGuidance on duration, follow-ups and maintenance\nOnline or at the clinic"
         },
         {
           "name": "Request Information",
           "who": "",
           "format": "",
-          "value_line": "Want to know whether a filler is right for you? Leave us your details and we will get back to you.",
+          "value_line": "Want to know which treatment is right for you? Leave us your details and we will get back to you.",
           "price": "",
           "icon": "",
           "featured": "",
@@ -491,7 +620,7 @@
           "name": "Message us on WhatsApp",
           "who": "Studio Campa front desk",
           "format": "Chat · quick and direct",
-          "value_line": "Got a question about fillers? Message us now: it is the easiest way to take the first step.",
+          "value_line": "Got a question about a treatment? Message us now: it is the easiest way to take the first step.",
           "price": "Free",
           "icon": "whatsapp",
           "featured": "",
@@ -567,13 +696,13 @@
     }
   ],
   "footer": {
-    "about_text": "Plastic Surgery and Aesthetic Medicine practice. Fillers and injectables with clinical assessment, a light touch and natural results.",
+    "about_text": "Plastic Surgery and Aesthetic Medicine practice. Facial and body aesthetic treatments with clinical assessment, a light touch and natural results.",
     "columns": [
       {
         "title": "Treatments",
         "links": [
           {
-            "label": "Lip filler",
+            "label": "Fillers",
             "href": "#trattamenti"
           },
           {
@@ -581,11 +710,11 @@
             "href": "#trattamenti"
           },
           {
-            "label": "Cheek filler",
+            "label": "Bio-revitalisation",
             "href": "#trattamenti"
           },
           {
-            "label": "Non-surgical rhinoplasty",
+            "label": "Facial laser",
             "href": "#trattamenti"
           }
         ]
@@ -911,6 +1040,40 @@
     "Indicazioni su durata, controlli e mantenimento": "Guidance on duration, follow-ups and maintenance",
     "Vuoi sapere se il filler è indicato per te? Lasciaci i tuoi dati: ti ricontattiamo noi.": "Want to know whether a filler is right for you? Leave us your details and we will get back to you.",
     "Hai una domanda sul filler? Scrivici ora: è il modo più semplice per fare il primo passo.": "Got a question about fillers? Message us now: it is the easiest way to take the first step.",
-    "Studio di Chirurgia Plastica e Medicina Estetica. Filler e trattamenti iniettivi con valutazione clinica, mano leggera e risultati naturali.": "Plastic Surgery and Aesthetic Medicine practice. Fillers and injectables with clinical assessment, a light touch and natural results."
+    "Studio di Chirurgia Plastica e Medicina Estetica. Filler e trattamenti iniettivi con valutazione clinica, mano leggera e risultati naturali.": "Plastic Surgery and Aesthetic Medicine practice. Fillers and injectables with clinical assessment, a light touch and natural results.",
+    "Medicina Estetica — Dr. Domenico Campa": "Aesthetic Medicine — Dr. Domenico Campa",
+    "Filler, botox, biorivitalizzazione e trattamenti estetici del viso con il Dr. Domenico Campa: valutazione clinica, simulazione del risultato e percorsi su misura.": "Fillers, Botox, bio-revitalisation and facial aesthetic treatments with Dr. Domenico Campa: clinical assessment, result simulation and tailored treatment plans.",
+    "\"Dietro la richiesta di un trattamento estetico c'è quasi sempre qualcosa di più: il desiderio di ritrovare armonia e piacersi allo specchio. Il risultato giusto è quello che nessuno nota, ma che tutti vedono.\"<br>\nDott. Campa": "\"Behind a request for an aesthetic treatment there is almost always something more: the wish to find harmony again and to like what you see in the mirror. The right result is the one nobody notices, but everybody sees.\"<br>\nDr. Campa",
+    "Prenota la consulenza": "Book your consultation",
+    "Consulenza in studio o online, senza impegno.": "Consultation at the clinic or online, with no obligation.",
+    "Le testimonianze dei pazienti dello Studio Campa, molte dopo un trattamento estetico, pubblicate direttamente su **Google**. Tutte verificate.": "Reviews from Studio Campa patients, many of them after an aesthetic treatment, published directly on **Google**. All verified.",
+    "Trattamenti Estetici?": "Aesthetic Treatments?",
+    "Le risposte del Dott. Campa alle domande che ci fanno più spesso.": "Dr. Campa answers the questions we are asked most often.",
+    "Medicina estetica del viso e del corpo: qui vedi dove agiscono i trattamenti e che cosa possiamo armonizzare.": "Facial and body aesthetic medicine: here you can see where the treatments work and what we can harmonise.",
+    "Trattamenti che stimolano i tessuti a rigenerarsi usando i fattori di crescita del paziente stesso.": "Treatments that stimulate tissue regeneration using the patient's own growth factors.",
+    "Macchinari viso e corpo": "Face & Body Technologies",
+    "Tecnologie non invasive per tonificare, rimodellare e migliorare la qualità della pelle, senza aghi.": "Non-invasive technologies to tone, reshape and improve skin quality, with no needles.",
+    "Laser Viso": "Facial Laser",
+    "Laser di ultima generazione per macchie, capillari, cicatrici e texture della pelle. Sedute brevi, ripresa immediata.": "Latest-generation lasers for pigmentation, thread veins, scars and skin texture. Short sessions, immediate recovery.",
+    "Filler autologo": "Autologous filler",
+    "Il modo più veloce per fissare la tua consulenza.": "The fastest way to book your consultation.",
+    "Piano di trattamento definitivo, zona per zona": "Definitive treatment plan, area by area",
+    "Vuoi sapere qual è il trattamento giusto per te? Lasciaci i tuoi dati: ti ricontattiamo noi.": "Want to know which treatment is right for you? Leave us your details and we will get back to you.",
+    "Hai una domanda su un trattamento? Scrivici ora: è il modo più semplice per fare il primo passo.": "Got a question about a treatment? Message us now: it is the easiest way to take the first step.",
+    "Studio di Chirurgia Plastica e Medicina Estetica. Trattamenti estetici del viso e del corpo con valutazione clinica, mano leggera e risultati naturali.": "Plastic Surgery and Aesthetic Medicine practice. Facial and body aesthetic treatments with clinical assessment, a light touch and natural results.",
+    "Laser viso": "Facial laser",
+    "Exion Face": "Exion Face",
+    "Emsculpt Neo": "Emsculpt Neo",
+    "Teleangectasie del volto": "Facial telangiectasia",
+    "Cicatrici chirurgiche e non": "Surgical and non-surgical scars",
+    "Capillari corpo": "Body capillaries",
+    "Macchie solari (viso e corpo)": "Sun spots (face and body)",
+    "Angiomi (viso e corpo)": "Angiomas (face and body)",
+    "Acne e cicatrici da acne": "Acne and acne scars",
+    "Discromie del contorno occhi": "Under-eye discolouration",
+    "Poichilodermia di Civatte": "Poikiloderma of Civatte",
+    "Porosità cutanea": "Skin porosity",
+    "Epilazione viso e corpo": "Face and body hair removal",
+    "Glacè Candela viso": "Glacè Candela face"
   }
 }
