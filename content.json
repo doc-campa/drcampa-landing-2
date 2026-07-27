@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Filler e Botox — Dr. Domenico Campa",
-    "meta_description": "Filler e botox con il Dr. Domenico Campa: valutazione clinica, risultati naturali e percorsi su misura.",
+    "title": "Filler — Dr. Domenico Campa",
+    "meta_description": "Filler labbra, zigomi, occhiaie e rinofiller con il Dr. Domenico Campa: valutazione clinica, simulazione del risultato e percorsi su misura.",
     "logo_text": "",
     "colors": {
       "primary": "#000000"
@@ -45,8 +45,8 @@
       "headline_main": "of",
       "headline_accent": "Yourself",
       "subtitle_em": "",
-      "subtitle": "\"Dietro un filler o un trattamento botox c'è spesso molto di più: il desiderio di piacersi, con un risultato naturale che nessuno nota ma tutti vedono.\"<br>\nDott. Campa",
-      "cta_label": "Prenota consulenza",
+      "subtitle": "\"Dietro la richiesta di un filler c'è quasi sempre qualcosa di più: il desiderio di ritrovare armonia e piacersi allo specchio. Il risultato giusto è quello che nessuno nota, ma che tutti vedono.\"<br>\nDott. Campa",
+      "cta_label": "Prenota la consulenza filler",
       "cta_href": "#prenota",
       "mission_label_strong": "LA NOSTRA MISSIONE:",
       "mission_label_text": "AIUTRARE 15 MILA PERSONE A DIVENTARE LA VERSIONE MIGLIORE DI SE ENTRO IL 2030",
@@ -58,7 +58,7 @@
       "cta_price_compare": "",
       "cta_secondary_label": "",
       "cta_secondary_href": "#prenota",
-      "cta_secondary_hint": "Chiamata gratuita per informazioni, senza impegno.",
+      "cta_secondary_hint": "Consulenza filler in studio o online, senza impegno.",
       "cta_tertiary_label": "",
       "cta_tertiary_href": "",
       "style": {
@@ -190,7 +190,7 @@
           "text": "Sono stata per la prima volta dal dottore ed inizialmente, a causa di un percorso non andato al meglio in passato, avevo non poche remore. Il dottor Campa e il suo staff mi hanno messo subito a mio agio. Risultato eccellente."
         }
       ],
-      "subtitle": "Le testimonianze dei pazienti dello Studio Campa, pubblicate direttamente su **Google**. Tutte verificate.",
+      "subtitle": "Le testimonianze dei pazienti dello Studio Campa, molte dopo un filler, pubblicate direttamente su **Google**. Tutte verificate.",
       "reviews_rating": "5,0",
       "reviews_count": "2.238",
       "reviews_link": "https://www.google.com/search?sca_esv=423685a90e5df121&q=dottore+domenico+campa",
@@ -216,7 +216,7 @@
       "eyebrow": "",
       "title_a": "Cosa ti spaventa <br> DEI<br>",
       "title_accent": "Filler Labbra?",
-      "subtitle": "Questi sono i Video Risposta a tutte le tue domande.",
+      "subtitle": "Le risposte del Dott. Campa alle domande che ci fanno più spesso sui filler.",
       "items": [
         {
           "video": {
@@ -317,10 +317,10 @@
     {
       "type": "treatments_list",
       "id": "trattamenti",
-      "title_a": "Trattamenti",
-      "title_italic": "",
-      "subtitle": "",
-      "footer_note": "",
+      "title_a": "I nostri",
+      "title_italic": "Trattamenti",
+      "subtitle": "Filler e botox, zona per zona: qui vedi dove agiscono e che cosa possiamo armonizzare.",
+      "footer_note": "Ogni trattamento è preceduto da una valutazione clinica. Prodotti riassorbibili, dosaggi personalizzati.",
       "categories": [
         {
           "name": "Filler",
@@ -354,7 +354,8 @@
               "name": "Filler glutei",
               "href": ""
             }
-          ]
+          ],
+          "description": "Acido ialuronico di ultima generazione: ridà volume dove è calato e ridisegna i contorni del viso. Risultato immediato, riassorbibile e sempre modulabile nel tempo."
         },
         {
           "name": "Botox",
@@ -384,7 +385,8 @@
               "name": "Iperidrosi (sudorazione eccessiva)",
               "href": ""
             }
-          ]
+          ],
+          "description": "Rilassa i muscoli che formano le rughe d'espressione. Effetto naturale e temporaneo, senza stravolgere la mimica del viso."
         }
       ],
       "style": {
@@ -396,7 +398,7 @@
     {
       "type": "stats",
       "id": "risultati",
-      "title_a": "i nosrti",
+      "title_a": "i nostri",
       "title_accent": "Numeri",
       "subtitle": "",
       "row_a": [
@@ -430,8 +432,8 @@
       "eyebrow": "IL PRIMO PASSO",
       "title_a": "",
       "title_accent": "Scegli come iniziare .",
-      "subtitle": "Ogni persona parte da un punto diverso. Per questo puoi scegliere il percorso più adatto\nalle tue esigenze.",
-      "urgency": "Il modo più veloce per fissare una consulenza.",
+      "subtitle": "Ogni viso parte da un punto diverso. Per questo puoi scegliere il percorso più adatto\nalle tue esigenze.",
+      "urgency": "Il modo più veloce per fissare la tua consulenza filler.",
       "tiers": [
         {
           "name": "Consulenza Dott. Campa",
@@ -449,7 +451,7 @@
           "scarcity": "",
           "photo": "/images/1783591439149-img-0220-2.webp",
           "price_compare": "",
-          "features": "Valutazione clinica completa\nAnalisi avanzata e approfondita\nSimulazione del risultato con software avanzati\nPiano Definitivo di trattamento\nConfronto diretto con il Dr. Campa\nIndicazioni complete\nOnline o in studio"
+          "features": "Valutazione clinica completa del viso\nAnalisi delle proporzioni e delle asimmetrie\nSimulazione del risultato con software avanzati\nPiano filler definitivo, zona per zona\nConfronto diretto con il Dr. Campa\nIndicazioni su durata, controlli e mantenimento\nOnline o in studio"
         },
         {
           "name": "Consulenza Dott.ssa Mansi",
@@ -466,13 +468,13 @@
           "cta2_href": "https://calendly.com/segreteriacampa/video-consulenza-con-dottoressa-federicamansi?month=2026-07",
           "scarcity": "",
           "photo": "/images/1783097121005-mansi-1-landing-2.png",
-          "features": "Valutazione clinica completa\nAnalisi avanzata e approfondita\nSimulazione del risultato con software avanzati\nPiano pre definitivo di trattamento (revisione finale con il dott.Campa)\nIndicazioni complete\nOnline o in studio"
+          "features": "Valutazione clinica completa del viso\nAnalisi delle proporzioni e delle asimmetrie\nSimulazione del risultato con software avanzati\nPiano filler definitivo, zona per zona\nIndicazioni su durata, controlli e mantenimento\nOnline o in studio"
         },
         {
           "name": "Richiedi Informazioni",
           "who": "",
           "format": "",
-          "value_line": "Compila il form: verrai ricontattata/o subito dal team del Dott. Campa.",
+          "value_line": "Vuoi sapere se il filler è indicato per te? Lasciaci i tuoi dati: ti ricontattiamo noi.",
           "price": "",
           "icon": "",
           "featured": "",
@@ -489,7 +491,7 @@
           "name": "Scrivici su WhatsApp",
           "who": "Segreteria Studio Campa",
           "format": "Chat · veloce e diretta",
-          "value_line": "Hai solo una domanda? Scrivici ora: è il modo più semplice per fare il primo passo.",
+          "value_line": "Hai una domanda sul filler? Scrivici ora: è il modo più semplice per fare il primo passo.",
           "price": "Gratis",
           "icon": "whatsapp",
           "featured": "",
@@ -565,7 +567,7 @@
     }
   ],
   "footer": {
-    "about_text": "Studio di Chirurgia e Medicina Estetica. Filler e botox con cura personale, attenzione clinica e risultati naturali.",
+    "about_text": "Studio di Chirurgia Plastica e Medicina Estetica. Filler e trattamenti iniettivi con valutazione clinica, mano leggera e risultati naturali.",
     "columns": [
       {
         "title": "Trattamenti",
