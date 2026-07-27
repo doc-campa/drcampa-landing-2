@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Filler — Dr. Domenico Campa",
-    "meta_description": "Filler labbra, zigomi, occhiaie e rinofiller con il Dr. Domenico Campa: valutazione clinica, simulazione del risultato e percorsi su misura.",
+    "title": "Medicina Estetica — Dr. Domenico Campa",
+    "meta_description": "Filler, botox, biorivitalizzazione e trattamenti estetici del viso con il Dr. Domenico Campa: valutazione clinica, simulazione del risultato e percorsi su misura.",
     "logo_text": "",
     "colors": {
       "primary": "#000000"
@@ -45,8 +45,8 @@
       "headline_main": "of",
       "headline_accent": "Yourself",
       "subtitle_em": "",
-      "subtitle": "\"Dietro la richiesta di un filler c'è quasi sempre qualcosa di più: il desiderio di ritrovare armonia e piacersi allo specchio. Il risultato giusto è quello che nessuno nota, ma che tutti vedono.\"<br>\nDott. Campa",
-      "cta_label": "Prenota la consulenza filler",
+      "subtitle": "\"Dietro la richiesta di un trattamento estetico c'è quasi sempre qualcosa di più: il desiderio di ritrovare armonia e piacersi allo specchio. Il risultato giusto è quello che nessuno nota, ma che tutti vedono.\"<br>\nDott. Campa",
+      "cta_label": "Prenota la consulenza",
       "cta_href": "#prenota",
       "mission_label_strong": "LA NOSTRA MISSIONE:",
       "mission_label_text": "AIUTRARE 15 MILA PERSONE A DIVENTARE LA VERSIONE MIGLIORE DI SE ENTRO IL 2030",
@@ -58,7 +58,7 @@
       "cta_price_compare": "",
       "cta_secondary_label": "",
       "cta_secondary_href": "#prenota",
-      "cta_secondary_hint": "Consulenza filler in studio o online, senza impegno.",
+      "cta_secondary_hint": "Consulenza in studio o online, senza impegno.",
       "cta_tertiary_label": "",
       "cta_tertiary_href": "",
       "style": {
@@ -190,7 +190,7 @@
           "text": "Sono stata per la prima volta dal dottore ed inizialmente, a causa di un percorso non andato al meglio in passato, avevo non poche remore. Il dottor Campa e il suo staff mi hanno messo subito a mio agio. Risultato eccellente."
         }
       ],
-      "subtitle": "Le testimonianze dei pazienti dello Studio Campa, molte dopo un filler, pubblicate direttamente su **Google**. Tutte verificate.",
+      "subtitle": "Le testimonianze dei pazienti dello Studio Campa, molte dopo un trattamento estetico, pubblicate direttamente su **Google**. Tutte verificate.",
       "reviews_rating": "5,0",
       "reviews_count": "2.238",
       "reviews_link": "https://www.google.com/search?sca_esv=423685a90e5df121&q=dottore+domenico+campa",
@@ -215,8 +215,8 @@
       "id": "risvegli",
       "eyebrow": "",
       "title_a": "Cosa ti spaventa <br> DEI<br>",
-      "title_accent": "Filler Labbra?",
-      "subtitle": "Le risposte del Dott. Campa alle domande che ci fanno più spesso sui filler.",
+      "title_accent": "Trattamenti Estetici?",
+      "subtitle": "Le risposte del Dott. Campa alle domande che ci fanno più spesso.",
       "items": [
         {
           "video": {
@@ -319,7 +319,7 @@
       "id": "trattamenti",
       "title_a": "I nostri",
       "title_italic": "Trattamenti",
-      "subtitle": "Filler e botox, zona per zona: qui vedi dove agiscono e che cosa possiamo armonizzare.",
+      "subtitle": "Medicina estetica del viso e del corpo: qui vedi dove agiscono i trattamenti e che cosa possiamo armonizzare.",
       "footer_note": "Ogni trattamento è preceduto da una valutazione clinica. Prodotti riassorbibili, dosaggi personalizzati.",
       "categories": [
         {
@@ -387,6 +387,135 @@
             }
           ],
           "description": "Rilassa i muscoli che formano le rughe d'espressione. Effetto naturale e temporaneo, senza stravolgere la mimica del viso."
+        },
+        {
+          "name": "Medicina Rigenerativa",
+          "icon": "heart",
+          "treatments": [
+            {
+              "name": "PRP",
+              "href": ""
+            },
+            {
+              "name": "PRF",
+              "href": ""
+            },
+            {
+              "name": "PRX T33",
+              "href": ""
+            },
+            {
+              "name": "Filler autologo",
+              "href": ""
+            }
+          ],
+          "description": "Trattamenti che stimolano i tessuti a rigenerarsi usando i fattori di crescita del paziente stesso."
+        },
+        {
+          "name": "Macchinari viso e corpo",
+          "icon": "legs",
+          "treatments": [
+            {
+              "name": "Exion Body",
+              "href": ""
+            },
+            {
+              "name": "Exion Face",
+              "href": ""
+            },
+            {
+              "name": "Exion RF",
+              "href": ""
+            },
+            {
+              "name": "Emtone",
+              "href": ""
+            },
+            {
+              "name": "Emsculpt Neo",
+              "href": ""
+            },
+            {
+              "name": "Carbossiterapia",
+              "href": ""
+            }
+          ],
+          "description": "Tecnologie non invasive per tonificare, rimodellare e migliorare la qualità della pelle, senza aghi."
+        },
+        {
+          "name": "Laser Viso",
+          "icon": "sparkle",
+          "treatments": [
+            {
+              "name": "Teleangectasie del volto",
+              "href": ""
+            },
+            {
+              "name": "Cicatrici chirurgiche e non",
+              "href": ""
+            },
+            {
+              "name": "Capillari corpo",
+              "href": ""
+            },
+            {
+              "name": "Macchie solari (viso e corpo)",
+              "href": ""
+            },
+            {
+              "name": "Cheratosi seborroiche e attiniche",
+              "href": ""
+            },
+            {
+              "name": "Angiomi (viso e corpo)",
+              "href": ""
+            },
+            {
+              "name": "Melasma",
+              "href": ""
+            },
+            {
+              "name": "Rosacea",
+              "href": ""
+            },
+            {
+              "name": "Acne e cicatrici da acne",
+              "href": ""
+            },
+            {
+              "name": "Discromie del contorno occhi",
+              "href": ""
+            },
+            {
+              "name": "Fotoringiovanimento",
+              "href": ""
+            },
+            {
+              "name": "Poichilodermia di Civatte",
+              "href": ""
+            },
+            {
+              "name": "Light and Bright",
+              "href": ""
+            },
+            {
+              "name": "Tatuaggi (+ Microblading)",
+              "href": ""
+            },
+            {
+              "name": "Porosità cutanea",
+              "href": ""
+            },
+            {
+              "name": "Epilazione viso e corpo",
+              "href": ""
+            },
+            {
+              "name": "Glacè Candela viso",
+              "href": ""
+            }
+          ],
+          "description": "Laser di ultima generazione per macchie, capillari, cicatrici e texture della pelle. Sedute brevi, ripresa immediata."
         }
       ],
       "style": {
@@ -433,7 +562,7 @@
       "title_a": "",
       "title_accent": "Scegli come iniziare .",
       "subtitle": "Ogni viso parte da un punto diverso. Per questo puoi scegliere il percorso più adatto\nalle tue esigenze.",
-      "urgency": "Il modo più veloce per fissare la tua consulenza filler.",
+      "urgency": "Il modo più veloce per fissare la tua consulenza.",
       "tiers": [
         {
           "name": "Consulenza Dott. Campa",
@@ -451,7 +580,7 @@
           "scarcity": "",
           "photo": "/images/1783591439149-img-0220-2.webp",
           "price_compare": "",
-          "features": "Valutazione clinica completa del viso\nAnalisi delle proporzioni e delle asimmetrie\nSimulazione del risultato con software avanzati\nPiano filler definitivo, zona per zona\nConfronto diretto con il Dr. Campa\nIndicazioni su durata, controlli e mantenimento\nOnline o in studio"
+          "features": "Valutazione clinica completa del viso\nAnalisi delle proporzioni e delle asimmetrie\nSimulazione del risultato con software avanzati\nPiano di trattamento definitivo, zona per zona\nConfronto diretto con il Dr. Campa\nIndicazioni su durata, controlli e mantenimento\nOnline o in studio"
         },
         {
           "name": "Consulenza Dott.ssa Mansi",
@@ -468,13 +597,13 @@
           "cta2_href": "https://calendly.com/segreteriacampa/video-consulenza-con-dottoressa-federicamansi?month=2026-07",
           "scarcity": "",
           "photo": "/images/1783097121005-mansi-1-landing-2.png",
-          "features": "Valutazione clinica completa del viso\nAnalisi delle proporzioni e delle asimmetrie\nSimulazione del risultato con software avanzati\nPiano filler definitivo, zona per zona\nIndicazioni su durata, controlli e mantenimento\nOnline o in studio"
+          "features": "Valutazione clinica completa del viso\nAnalisi delle proporzioni e delle asimmetrie\nSimulazione del risultato con software avanzati\nPiano di trattamento definitivo, zona per zona\nIndicazioni su durata, controlli e mantenimento\nOnline o in studio"
         },
         {
           "name": "Richiedi Informazioni",
           "who": "",
           "format": "",
-          "value_line": "Vuoi sapere se il filler è indicato per te? Lasciaci i tuoi dati: ti ricontattiamo noi.",
+          "value_line": "Vuoi sapere qual è il trattamento giusto per te? Lasciaci i tuoi dati: ti ricontattiamo noi.",
           "price": "",
           "icon": "",
           "featured": "",
@@ -491,7 +620,7 @@
           "name": "Scrivici su WhatsApp",
           "who": "Segreteria Studio Campa",
           "format": "Chat · veloce e diretta",
-          "value_line": "Hai una domanda sul filler? Scrivici ora: è il modo più semplice per fare il primo passo.",
+          "value_line": "Hai una domanda su un trattamento? Scrivici ora: è il modo più semplice per fare il primo passo.",
           "price": "Gratis",
           "icon": "whatsapp",
           "featured": "",
@@ -567,13 +696,13 @@
     }
   ],
   "footer": {
-    "about_text": "Studio di Chirurgia Plastica e Medicina Estetica. Filler e trattamenti iniettivi con valutazione clinica, mano leggera e risultati naturali.",
+    "about_text": "Studio di Chirurgia Plastica e Medicina Estetica. Trattamenti estetici del viso e del corpo con valutazione clinica, mano leggera e risultati naturali.",
     "columns": [
       {
         "title": "Trattamenti",
         "links": [
           {
-            "label": "Filler labbra",
+            "label": "Filler",
             "href": "#trattamenti"
           },
           {
@@ -581,11 +710,11 @@
             "href": "#trattamenti"
           },
           {
-            "label": "Filler zigomi",
+            "label": "Biorivitalizzazione",
             "href": "#trattamenti"
           },
           {
-            "label": "Rinofiller",
+            "label": "Laser viso",
             "href": "#trattamenti"
           }
         ]
