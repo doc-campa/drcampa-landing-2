@@ -63,8 +63,8 @@
       "cta_tertiary_href": "",
       "style": {
         "scale": "compatto",
-        "bg": "#000000",
-        "accent": "#fe6a2d",
+        "bg": "#0714a6",
+        "accent": "#ff2d96",
         "text": "#ffffff"
       },
       "video_player_poster": "/images/1783029079836-sfondo-video.png",
@@ -104,7 +104,7 @@
         }
       ],
       "style": {
-        "bg": "#000105",
+        "bg": "#0b1fd4",
         "accent": "#ffffff",
         "text": "#ffffff"
       },
@@ -207,7 +207,7 @@
       "style": {
         "bg": "#ffffff",
         "text": "#000000",
-        "accent": "#6f2d01"
+        "accent": "#c2126f"
       }
     },
     {
@@ -259,8 +259,8 @@
         }
       ],
       "style": {
-        "bg": "#000105",
-        "accent": "#fe6a2d",
+        "bg": "#0714a6",
+        "accent": "#ff2d96",
         "text": "#ffffff"
       }
     },
@@ -308,8 +308,8 @@
         }
       ],
       "style": {
-        "bg": "#000105",
-        "accent": "#fe6a2d"
+        "bg": "#0b1fd4",
+        "accent": "#ff2d96"
       },
       "eyebrow": "",
       "cta_label": "Scopri tutti i risultati @dottcampa_chirurgoplastico"
@@ -519,8 +519,8 @@
         }
       ],
       "style": {
-        "bg": "#000105",
-        "accent": "#fe6a2d",
+        "bg": "#0714a6",
+        "accent": "#ff2d96",
         "text": "#F7F3EC"
       },
       "hide_accordion": true
@@ -551,8 +551,8 @@
       "row_b": [],
       "footnote": "*Tutti i dati provengono da sondaggi interni e da rilevazioni cliniche su pazienti dello Studio Campa.",
       "style": {
-        "bg": "#000105",
-        "accent": "#fe6a2d"
+        "bg": "#0b1fd4",
+        "accent": "#ff2d96"
       }
     },
     {
@@ -633,8 +633,8 @@
       ],
       "footer_note": "",
       "style": {
-        "bg": "#000105",
-        "accent": "#fe6a2d",
+        "bg": "#0714a6",
+        "accent": "#ff2d96",
         "text": "#ffffff",
         "scale": "compatto"
       },
