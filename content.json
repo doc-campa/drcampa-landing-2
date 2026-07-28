@@ -39,7 +39,7 @@
   "sections": [
     {
       "type": "hero",
-      "bg_image": "/images/1781114045941-copertina-2.jpg",
+      "bg_image": "/images/1785251968684-sfondo-landing-2-2.jpg",
       "watermark": "",
       "headline_pre": "\"Be the best version",
       "headline_main": "of",
@@ -67,8 +67,11 @@
         "accent": "#ff2d96",
         "text": "#ffffff"
       },
-      "video_player_poster": "/images/1783029079836-sfondo-video.png",
-      "mobile_title_gap": 220,
+      "video_player_poster": {
+        "desktop": "/images/1783029079836-sfondo-video.png",
+        "mobile": "/images/1785252076944-sfondo-landing-2-2-mobile.jpg"
+      },
+      "mobile_title_gap": null,
       "bg_zoom": "0.9",
       "bg_zoom_mobile": "1",
       "bg_position": "",
@@ -77,7 +80,7 @@
       "play_y": "83",
       "player_width": "",
       "player_ratio": "12/10",
-      "title_offset": 120
+      "title_offset": null
     },
     {
       "type": "stats_band",
