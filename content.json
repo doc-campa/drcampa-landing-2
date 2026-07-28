@@ -39,7 +39,10 @@
   "sections": [
     {
       "type": "hero",
-      "bg_image": "/images/1785251968684-sfondo-landing-2-2.jpg",
+      "bg_image": {
+        "desktop": "/images/1785252290289-sfondo-landing-2-3.jpg",
+        "mobile": "/images/1785252307722-sfondo-landing-2-2-mobile.jpg"
+      },
       "watermark": "",
       "headline_pre": "\"Be the best version",
       "headline_main": "of",
@@ -69,7 +72,7 @@
       },
       "video_player_poster": {
         "desktop": "/images/1783029079836-sfondo-video.png",
-        "mobile": "/images/1785252076944-sfondo-landing-2-2-mobile.jpg"
+        "mobile": ""
       },
       "mobile_title_gap": null,
       "bg_zoom": "",
