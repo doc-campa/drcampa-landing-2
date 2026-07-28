@@ -72,8 +72,8 @@
         "mobile": "/images/1785252076944-sfondo-landing-2-2-mobile.jpg"
       },
       "mobile_title_gap": null,
-      "bg_zoom": "0.9",
-      "bg_zoom_mobile": "1",
+      "bg_zoom": "",
+      "bg_zoom_mobile": "",
       "bg_position": "",
       "bg_position_mobile": "",
       "play_x": "",
