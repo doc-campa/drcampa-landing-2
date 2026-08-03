@@ -233,7 +233,7 @@
             "controls": true
           },
           "poster": "",
-          "name": "E se il risultato non è naturale?",
+          "name": "Perdo la vista con il Rinofiller?",
           "treatment": "",
           "src": ""
         },
@@ -246,7 +246,7 @@
             "controls": true
           },
           "poster": "",
-          "name": "Fa male? Quanto dura?",
+          "name": "⁠⁠Ma fa male?",
           "treatment": "",
           "src": ""
         },
@@ -259,7 +259,7 @@
             "controls": true
           },
           "poster": "",
-          "name": "E se poi non mi piace?",
+          "name": "”Doc le vorrei così”",
           "treatment": "",
           "src": ""
         }
@@ -580,10 +580,10 @@
           "icon": "",
           "featured": "",
           "free": false,
-          "cta_label": "Prenota dal vivo",
+          "cta_label": "Prenota subito!",
           "cta_href": "https://calendly.com/segreteriacampa/consulenza",
-          "cta2_label": "Prenota videoconsulenza",
-          "cta2_href": "https://calendly.com/segreteriacampa/video-consulenza-con-dottoressa-federicamansi",
+          "cta2_label": "",
+          "cta2_href": "",
           "scarcity": "",
           "photo": "/images/1783591439149-img-0220-2.webp",
           "price_compare": "",
@@ -598,9 +598,9 @@
           "icon": "",
           "featured": "",
           "free": false,
-          "cta_label": "Prenota dal vivo",
+          "cta_label": "Prenota subito!",
           "cta_href": "https://calendly.com/segreteriacampa/consulenza-clone",
-          "cta2_label": "Prenota videoconsulenza",
+          "cta2_label": "",
           "cta2_href": "https://calendly.com/segreteriacampa/video-consulenza-con-dottoressa-federicamansi?month=2026-07",
           "scarcity": "",
           "photo": "/images/1783097121005-mansi-1-landing-2.png",
