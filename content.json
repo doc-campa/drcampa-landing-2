@@ -86,56 +86,6 @@
       "title_offset": null
     },
     {
-      "type": "stats_band",
-      "id": "numeri",
-      "intro": "I numeri dello Studio Campa",
-      "items": [
-        {
-          "prefix": ">",
-          "number": "35000",
-          "suffix": "",
-          "label": "𝘛𝘳𝘢𝘵𝘵𝘢𝘮𝘦𝘯𝘵𝘪 𝘥𝘪 𝘮𝘦𝘥𝘪𝘤𝘪𝘯𝘢 𝘦𝘴𝘵𝘦𝘵𝘪𝘤𝘢"
-        },
-        {
-          "prefix": ">",
-          "number": "10000",
-          "suffix": "",
-          "label": "𝘐𝘯𝘵𝘦𝘳𝘷𝘦𝘯𝘵𝘪 𝘤𝘩𝘪𝘳𝘶𝘳𝘨𝘪𝘤𝘪"
-        },
-        {
-          "prefix": ">",
-          "number": "99,8",
-          "suffix": "%",
-          "label": "𝘛𝘢𝘴𝘴𝘰 𝘥𝘪 𝘴𝘰𝘥𝘥𝘪𝘴𝘧𝘢𝘻𝘪𝘰𝘯𝘦 𝘥𝘦𝘪 𝘱𝘢𝘻𝘪𝘦𝘯𝘵𝘪"
-        }
-      ],
-      "style": {
-        "bg": "#0b1fd4",
-        "accent": "#ffffff",
-        "text": "#ffffff"
-      },
-      "label_size": "large",
-      "intro_size": "large",
-      "logos_title": "LE SOCIETÀ SCIENTIFICHE",
-      "logos": [
-        {
-          "image": "/images/1781351942304-logo-asps-dottor-campa.png",
-          "alt": "",
-          "href": ""
-        },
-        {
-          "image": "/images/1781351945710-logo-aicpre-dottor-campa.png",
-          "alt": "",
-          "href": ""
-        },
-        {
-          "image": "/images/1781351949261-logo-sicpre-dottor-campa.png",
-          "alt": "",
-          "href": ""
-        }
-      ]
-    },
-    {
       "type": "testimonials",
       "id": "recensioni",
       "title_a": "La Vostra",
@@ -314,8 +264,8 @@
     {
       "type": "treatments_list",
       "id": "trattamenti",
-      "title_a": "I nostri",
-      "title_italic": "Trattamenti",
+      "title_a": "Zone da",
+      "title_italic": "Trattare",
       "subtitle": "Medicina estetica del viso e del corpo: qui vedi dove agiscono i trattamenti e che cosa possiamo armonizzare.",
       "footer_note": "Ogni trattamento è preceduto da una valutazione clinica. Prodotti riassorbibili, dosaggi personalizzati.",
       "categories": [
