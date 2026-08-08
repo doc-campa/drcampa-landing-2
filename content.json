@@ -226,7 +226,7 @@
       "items": [
         {
           "video": {
-            "src": "/videos/1783034130870-risveglio-2.webm",
+            "src": "",
             "autoplay": true,
             "loop": true,
             "muted": true,
@@ -235,7 +235,8 @@
           "poster": "",
           "name": "Perdo la vista con il Rinofiller?",
           "treatment": "",
-          "src": ""
+          "src": "",
+          "youtube": "https://youtube.com/shorts/1n0w5OnoONA"
         },
         {
           "video": {
