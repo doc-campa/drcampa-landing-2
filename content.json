@@ -239,17 +239,12 @@
           "youtube": "https://youtube.com/shorts/1n0w5OnoONA"
         },
         {
-          "video": {
-            "src": "/videos/1783072689742-campa-risveglio2.webm",
-            "autoplay": true,
-            "loop": true,
-            "muted": true,
-            "controls": true
-          },
+          "video": "",
           "poster": "",
           "name": "⁠⁠Ma fa male?",
           "treatment": "",
-          "src": ""
+          "src": "",
+          "youtube": "https://youtube.com/shorts/yrUw9bhL94I"
         },
         {
           "video": {
