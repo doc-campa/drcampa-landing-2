@@ -473,36 +473,6 @@
       "hide_accordion": true
     },
     {
-      "type": "stats",
-      "id": "risultati",
-      "title_a": "i nostri",
-      "title_accent": "Numeri",
-      "subtitle": "",
-      "row_a": [
-        {
-          "pill": "OLTRE",
-          "num": "3 SEDI",
-          "label": "in Italia"
-        },
-        {
-          "pill": "OLTRE",
-          "num": "20 ANNI",
-          "label": "di esperienza"
-        },
-        {
-          "pill": "OLTRE",
-          "num": "40 MILA",
-          "label": "Pazienti seguiti"
-        }
-      ],
-      "row_b": [],
-      "footnote": "*Tutti i dati provengono da sondaggi interni e da rilevazioni cliniche su pazienti dello Studio Campa.",
-      "style": {
-        "bg": "#0b1fd4",
-        "accent": "#ff2d96"
-      }
-    },
-    {
       "type": "booking_ladder",
       "id": "prenota",
       "layout": "columns",
