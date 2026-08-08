@@ -3262,11 +3262,14 @@ body.js-ready section.testimonials.fx-in .test-badge:nth-child(3) .tb-stars { an
 
 /* ===== MINI-FORM nella scheda prenotazioni (embed_form) ===== */
 .bl-lead-form{ display:flex; flex-direction:column; gap:10px; width:100%; text-align:left; }
+.bl-lead-form select,
 .bl-lead-form input[type="text"], .bl-lead-form input[type="email"], .bl-lead-form input[type="tel"]{
   width:100%; box-sizing:border-box; padding:12px 14px; border-radius:10px;
   border:1px solid rgba(255,255,255,.18); background:#1226B8; color:#EDEAE3;
   font-family:inherit; font-size:.92rem;
 }
+.bl-lead-form select:invalid{ color:rgba(237,234,227,.45); }
+:root[data-theme="light"] .bl-lead-form select:invalid{ color:#9AA0AC; }
 .bl-lead-form input::placeholder{ color:rgba(237,234,227,.45); }
 .bl-lead-form input:focus{ outline:none; border-color:#FF2D96; }
 .bl-consent{ display:flex; align-items:flex-start; gap:8px; font-size:.72rem; line-height:1.45; opacity:.85; cursor:pointer; }
@@ -3376,6 +3379,9 @@ body.js-ready section.testimonials.fx-in .test-badge:nth-child(3) .tb-stars { an
   <input type="email" name="email">
   <input type="tel" name="phone">
   <input type="text" name="treatment">
+  <select name="fiale"><option value="1"></option></select>
+  <select name="sede"><option value="Napoli"></option></select>
+  <input type="text" name="trattamento">
   <textarea name="message"></textarea>
   <input name="bot-field">
 </form>
@@ -3424,6 +3430,8 @@ const I18N = SITE_LANG==='en' ? {
   fInterest:'What are you interested in', fSelect:'Select\u2026', fMessage:'What are you interested in?',
   fMsgPh:'Write your request or your needs here\u2026',
   blSend:'Send request', blOk:'Request sent! We\u2019ll get back to you shortly.',
+  blVials:'How many vials would you like?', blCity:'Which clinic would you like?',
+  blTreat:'Which treatment are you interested in?', blTreatPh:'Write here',
   fConsent:'I have read and accept the <a href="/privacy.html" target="_blank" rel="noopener">privacy policy</a> and consent to the processing of my data in order to be contacted.'
 } : {
   videoSoon:'Video in arrivo',
@@ -3439,6 +3447,8 @@ const I18N = SITE_LANG==='en' ? {
   fInterest:'Cosa ti interessa', fSelect:'Seleziona\u2026', fMessage:'A cosa sei interessato/a?',
   fMsgPh:'Scrivi qui la tua richiesta o la tua esigenza..',
   blSend:'Invia richiesta', blOk:'Richiesta inviata! Ti ricontatteremo a breve.',
+  blVials:'Quante fiale vuoi effettuare?', blCity:'In quale sede vuoi effettuare il trattamento?',
+  blTreat:'A quale trattamento sei interessata?', blTreatPh:'Scrivi qui',
   fConsent:'Ho letto e accetto l\u2019<a href="/privacy.html" target="_blank" rel="noopener">informativa privacy</a> e acconsento al trattamento dei dati per essere ricontattato.'
 };
 
@@ -4334,6 +4344,15 @@ const templates = {
           <input type="text" name="lastName" placeholder="${I18N.fSurname}" required>
           <input type="email" name="email" placeholder="${I18N.fEmail}" required>
           <input type="tel" name="phone" placeholder="${I18N.fPhone}" required>
+          <select name="fiale" required>
+            <option value="">${I18N.blVials}</option>
+            ${[1,2,3,4,5,6,7,8].map(n=>`<option value="${n}">${n}</option>`).join('')}
+          </select>
+          <select name="sede" required>
+            <option value="">${I18N.blCity}</option>
+            ${['Napoli','Milano','Bari','Catania'].map(c=>`<option value="${c}">${c}</option>`).join('')}
+          </select>
+          <input type="text" name="trattamento" placeholder="${I18N.blTreat} — ${I18N.blTreatPh}" required>
           <label class="bl-consent"><input type="checkbox" required><span>${I18N.fConsent}</span></label>
           <button type="submit" class="bl-cta bl-cta--${tSlug}" data-tier="${esc(t.name||'')}" data-cta="form">${I18N.blSend}</button>
           <p class="bl-form-ok" hidden>${I18N.blOk}</p>
