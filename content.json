@@ -483,10 +483,10 @@
       "urgency": "Il modo più veloce per fissare la tua consulenza.",
       "tiers": [
         {
-          "name": "Consulenza Dott. Campa",
+          "name": "Dott. Campa",
           "who": "",
           "format": "",
-          "value_line": "Conosci direttamente il <br>Dott. Domenico Campa.",
+          "value_line": "Effettua il Trattamento con il Dott. Campa",
           "price": "400€",
           "icon": "",
           "featured": "",
@@ -498,13 +498,13 @@
           "scarcity": "",
           "photo": "/images/1783591439149-img-0220-2.webp",
           "price_compare": "",
-          "features": "Valutazione clinica completa del viso\nAnalisi delle proporzioni e delle asimmetrie\nSimulazione del risultato con software avanzati\nPiano di trattamento definitivo, zona per zona\nConfronto diretto con il Dr. Campa\nIndicazioni su durata, controlli e mantenimento\nOnline o in studio"
+          "features": "Valutazione completa dell'anatomia del viso\nAnalisi di proporzioni, volumi e asimmetrie\nIndividuazione delle aree da valorizzare\nDefinizione del trattamento più indicato\n⁠Piano di trattamento personalizzato\nIndicazioni su durata, controlli e piano di mantenimento"
         },
         {
-          "name": "Consulenza Dott.ssa Mansi",
+          "name": "Dott.ssa Mansi",
           "who": "",
           "format": "",
-          "value_line": "Conosci la Dott.ssa Mansi.<br> Primo aiuto del Dott. Campa",
+          "value_line": "Effettua il Trattamento con la Dott.ssa Mansi, primo aiuto del Dott. Campa",
           "price": "350€",
           "icon": "",
           "featured": "",
@@ -515,7 +515,8 @@
           "cta2_href": "https://calendly.com/segreteriacampa/video-consulenza-con-dottoressa-federicamansi?month=2026-07",
           "scarcity": "",
           "photo": "/images/1783097121005-mansi-1-landing-2.png",
-          "features": "Valutazione clinica completa del viso\nAnalisi delle proporzioni e delle asimmetrie\nSimulazione del risultato con software avanzati\nPiano di trattamento definitivo, zona per zona\nIndicazioni su durata, controlli e mantenimento\nOnline o in studio"
+          "features": "Piano di trattamento supervisionato dal Dott. Campa\nValutazione completa dell'anatomia del viso\nAnalisi di proporzioni, volumi e asimmetrie\nIndividuazione delle aree da valorizzare\nDefinizione del trattamento più indicato\n⁠Piano di trattamento personalizzato\nIndicazioni su durata, controlli e piano di mantenimento",
+          "bottom_note": ""
         },
         {
           "name": "Richiedi Informazioni",
