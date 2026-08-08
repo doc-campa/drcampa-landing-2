@@ -247,17 +247,12 @@
           "youtube": "https://youtube.com/shorts/yrUw9bhL94I"
         },
         {
-          "video": {
-            "src": "/videos/1783030343389-risvegli-1.webm",
-            "autoplay": true,
-            "loop": true,
-            "muted": true,
-            "controls": true
-          },
+          "video": "",
           "poster": "",
           "name": "”Doc le vorrei così”",
           "treatment": "",
-          "src": ""
+          "src": "",
+          "youtube": "https://youtube.com/shorts/h0MVORxdfSo"
         }
       ],
       "style": {
