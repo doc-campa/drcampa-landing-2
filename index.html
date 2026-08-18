@@ -3458,49 +3458,55 @@ const I18N = SITE_LANG==='en' ? {
    quindi si adatta da solo a tema chiaro e scuro).
    ========================================================== */
 const FACE_ART =
-  '<image class="fm-photo" href="/images/viso-lineart.png" x="340" y="0" width="706" height="834" preserveAspectRatio="xMidYMid meet"/>';
+  '<image class="fm-photo" href="/images/viso-lineart.png" x="380" y="0" width="706" height="834" preserveAspectRatio="xMidYMid meet"/>';
 
 const FACE_GEO = {
   filler: [
-    ['M553,344 L370,300 L320,300', 565,342, 310,300,'end'],
-    ['M521,389 L370,400 L320,400', 533,387, 310,400,'end'],
-    ['M537,542 L370,560 L320,560', 549,540, 310,560,'end'],
-    ['M682,376 L1010,330 L1056,330', 670,378, 1066,330,'start'],
-    ['M761,475 L1010,470 L1056,470', 749,475, 1066,470,'start'],
-    ['M682,568 L1010,610 L1056,610', 670,566, 1066,610,'start']
+    ['M593,344 L410,290 L360,290', [[605,342]], 350,290,'end'],
+    ['M561,389 L410,390 L360,390', [[573,387]], 350,390,'end'],
+    ['M608,422 L410,490 L360,490', [[620,420],[810,420]], 350,490,'end'],
+    ['M577,542 L410,590 L360,590', [[589,540]], 350,590,'end'],
+    ['M722,376 L1050,330 L1096,330', [[710,378]], 1106,330,'start'],
+    ['M801,475 L1050,470 L1096,470', [[789,475]], 1106,470,'start'],
+    ['M722,568 L1050,610 L1096,610', [[710,566]], 1106,610,'start']
   ],
   botox: [
-    ['M616,150 L370,140 L320,140', 628,148, 310,140,'end'],
-    ['M472,303 L370,290 L320,290', 484,301, 310,290,'end'],
-    ['M521,506 L370,530 L320,530', 533,504, 310,530,'end'],
-    ['M682,223 L1010,200 L1056,200', 670,225, 1066,200,'start'],
-    ['M682,450 L1010,430 L1056,430', 670,450, 1066,430,'start']
+    ['M656,150 L410,130 L360,130', [[668,148]], 350,130,'end'],
+    ['M540,198 L410,230 L360,230', [[552,196],[872,196]], 350,230,'end'],
+    ['M512,303 L410,330 L360,330', [[524,301],[894,301]], 350,330,'end'],
+    ['M561,506 L410,520 L360,520', [[573,504],[852,504]], 350,520,'end'],
+    ['M722,223 L1050,190 L1096,190', [[710,225]], 1106,190,'start'],
+    ['M749,393 L1050,310 L1096,310', [[686,395],[737,395]], 1106,310,'start'],
+    ['M724,458 L1050,420 L1096,420', [[712,458]], 1106,420,'start'],
+    ['M792,470 L1050,530 L1096,530', [[780,468]], 1106,530,'start'],
+    ['M952,690 L1050,690 L1096,690', [[940,690]], 1106,690,'start']
   ]
 };
 
 const FACE_TXT = (typeof SITE_LANG !== 'undefined' && SITE_LANG === 'en') ? {
   note:'Illustrative image. Treatable areas vary from person to person and are always defined during the consultation.',
   filler:{ title:'Filler', sub:'Where it works', extra:'Buttock filler: body area',
-    labels:['Tear trough','Cheeks','Jawline','Nose filler','Lips','Chin'] },
+    labels:['Tear trough','Cheeks','Skin texture','Jawline','Nose filler','Lips','Chin'] },
   botox:{ title:'Botox', sub:'Where it works', extra:'Hyperhidrosis: body areas (underarms, hands)',
-    labels:['Forehead lines',"Crow's feet",'Masseters','Glabella','Gummy smile'] }
+    labels:['Forehead lines','Foxy eye',"Crow's feet",'Masseters','Glabella','Bunny lines','Lip flip','Gummy smile','Trap botox'] }
 } : {
   note:'Immagine illustrativa. Le zone trattabili variano da persona a persona e vengono definite in sede di consulenza.',
   filler:{ title:'Filler', sub:'Dove agisce', extra:'Filler glutei: zona corpo',
-    labels:['Occhiaie','Zigomi','Jawline','Rinofiller','Labbra','Mento'] },
+    labels:['Occhiaie','Zigomi','Texture del viso','Jawline','Rinofiller','Labbra','Mento'] },
   botox:{ title:'Botox', sub:'Dove agisce', extra:'Iperidrosi: zone corpo (ascelle, mani)',
-    labels:['Rughe fronte','Zampe di gallina','Masseteri','Glabella','Gummy smile'] }
+    labels:['Rughe fronte','Foxy eye','Zampe di gallina','Masseteri','Glabella','Rughe naso','Lip flip','Gummy smile','Trap botox'] }
 };
 
 function faceMapCard(key){
   const c = FACE_TXT[key], geo = FACE_GEO[key];
   const marks = geo.map((g, i) =>
-    `<path class="fm-lead" d="${g[0]}"/><circle class="fm-dot" cx="${g[1]}" cy="${g[2]}" r="15"/>` +
-    `<text class="fm-lbl" x="${g[3]}" y="${g[4]}" dy=".33em" text-anchor="${g[5]}">${esc((c.labels[i]||'').toUpperCase())}</text>`
+    `<path class="fm-lead" d="${g[0]}"/>` +
+    g[1].map(p => `<circle class="fm-dot" cx="${p[0]}" cy="${p[1]}" r="15"/>`).join('') +
+    `<text class="fm-lbl" x="${g[2]}" y="${g[3]}" dy=".33em" text-anchor="${g[4]}">${esc((c.labels[i]||'').toUpperCase())}</text>`
   ).join('');
   return `<figure class="fm-card">
     <figcaption class="fm-head"><h3 class="fm-title">${esc(c.title)}</h3><p class="fm-sub">${esc(c.sub)}</p></figcaption>
-    <svg class="fm-svg" viewBox="0 0 1360 834" role="img" aria-label="${esc(c.title)}"><g class="fm-art">${FACE_ART}${marks}</g></svg>
+    <svg class="fm-svg" viewBox="0 0 1440 834" role="img" aria-label="${esc(c.title)}"><g class="fm-art">${FACE_ART}${marks}</g></svg>
     ${c.extra?`<p class="fm-extra">+ ${esc(c.extra)}</p>`:''}
   </figure>`;
 }
