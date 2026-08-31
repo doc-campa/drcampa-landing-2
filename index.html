@@ -3383,6 +3383,8 @@ body.js-ready section.testimonials.fx-in .test-badge:nth-child(3) .tb-stars { an
   <select name="sede"><option value="Napoli"></option></select>
   <input type="text" name="trattamento">
   <textarea name="message"></textarea>
+  <input type="text" name="consenso">
+  <input type="text" name="sito_web">
   <input name="bot-field">
 </form>
 <div class="topbar" id="topbar"></div>
@@ -4124,9 +4126,10 @@ const templates = {
                   <textarea name="message" placeholder="${I18N.fMsgPh}" required></textarea>
                 </div>
                 <label class="consent">
-                  <input type="checkbox" required>
+                  <input type="checkbox" name="consenso" value="true" required>
                   <span>${I18N.fConsent}</span>
                 </label>
+                <input type="text" name="sito_web" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
                 <button type="submit" class="btn btn-primary">${esc(s.submit_label||'Invia')}</button>
               </form>
               <div class="form-success" id="formSuccess">
@@ -4359,7 +4362,8 @@ const templates = {
             ${['Napoli','Milano','Bari','Catania'].map(c=>`<option value="${c}">${c}</option>`).join('')}
           </select>
           <input type="text" name="trattamento" placeholder="${I18N.blTreat} — ${I18N.blTreatPh}" required>
-          <label class="bl-consent"><input type="checkbox" required><span>${I18N.fConsent}</span></label>
+          <label class="bl-consent"><input type="checkbox" name="consenso" value="true" required><span>${I18N.fConsent}</span></label>
+          <input type="text" name="sito_web" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
           <button type="submit" class="bl-cta bl-cta--${tSlug}" data-tier="${esc(t.name||'')}" data-cta="form">${I18N.blSend}</button>
           <p class="bl-form-ok" hidden>${I18N.blOk}</p>
         </form>` : '';
@@ -5073,6 +5077,7 @@ function initBehaviors(){
       var lb = btn ? btn.textContent : '';
       if(btn){ btn.disabled = true; btn.textContent = '\u2026'; }
       var fd = Object.fromEntries(new FormData(f).entries());
+      crmSend(fd, 'scheda_prenotazione:' + (f.getAttribute('data-tier') || ''));
       try{
         var res = await fetch('/', {
           method:'POST',
@@ -5287,6 +5292,7 @@ function initBehaviors(){
       const btnLabel = btn ? btn.textContent : '';
       if(btn){ btn.disabled = true; btn.textContent = 'Invio in corso…'; }
       const formData = Object.fromEntries(new FormData(form).entries());
+      crmSend(formData, 'form_contatti');
       try{
         const res = await fetch('/', {
           method:'POST',
@@ -5363,6 +5369,75 @@ function animateNumber(el){
     else el.textContent = format(target);
   }
   requestAnimationFrame(step);
+}
+
+/* ==========================================================
+   CRM — invio parallelo a endpoint esterno + attribuzione campagna
+   L'invio a Netlify Forms resta la fonte primaria: se il CRM non
+   risponde, il lead NON si perde e l'utente non vede errori.
+   ========================================================== */
+var CRM_ENDPOINT = 'https://clone-calendly.vercel.app/api/registrazione';
+var CRM_ENABLED  = true;   /* metti false per staccare l'invio senza toccare altro */
+
+function crmAttrib(){
+  var K = 'dc_attrib';
+  try{ var s = sessionStorage.getItem(K); if(s) return JSON.parse(s); }catch(e){}
+  var q;
+  try{ q = new URLSearchParams(location.search || ''); }catch(e){ q = null; }
+  function g(k){ try{ return (q && q.get(k)) || ''; }catch(e){ return ''; } }
+  var a = {
+    utm_source:   g('utm_source'),
+    utm_medium:   g('utm_medium'),
+    utm_campaign: g('utm_campaign'),
+    utm_content:  g('utm_content'),
+    utm_term:     g('utm_term'),
+    gclid:        g('gclid'),
+    fbclid:       g('fbclid'),
+    referrer:     (document.referrer || ''),
+    landing:      (location.hostname + location.pathname)
+  };
+  try{ sessionStorage.setItem(K, JSON.stringify(a)); }catch(e){}
+  return a;
+}
+
+function crmSend(fd, origine){
+  if(!CRM_ENABLED) return Promise.resolve(null);
+  try{
+    var a = crmAttrib();
+    var payload = {
+      nome:        fd.firstName || '',
+      cognome:     fd.lastName  || '',
+      email:       fd.email     || '',
+      telefono:    fd.phone     || '',
+      consenso:    (fd.consenso === 'true' || fd.consenso === 'on' || fd.consenso === true),
+      sito_web:    fd.sito_web  || '',
+      fiale:       fd.fiale     || '',
+      sede:        fd.sede      || '',
+      trattamento: fd.trattamento || fd.treatment || '',
+      messaggio:   fd.message   || '',
+      origine:     origine      || '',
+      lingua:      (document.documentElement.getAttribute('lang') || 'it')
+    };
+    for(var k in a){ if(Object.prototype.hasOwnProperty.call(a,k)) payload[k] = a[k]; }
+    return fetch(CRM_ENDPOINT, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify(payload),
+      keepalive: true
+    }).then(function(r){
+      return r.json().catch(function(){ return null; });
+    }).then(function(j){
+      if(!j || j.ok !== true) console.warn('[CRM] risposta inattesa:', j);
+      else console.log('[CRM] registrazione inviata, id:', j.id);
+      return j;
+    }).catch(function(err){
+      console.warn('[CRM] invio fallito:', err);
+      return null;
+    });
+  }catch(err){
+    console.warn('[CRM] errore:', err);
+    return Promise.resolve(null);
+  }
 }
 
 init();
