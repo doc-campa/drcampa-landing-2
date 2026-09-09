@@ -40,8 +40,8 @@
     {
       "type": "hero",
       "bg_image": {
-        "desktop": "/images/1785252290289-sfondo-landing-2-3.jpg",
-        "mobile": "/images/1785252307722-sfondo-landing-2-2-mobile.jpg"
+        "desktop": "/images/1785252290289-sfondo-landing-2-3.webp",
+        "mobile": "/images/1785252307722-sfondo-landing-2-2-mobile.webp"
       },
       "watermark": "",
       "headline_pre": "\"Be the best version",
@@ -71,7 +71,7 @@
         "text": "#ffffff"
       },
       "video_player_poster": {
-        "desktop": "/images/1783029079836-sfondo-video.png",
+        "desktop": "/images/1783029079836-sfondo-video.webp",
         "mobile": ""
       },
       "mobile_title_gap": null,
@@ -119,17 +119,17 @@
       "logos_title": "SCIENTIFIC SOCIETIES",
       "logos": [
         {
-          "image": "/images/1781351942304-logo-asps-dottor-campa.png",
+          "image": "/images/1781351942304-logo-asps-dottor-campa.webp",
           "alt": "",
           "href": ""
         },
         {
-          "image": "/images/1781351945710-logo-aicpre-dottor-campa.png",
+          "image": "/images/1781351945710-logo-aicpre-dottor-campa.webp",
           "alt": "",
           "href": ""
         },
         {
-          "image": "/images/1781351949261-logo-sicpre-dottor-campa.png",
+          "image": "/images/1781351949261-logo-sicpre-dottor-campa.webp",
           "alt": "",
           "href": ""
         }
@@ -280,35 +280,35 @@
       "items": [
         {
           "label": "LIP FILLER",
-          "image": "/images/1783076034081-img-1424.png"
+          "image": "/images/1783076034081-img-1424.webp"
         },
         {
           "label": "botox",
-          "image": "/images/1783076002047-img-1428.jpg"
+          "image": "/images/1783076002047-img-1428.webp"
         },
         {
           "label": "cheek filler",
-          "image": "/images/1783076053948-img-1430.png",
+          "image": "/images/1783076053948-img-1430.webp",
           "caption": ""
         },
         {
-          "image": "/images/1783096490872-landing-campa-4-2.png",
+          "image": "/images/1783096490872-landing-campa-4-2.webp",
           "label": "LIP FILLER"
         },
         {
-          "image": "/images/1783098600798-img-1583.png",
+          "image": "/images/1783098600798-img-1583.webp",
           "label": "non-surgical rhinoplasty"
         },
         {
-          "image": "/images/1783098687081-foto-eleonora.png",
+          "image": "/images/1783098687081-foto-eleonora.webp",
           "label": "botox"
         },
         {
-          "image": "/images/1783098747794-eleonora-2.png",
+          "image": "/images/1783098747794-eleonora-2.webp",
           "label": "LIP FILLER"
         },
         {
-          "image": "/images/1783098760226-img-1580.png",
+          "image": "/images/1783098760226-img-1580.webp",
           "label": "chin filler",
           "caption": ""
         }
@@ -603,7 +603,7 @@
           "cta2_label": "Book a video consultation",
           "cta2_href": "https://calendly.com/segreteriacampa/video-consulenza-con-dottoressa-federicamansi?month=2026-07",
           "scarcity": "",
-          "photo": "/images/1783097121005-mansi-1-landing-2.png",
+          "photo": "/images/1783097121005-mansi-1-landing-2.webp",
           "features": "Complete clinical assessment of the face\nAnalysis of proportions and asymmetries\nResult simulation with advanced software\nDefinitive treatment plan, area by area\nGuidance on duration, follow-ups and maintenance\nOnline or at the clinic"
         },
         {
