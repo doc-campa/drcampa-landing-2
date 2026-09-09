@@ -3277,6 +3277,9 @@ body.js-ready section.testimonials.fx-in .test-badge:nth-child(3) .tb-stars { an
 .bl-consent a{ color:inherit; text-decoration:underline; }
 .bl-lead-form .bl-cta{ border:none; cursor:pointer; font-family:inherit; }
 .bl-form-ok{ margin:6px 0 0; font-weight:700; color:#FF2D96; text-align:center; }
+.bl-lead-form.bl-form-sent{ display:flex; align-items:center; justify-content:center; min-height:120px; }
+.bl-lead-form.bl-form-sent .bl-form-ok{ margin:0; font-size:1.05rem; line-height:1.5; }
+.bl-lead-form.bl-form-sent .bl-form-ok::before{ content:'\2713'; display:block; font-size:1.8rem; margin-bottom:6px; }
 .booking-ladder.bl-columns .bl-tier-action-form{ min-height:0; }
 .booking-ladder.bl-columns .bl-has-form .bl-cta-pair{ min-height:0; }
 :root[data-theme="light"] .bl-lead-form input[type="text"],
@@ -3460,7 +3463,7 @@ const I18N = SITE_LANG==='en' ? {
    quindi si adatta da solo a tema chiaro e scuro).
    ========================================================== */
 const FACE_ART =
-  '<image class="fm-photo" href="/images/viso-lineart.png" x="380" y="0" width="706" height="834" preserveAspectRatio="xMidYMid meet"/>';
+  '<image class="fm-photo" href="/images/viso-lineart.webp" x="380" y="0" width="706" height="834" preserveAspectRatio="xMidYMid meet"/>';
 
 const FACE_GEO = {
   filler: [
@@ -5085,7 +5088,11 @@ function initBehaviors(){
           body: new URLSearchParams({ 'form-name':'contatti', message:'', ...fd }).toString()
         });
         if(!res.ok) throw new Error('HTTP '+res.status);
-        Array.prototype.forEach.call(f.querySelectorAll('input,button,.bl-consent'), function(el){ el.style.display='none'; });
+        /* nasconde TUTTI i campi (input, select, label, bottone), lascia solo il messaggio */
+        Array.prototype.forEach.call(f.children, function(el){
+          if(!el.classList || !el.classList.contains('bl-form-ok')) el.style.display = 'none';
+        });
+        f.classList.add('bl-form-sent');
         var ok = f.querySelector('.bl-form-ok'); if(ok) ok.hidden = false;
         try{ if(window.gtag) gtag('event','lead_submit',{ origin:'booking_card' }); }catch(err){}
         try{ if(window.fbq) fbq('track','Lead'); }catch(err){}
