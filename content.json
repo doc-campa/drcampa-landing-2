@@ -40,8 +40,8 @@
     {
       "type": "hero",
       "bg_image": {
-        "desktop": "/images/1786210388098-sfondo-landing-2-5.jpg",
-        "mobile": "/images/1786210392601-landing-due-campa-mobile.jpg"
+        "desktop": "/images/1786210388098-sfondo-landing-2-5.webp",
+        "mobile": "/images/1786210392601-landing-due-campa-mobile.webp"
       },
       "watermark": "",
       "headline_pre": "\"Be the best version",
@@ -71,7 +71,7 @@
         "text": "#ffffff"
       },
       "video_player_poster": {
-        "desktop": "/images/1783029079836-sfondo-video.png",
+        "desktop": "/images/1783029079836-sfondo-video.webp",
         "mobile": ""
       },
       "mobile_title_gap": null,
@@ -213,35 +213,35 @@
       "items": [
         {
           "label": "FILLER LABBRA",
-          "image": "/images/1786200211810-whatsapp-image-2026-07-23-at-13.38.08--3-.jpeg"
+          "image": "/images/1786200211810-whatsapp-image-2026-07-23-at-13.38.08--3-.webp"
         },
         {
           "label": "filler labbra",
-          "image": "/images/1786210474451-whatsapp-image-2026-07-23-at-13.49.00--7-.jpeg"
+          "image": "/images/1786210474451-whatsapp-image-2026-07-23-at-13.49.00--7-.webp"
         },
         {
           "label": "filler labbra",
-          "image": "/images/1786210723743-whatsapp-image-2026-07-23-at-13.38.08.jpeg",
+          "image": "/images/1786210723743-whatsapp-image-2026-07-23-at-13.38.08.webp",
           "caption": ""
         },
         {
-          "image": "/images/1786200288890-whatsapp-image-2026-07-23-at-13.49.00--6-.jpeg",
+          "image": "/images/1786200288890-whatsapp-image-2026-07-23-at-13.49.00--6-.webp",
           "label": "FILLER LABBRA"
         },
         {
-          "image": "/images/1786200318934-whatsapp-image-2026-07-23-at-13.49.00--3-.jpeg",
+          "image": "/images/1786200318934-whatsapp-image-2026-07-23-at-13.49.00--3-.webp",
           "label": "rinofiller"
         },
         {
-          "image": "/images/1786200328821-whatsapp-image-2026-07-23-at-13.49.00--2-.jpeg",
+          "image": "/images/1786200328821-whatsapp-image-2026-07-23-at-13.49.00--2-.webp",
           "label": "rinofiller"
         },
         {
-          "image": "/images/1786210614036-rino2.jpg",
+          "image": "/images/1786210614036-rino2.webp",
           "label": "rinofiller"
         },
         {
-          "image": "/images/1786210628726-whatsapp-image-2026-07-23-at-13.49.00--4-.jpeg",
+          "image": "/images/1786210628726-whatsapp-image-2026-07-23-at-13.49.00--4-.webp",
           "label": "botox",
           "caption": ""
         }
@@ -506,7 +506,7 @@
           "cta2_label": "",
           "cta2_href": "https://calendly.com/segreteriacampa/video-consulenza-con-dottoressa-federicamansi?month=2026-07",
           "scarcity": "",
-          "photo": "/images/1783097121005-mansi-1-landing-2.png",
+          "photo": "/images/1783097121005-mansi-1-landing-2.webp",
           "features": "Valutazione completa dell'anatomia del viso\nAnalisi di proporzioni, volumi e asimmetrie\nIndividuazione delle aree da valorizzare\nDefinizione del trattamento più indicato\n⁠Piano di trattamento personalizzato\nIndicazioni su durata, controlli e piano di mantenimento",
           "bottom_note": "",
           "social_proof": ""
