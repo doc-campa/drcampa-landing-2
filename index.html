@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0A17A8">
+<meta name="theme-color" content="#0a0a0a">
 <meta name="description" content="Studio del Dr. Domenico Campa — Chirurgia estetica con ascolto, precisione e rispetto della naturalezza.">
 <title>Studio Dr. Campa</title>
 <link rel="icon" href="data:,">
@@ -17,33 +17,33 @@
 :root {
   /* ====== PALETTE: INDACO & RAME (tema scuro) ====== */
   /* Indaco scuro: pagina + sezioni (sfondi) */
-  --petrol:#0B1FD4;
-  --petrol-darker:#0714A6;
-  --petrol-soft:#3A4BE8;
-  --petrol-tint:#1428B8;
+  --petrol:#000000;
+  --petrol-darker:#000000;
+  --petrol-soft:#2A3656;
+  --petrol-tint:#1E2A44;
   /* CHIARO: testo e elementi chiari su fondo scuro */
   --ivory:#ECEEF4;
   --ivory-deeper:#D6DCE6;
   --white:#1C2438;
   /* Accento: Rame */
-  --gold:#FF2D96;
-  --gold-deeper:#E01480;
-  --gold-soft:#3A0A26;
+  --gold:#C2825A;
+  --gold-deeper:#A66A45;
+  --gold-soft:#33251C;
   /* Arancio fluo — colore pulsanti */
-  --orange:#FF2D96;
-  --orange-deep:#E01480;
+  --orange:#FF6B2C;
+  --orange-deep:#E8520F;
   /* Secondario (ex blush) — tonalità indaco */
-  --blush:#1428B8;
-  --blush-soft:#0F1F9E;
-  --blush-deep:#3A4BE8;
+  --blush:#2A3656;
+  --blush-soft:#1E2A44;
+  --blush-deep:#3A4A6A;
   /* Testo: chiaro */
   --ink:#ECEEF4;
   --ink-soft:#C3C9D4;
   --ink-light:#8C94A4;
   /* Neutri su scuro: bordi/track */
-  --mist:#2A3BD8;
-  --mist-soft:#1428B8;
-  --line:#2A3BD8;
+  --mist:#2B3550;
+  --mist-soft:#1E2740;
+  --line:#2B3550;
   --line-hair:rgba(236,238,244,.10);
 
   /* ====== BACKWARD-COMPAT ALIASES ======
@@ -183,7 +183,7 @@ section[id] { scroll-margin-top:90px; }
 .btn-primary:hover {
   background:var(--orange-deep); color:#fff;
   border-color:var(--orange-deep);
-  box-shadow:0 14px 32px -8px rgba(255,45,150,.55);
+  box-shadow:0 14px 32px -8px rgba(255,107,44,.55);
 }
 .btn-yellow {
   background:var(--orange); color:#fff;
@@ -191,7 +191,7 @@ section[id] { scroll-margin-top:90px; }
 }
 .btn-yellow:hover {
   background:var(--orange-deep); color:#fff;
-  box-shadow:0 14px 32px -8px rgba(255,45,150,.55);
+  box-shadow:0 14px 32px -8px rgba(255,107,44,.55);
 }
 .btn-large { padding:16px 32px; font-size:1.08rem; letter-spacing:.07em; }
 
@@ -207,7 +207,7 @@ section[id] { scroll-margin-top:90px; }
   position:fixed; top:0; left:0; right:0; z-index:101;
   background:linear-gradient(90deg, var(--petrol-darker, #0D2E36) 0%, var(--petrol, #123C46) 100%);
   color:var(--ivory);
-  border-bottom:1px solid rgba(255,45,150,.15);
+  border-bottom:1px solid rgba(200,168,107,.15);
   font-size:.92rem; letter-spacing:.015em;
   height:44px;
   display:flex; align-items:center; justify-content:center;
@@ -379,6 +379,7 @@ html.no-topbar .hero { padding-top:190px; }
   transition:color .2s;
 }
 .nav-cta .login:hover { color:var(--orange); }
+.nav-cta .login .login-ic { display:none; }
 /* Bottone "Prenota Consulto" nella nav: arancio fluo */
 .nav-cta .btn-primary {
   background:var(--orange);
@@ -389,7 +390,7 @@ html.no-topbar .hero { padding-top:190px; }
   background:var(--orange-deep);
   color:#fff;
   border-color:var(--orange-deep);
-  box-shadow:0 12px 28px -8px rgba(255,45,150,.5);
+  box-shadow:0 12px 28px -8px rgba(255,107,44,.5);
 }
 .mobile-toggle {
   display:none; flex-direction:column; gap:5px; padding:8px;
@@ -421,7 +422,7 @@ html.no-topbar .hero { padding-top:190px; }
 @media (max-width:420px){
   .hero { padding:100px 0 70px; }
 }
-.hero-bg { position:absolute; inset:0; z-index:0; background:var(--petrol); }
+.hero-bg { position:absolute; inset:0; z-index:0; background:#000; }
 .hero-bg img, .hero-bg video, .hero-bg picture {
   width:100%; height:100%; object-fit:cover;
   display:block;
@@ -488,8 +489,8 @@ html.no-topbar .hero { padding-top:190px; }
   margin-inline:auto;
   border-radius:var(--radius-lg);
   overflow:hidden;
-  box-shadow:0 28px 64px -16px rgba(0,0,0,.55), 0 8px 24px -8px rgba(255,45,150,.18);
-  border:1px solid rgba(255,45,150,.25);
+  box-shadow:0 28px 64px -16px rgba(0,0,0,.55), 0 8px 24px -8px rgba(200,168,107,.18);
+  border:1px solid rgba(200,168,107,.25);
   background:var(--petrol);
 }
 .hero-video-trigger {
@@ -529,7 +530,7 @@ html.no-topbar .hero { padding-top:190px; }
   backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
   padding:7px 14px;
   border-radius:999px;
-  border:1px solid rgba(255,45,150,.3);
+  border:1px solid rgba(200,168,107,.3);
 }
 .hero-video-play {
   position:absolute;
@@ -630,7 +631,7 @@ html.no-topbar .hero { padding-top:190px; }
   width:100%;
   max-width:1200px;
   aspect-ratio:16/9;
-  background:var(--petrol);
+  background:#000;
   border-radius:var(--radius);
   overflow:hidden;
   box-shadow:0 30px 80px rgba(0,0,0,.6);
@@ -725,7 +726,7 @@ html.no-topbar .hero { padding-top:190px; }
 .btn-outline-gold {
   background:transparent;
   color:var(--ivory);
-  border:1.5px solid rgba(255,45,150,.6);
+  border:1.5px solid rgba(255,107,44,.6);
   padding:10px 26px;
   border-radius:999px;
   font-family:var(--font-display);
@@ -763,7 +764,7 @@ html.no-topbar .hero { padding-top:190px; }
   color:rgba(247,243,236,.78);
   text-decoration:none;
   letter-spacing:.005em;
-  border-bottom:1px solid rgba(255,45,150,.22);
+  border-bottom:1px solid rgba(200,168,107,.22);
   padding-bottom:3px;
   transition:color .2s, border-color .2s;
 }
@@ -783,13 +784,13 @@ html.no-topbar .hero { padding-top:190px; }
   background:#FFFFFF;
   backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
   border-radius:var(--radius);
-  border:1px solid rgba(255,45,150,.3);
+  border:1px solid rgba(200,168,107,.3);
   color:var(--ink);
   max-width:680px;
   box-shadow:var(--shadow-xl);
 }
-.mission-label { font-size:.82rem; font-weight:500; letter-spacing:.06em; text-transform:uppercase; color:#E01480; margin-bottom:14px; }
-.mission-label strong { color:#E01480; font-weight:700; letter-spacing:.08em; font-size:1.16em; }
+.mission-label { font-size:.82rem; font-weight:500; letter-spacing:.06em; text-transform:uppercase; color:#E8520F; margin-bottom:14px; }
+.mission-label strong { color:#E8520F; font-weight:700; letter-spacing:.08em; font-size:1.16em; }
 .mission-bar {
   position:relative; height:8px; background:rgba(20,28,46,.14); border-radius:999px;
   margin-bottom:18px; overflow:hidden;
@@ -809,10 +810,10 @@ html.no-topbar .hero { padding-top:190px; }
 .mission-figure {
   font-size:clamp(1.7rem, 3vw, 2.4rem); font-weight:700; letter-spacing:-.025em;
   line-height:1.1; margin-bottom:6px;
-  color:#E01480;
+  color:#E8520F;
 }
-.mission-sub { color:#E01480; font-size:.95rem; }
-.mission-sub .hl { color:#E01480; font-weight:700; }
+.mission-sub { color:#E8520F; font-size:.95rem; }
+.mission-sub .hl { color:#E8520F; font-weight:700; }
 
 /* ============================================================
    PROBLEM section
@@ -919,12 +920,12 @@ html.no-topbar .hero { padding-top:190px; }
   padding:clamp(40px, 6vw, 80px);
   position:relative; overflow:hidden;
   box-shadow:var(--shadow-petrol), var(--shadow-xl);
-  border:1px solid rgba(255,45,150,.18);
+  border:1px solid rgba(200,168,107,.18);
 }
 .value-card::before {
   content:""; position:absolute; top:-50%; right:-20%;
   width:60%; height:200%;
-  background:radial-gradient(circle, rgba(255,45,150,.12) 0%, transparent 60%);
+  background:radial-gradient(circle, rgba(200,168,107,.12) 0%, transparent 60%);
   pointer-events:none;
 }
 .value-card h2 {
@@ -954,7 +955,7 @@ html.no-topbar .hero { padding-top:190px; }
 .value-item:hover {
   transform:translateY(-4px);
   background:rgba(247,243,236,.13);
-  border-color:rgba(255,45,150,.4);
+  border-color:rgba(200,168,107,.4);
 }
 .value-icon {
   width:48px; height:48px;
@@ -1057,7 +1058,7 @@ html.no-topbar .hero { padding-top:190px; }
   border-radius:8px;
   transition:transform .4s var(--ease-spring), box-shadow .4s var(--ease-out);
   box-shadow:var(--shadow-md);
-  border:1px solid rgba(255,45,150,.25);
+  border:1px solid rgba(200,168,107,.25);
 }
 .tri-3 { width:55%; height:80px; }
 .tri-2 { width:75%; height:80px; }
@@ -1274,7 +1275,7 @@ a.test-google-badge:hover { transform:translateY(-2px); box-shadow:0 8px 18px -6
 .test-dots{ display:none; justify-content:center; gap:9px; margin:20px auto 0; }
 .test-dot{ width:8px; height:8px; padding:0; border:0; border-radius:999px;
   background:rgba(20,28,46,.22); cursor:pointer; transition:width .3s var(--ease-out), background .3s; }
-.test-dot.is-active{ width:24px; background:var(--orange, #FF2D96); }
+.test-dot.is-active{ width:24px; background:var(--orange, #FF6B2C); }
 @media (max-width:760px){
   .testimonials .test-grid{
     display:flex; grid-template-columns:none;
@@ -1298,7 +1299,7 @@ a.test-google-badge:hover { transform:translateY(-2px); box-shadow:0 8px 18px -6
 .test-card:hover {
   transform:translateY(-4px);
   box-shadow:0 18px 36px -16px rgba(43,49,56,.18);
-  border-color:rgba(255,45,150,.45);
+  border-color:rgba(200,168,107,.45);
 }
 .test-card-head {
   display:flex; align-items:center; gap:12px; margin-bottom:14px;
@@ -1378,7 +1379,7 @@ section.testimonials[style*="--section-text"] { color:#1C2438; }
   box-shadow:0 2px 10px -6px rgba(20,28,46,.12);
 }
 .testimonials .test-card:hover {
-  border-color:rgba(255,45,150,.45);
+  border-color:rgba(255,107,44,.45);
   box-shadow:0 18px 36px -16px rgba(20,28,46,.18);
 }
 .testimonials .test-name { color:#141C2E; }
@@ -1409,7 +1410,7 @@ section.testimonials .test-stars { color:#F5A623 !important; }
 }
 .test-badge:hover {
   transform:translateY(-3px);
-  border-color:rgba(255,45,150,.45);
+  border-color:rgba(255,107,44,.45);
   box-shadow:0 14px 30px -14px rgba(20,28,46,.28);
 }
 .tb-logo { width:34px; height:34px; flex-shrink:0; display:grid; place-items:center; }
@@ -1429,8 +1430,8 @@ section.testimonials .test-stars { color:#F5A623 !important; }
 .tb-note { font-size:.74rem; color:#7A8294; margin-top:2px; }
 .tb-count { font-size:.82rem; font-weight:800; color:var(--orange); margin-top:2px; }
 .test-badge.is-featured {
-  border-color:rgba(255,45,150,.55);
-  box-shadow:0 12px 30px -12px rgba(255,45,150,.4);
+  border-color:rgba(255,107,44,.55);
+  box-shadow:0 12px 30px -12px rgba(255,107,44,.4);
   transform:scale(1.06);
 }
 .test-badge.is-featured .tb-num { font-size:1.3rem; }
@@ -1442,15 +1443,15 @@ section.testimonials .test-stars { color:#F5A623 !important; }
 }
 
 /* ===== Video dei risvegli (sezione nera, 4 video autoplay) ===== */
-.wake-videos { background:var(--petrol); color:#fff; }
+.wake-videos { background:#000; color:#fff; }
 .wv-head { text-align:center; max-width:780px; margin:0 auto 46px; }
 .wv-eyebrow {
   display:inline-block; margin-bottom:16px;
   font-family:var(--font-display); text-transform:uppercase;
-  letter-spacing:.24em; font-size:.82rem; color:var(--section-accent,#FF2D96);
+  letter-spacing:.24em; font-size:.82rem; color:var(--section-accent,#C8A86B);
 }
 .wake-videos h2 { color:#fff; }
-.wake-videos .wv-head h2 .serif-italic { color:var(--section-accent,#FF2D96); }
+.wake-videos .wv-head h2 .serif-italic { color:var(--section-accent,#C8A86B); }
 .wv-subtitle {
   margin:16px auto 0; max-width:620px;
   color:rgba(255,255,255,.72); font-size:1.04rem; line-height:1.6;
@@ -1496,7 +1497,7 @@ section.testimonials .test-stars { color:#F5A623 !important; }
 }
 .wv-cap { margin-top:14px; text-align:center; display:flex; flex-direction:column; gap:3px; }
 .wv-name { color:#fff; font-weight:700; font-size:1rem; }
-.wv-treatment { color:var(--section-accent,#FF2D96); font-size:.85rem; letter-spacing:.02em; }
+.wv-treatment { color:var(--section-accent,#C8A86B); font-size:.85rem; letter-spacing:.02em; }
 @media (max-width:880px){
   .wv-grid > .wv-card { flex:0 0 calc((100% - 20px)/2); }
 }
@@ -1519,7 +1520,7 @@ section.testimonials .test-stars { color:#F5A623 !important; }
   transform:translateX(-50%);
   font-family:var(--font-serif);
   font-size:clamp(8rem, 18vw, 18rem);
-  color:rgba(255,45,150,.1);
+  color:rgba(200,168,107,.1);
   line-height:1; pointer-events:none; user-select:none;
 }
 .big-quote .container { position:relative; z-index:1; }
@@ -1551,13 +1552,13 @@ section.testimonials .test-stars { color:#F5A623 !important; }
   padding:clamp(40px, 6vw, 80px);
   text-align:center;
   box-shadow:var(--shadow-petrol), var(--shadow-xl);
-  border:1px solid rgba(255,45,150,.18);
+  border:1px solid rgba(200,168,107,.18);
   position:relative; overflow:hidden;
 }
 .features-card::before {
   content:""; position:absolute; left:-10%; top:-30%;
   width:50%; height:160%;
-  background:radial-gradient(circle, rgba(255,45,150,.12) 0%, transparent 60%);
+  background:radial-gradient(circle, rgba(200,168,107,.12) 0%, transparent 60%);
   pointer-events:none;
 }
 .features-card h2 { color:var(--ivory); max-width:18ch; margin:0 auto 18px; }
@@ -1600,11 +1601,11 @@ section.testimonials .test-stars { color:#F5A623 !important; }
 /* ============================================================
    CTA FORM
    ============================================================ */
-.cta-section { background:var(--petrol); padding-top:28px; }
+.cta-section { background:#000; padding-top:28px; }
 .cta-card {
   display:grid; grid-template-columns:1fr;
   gap:36px; align-items:start;
-  background:#0A17A8;
+  background:#0B0B0D;
   border-radius:var(--radius-xl);
   padding:clamp(40px, 5vw, 70px);
   box-shadow:var(--shadow-lg);
@@ -1642,7 +1643,7 @@ section.testimonials .test-stars { color:#F5A623 !important; }
 .form-wrap input, .form-wrap textarea, .form-wrap select {
   width:100%; padding:13px 16px;
   border:1px solid rgba(255,255,255,.16);
-  background:#1226B8;
+  background:#1E2023;
   border-radius:10px;
   font-size:.95rem; color:#EDEAE3; font-family:inherit;
   margin-bottom:14px;
@@ -1669,7 +1670,7 @@ section.testimonials .test-stars { color:#F5A623 !important; }
 }
 .form-wrap .consent input{
   width:auto; flex:0 0 auto; margin:3px 0 0; padding:0;
-  accent-color:#FF2D96;
+  accent-color:#FF6B2C;
 }
 /* DESKTOP: form largo, i 5 campi su un'unica fila, messaggio a tutta larghezza */
 @media (min-width:861px){
@@ -1677,10 +1678,18 @@ section.testimonials .test-stars { color:#F5A623 !important; }
   #leadForm .field-row{ display:contents; }
   #leadForm .field{ margin:0; }
   #leadForm input, #leadForm select, #leadForm textarea{ margin-bottom:0; }
-  #leadForm > .field:nth-of-type(3){ grid-column:1 / -1; } /* messaggio */
+  #leadForm .field-msg{ grid-column:1 / -1; } /* messaggio */
+  #leadForm .field-group3{ grid-column:1 / -1; display:grid; grid-template-columns:repeat(3, 1fr); gap:14px; }
   #leadForm .consent{ grid-column:1 / -1; margin:2px 0 0; }
   #leadForm .btn{ grid-column:1 / -1; margin-top:0; }
 }
+
+/* Le tre domande: affiancate su desktop, impilate su mobile */
+.field-group3{ display:grid; grid-template-columns:1fr; gap:0; }
+.field-group3 .field label{ display:block; }
+.form-wrap select{ cursor:pointer; }
+.form-wrap select:invalid{ color:rgba(237,234,227,.45); }
+:root[data-theme="light"] .form-wrap select:invalid{ color:#9AA0AC; }
 
 .form-success {
   display:none; text-align:center; padding:32px 16px;
@@ -1735,16 +1744,16 @@ section.testimonials .test-stars { color:#F5A623 !important; }
    ============================================================ */
 .before-after {
   padding:90px 0;
-  background:var(--petrol); color:#fff;
+  background:#000; color:#fff;
 }
 .ba-head { text-align:center; max-width:780px; margin:0 auto 50px; }
 .ba-eyebrow {
   display:inline-block; margin-bottom:16px;
   font-family:var(--font-display); text-transform:uppercase;
-  letter-spacing:.24em; font-size:.82rem; color:var(--section-accent,#FF2D96);
+  letter-spacing:.24em; font-size:.82rem; color:var(--section-accent,#C8A86B);
 }
 .before-after h2 { color:#fff; }
-.ba-head h2 .serif-italic { color:var(--section-accent,#FF2D96); }
+.ba-head h2 .serif-italic { color:var(--section-accent,#C8A86B); }
 .ba-subtitle {
   margin:16px auto 0; max-width:640px;
   color:rgba(255,255,255,.72); font-size:1.02rem; line-height:1.6;
@@ -1778,7 +1787,7 @@ section.testimonials .test-stars { color:#F5A623 !important; }
   border:1px solid rgba(255,255,255,.25);
 }
 .ba-tag-after {
-  background:var(--section-accent,#FF2D96); color:#1a1205;
+  background:var(--section-accent,#C8A86B); color:#1a1205;
   border:1px solid rgba(255,255,255,.2);
 }
 .ba-cap { text-align:center; display:flex; flex-direction:column; gap:3px; margin-top:2px; }
@@ -1793,7 +1802,7 @@ section.testimonials .test-stars { color:#F5A623 !important; }
   display:flex; align-items:center; justify-content:center; gap:10px;
   width:max-content; max-width:92%; margin:40px auto 0;
   padding:14px 30px; border-radius:999px;
-  background:var(--section-accent,#FF2D96); color:#1a1205;
+  background:var(--section-accent,#C8A86B); color:#1a1205;
   font-family:var(--font-display); text-transform:uppercase; letter-spacing:.08em;
   font-size:1.05rem; line-height:1; cursor:default; user-select:none;
 }
@@ -1819,8 +1828,8 @@ section.testimonials .test-stars { color:#F5A623 !important; }
 .stats-band::before {
   content:""; position:absolute; inset:0;
   background:
-    radial-gradient(circle at 20% 30%, rgba(255,45,150,.10), transparent 45%),
-    radial-gradient(circle at 85% 70%, rgba(255,45,150,.07), transparent 40%);
+    radial-gradient(circle at 20% 30%, rgba(200,168,107,.10), transparent 45%),
+    radial-gradient(circle at 85% 70%, rgba(200,168,107,.07), transparent 40%);
   pointer-events:none;
 }
 .sb-intro {
@@ -1851,7 +1860,7 @@ section.testimonials .test-stars { color:#F5A623 !important; }
   content:""; position:absolute; right:-12px; top:50%;
   transform:translateY(-50%);
   width:1px; height:54px;
-  background:linear-gradient(180deg, transparent, rgba(255,45,150,.35), transparent);
+  background:linear-gradient(180deg, transparent, rgba(200,168,107,.35), transparent);
 }
 .sb-number {
   display:flex; align-items:baseline; justify-content:center; gap:2px;
@@ -1941,12 +1950,12 @@ section.testimonials .test-stars { color:#F5A623 !important; }
 }
 .spacer-dot {
   width:6px; height:6px; border-radius:50%;
-  background:var(--gold, #FF2D96);
+  background:var(--gold, #C8A86B);
   opacity:.6;
 }
 .spacer-gold {
   width:48px; height:3px; border-radius:2px;
-  background:var(--gold, #FF2D96);
+  background:var(--gold, #C8A86B);
 }
 
 /* ============================================================
@@ -1954,11 +1963,11 @@ section.testimonials .test-stars { color:#F5A623 !important; }
    ============================================================ */
 .treatments-list {
   padding:90px 0;
-  background:var(--petrol); color:#fff;
+  background:#000; color:#fff;
 }
 .tl-head { text-align:center; max-width:780px; margin:0 auto 44px; }
 .tl-head h2 { color:#fff; }
-.tl-head h2 .serif-italic { color:var(--section-accent,#FF2D96); }
+.tl-head h2 .serif-italic { color:var(--section-accent,#C8A86B); }
 .tl-subtitle {
   margin:14px auto 0; max-width:620px;
   color:rgba(255,255,255,.7); font-size:1.02rem; line-height:1.55;
@@ -2009,33 +2018,6 @@ section.testimonials .test-stars { color:#F5A623 !important; }
   to { opacity:1; transform:translateY(0); }
 }
 /* ===== Trattamenti: layout a LISTA / accordion ===== */
-/* ===== MAPPA VISO filler / botox ===== */
-.tl-facemap{ display:grid; grid-template-columns:1fr; gap:22px; max-width:940px; margin:0 auto 18px; }
-.fm-card{ margin:0; padding:26px 18px 20px; border-radius:22px;
-  border:1px solid rgba(255,255,255,.16); background:rgba(255,255,255,.03); }
-.fm-head{ text-align:center; margin-bottom:2px; }
-.fm-title{ font-family:var(--font-display); font-weight:400; letter-spacing:.06em;
-  font-size:1.6rem; margin:0; text-transform:uppercase; }
-.fm-sub{ margin:3px 0 0; font-size:.72rem; letter-spacing:.09em; text-transform:uppercase; opacity:.55; }
-.fm-svg{ display:block; width:100%; height:auto; margin:4px auto 0; }
-.fm-art .fm-photo{ filter:invert(1); opacity:.92; }
-:root[data-theme="light"] .fm-art .fm-photo{ filter:none; opacity:.9; }
-.fm-art .fm-lead{ fill:none; stroke:#FF2D96; stroke-width:3; opacity:.85; }
-.fm-art .fm-dot{ fill:#FF2D96; stroke:none; }
-.fm-lbl{ fill:currentColor; font-family:var(--font-sans); font-size:28px; font-weight:700; letter-spacing:1.4px; opacity:.9; }
-.fm-extra{ margin:12px 0 0; padding-top:12px; text-align:center;
-  border-top:1px solid rgba(255,255,255,.1); font-size:.8rem; opacity:.6; }
-.fm-note{ max-width:1120px; margin:0 auto 34px; text-align:center; font-size:.76rem; line-height:1.5; opacity:.5; }
-:root[data-theme="light"] .fm-card{ background:#FFFFFF; border-color:rgba(224,20,128,.28); }
-:root[data-theme="light"] .fm-extra{ border-top-color:rgba(20,28,46,.12); }
-@media (max-width:860px){
-  .tl-facemap{ gap:16px; }
-  .fm-card{ padding:20px 10px 16px; }
-  .fm-lbl{ font-size:46px; letter-spacing:1px; }
-  .fm-art .fm-dot{ r:20; }
-  .fm-art .fm-lead{ stroke-width:4; }
-  .fm-title{ font-size:1.4rem; }
-}
 .tl-accordion{ max-width:920px; margin:0 auto; display:flex; flex-direction:column; gap:12px; }
 .tl-acc-item{
   border:1px solid rgba(255,255,255,.12); border-radius:18px;
@@ -2103,7 +2085,7 @@ section.testimonials .test-stars { color:#F5A623 !important; }
   width:26px; height:26px;
   border-radius:50%;
   background:rgba(231,192,103,.16);
-  color:var(--section-accent,#FF2D96);
+  color:var(--section-accent,#C8A86B);
   flex-shrink:0;
 }
 .tl-treatment-name {
@@ -2120,7 +2102,7 @@ section.testimonials .test-stars { color:#F5A623 !important; }
 }
 .tl-treatment.is-link:hover .tl-treatment-arrow {
   opacity:1; transform:translate(0,0);
-  color:var(--section-accent,#FF2D96);
+  color:var(--section-accent,#C8A86B);
 }
 .tl-footer-note {
   text-align:center; margin:48px auto 0; max-width:680px;
@@ -2198,7 +2180,15 @@ section.testimonials .test-stars { color:#F5A623 !important; }
   }
   .nav-links li { padding:14px 0; border-bottom:1px solid rgba(20,28,46,.08); }
   .nav-links li:last-child { border-bottom:0; }
-  .nav-cta .login { display:none; }
+  /* Mobile: "Chiama" diventa un'icona telefono tonda */
+  .nav-cta { gap:10px; }
+  .nav-cta .login {
+    display:grid; place-items:center;
+    width:38px; height:38px; border-radius:50%;
+    border:1px solid rgba(42,54,86,.22); padding:0;
+  }
+  .nav-cta .login .login-txt { display:none; }
+  .nav-cta .login .login-ic { display:block; width:17px; height:17px; }
 }
 
 /* ============================================================
@@ -2377,8 +2367,8 @@ section[style*="--section-text"] li { color:inherit; }
   content:"";
   position:absolute; inset:0;
   background:
-    radial-gradient(circle at 50% -10%, rgba(255,45,150,.18), transparent 55%),
-    radial-gradient(circle at 90% 110%, rgba(255,45,150,.10), transparent 50%);
+    radial-gradient(circle at 50% -10%, rgba(200,168,107,.18), transparent 55%),
+    radial-gradient(circle at 90% 110%, rgba(200,168,107,.10), transparent 50%);
   pointer-events:none;
 }
 .booking-ladder .container { position:relative; z-index:1; }
@@ -2406,9 +2396,9 @@ section[style*="--section-text"] li { color:inherit; }
   display:inline-flex; align-items:center; gap:8px;
   margin:26px auto 0; padding:10px 20px;
   background:#FFFFFF;
-  border:1.5px solid #FF2D96;
+  border:1.5px solid #FF6B2C;
   border-radius:999px;
-  font-size:.95rem; color:#E01480;
+  font-size:.95rem; color:#E8520F;
   font-weight:600;
 }
 .bl-urgency-wrap { text-align:center; }
@@ -2438,7 +2428,7 @@ section[style*="--section-text"] li { color:inherit; }
   border:none;
   color:var(--petrol-darker);
   transform:scale(1.02);
-  box-shadow:0 24px 60px -22px rgba(255,45,150,.6);
+  box-shadow:0 24px 60px -22px rgba(200,168,107,.6);
   padding:34px 32px;
 }
 .bl-tier.is-featured:hover { transform:scale(1.02) translateY(-3px); }
@@ -2458,7 +2448,7 @@ section[style*="--section-text"] li { color:inherit; }
   width:54px; height:54px; flex-shrink:0;
   display:grid; place-items:center;
   border-radius:14px;
-  background:rgba(255,45,150,.14);
+  background:rgba(200,168,107,.14);
   color:var(--section-accent, var(--gold));
 }
 .bl-icon svg { width:26px; height:26px; }
@@ -2472,7 +2462,7 @@ section[style*="--section-text"] li { color:inherit; }
   background:rgba(13,46,54,.16); color:inherit;
 }
 .bl-tier:not(.is-featured) .bl-badge {
-  background:rgba(255,45,150,.16); color:var(--section-accent, var(--gold));
+  background:rgba(200,168,107,.16); color:var(--section-accent, var(--gold));
 }
 .bl-tier.is-free .bl-badge {
   background:rgba(74,222,128,.16); color:#86efac;
@@ -2541,7 +2531,7 @@ section[style*="--section-text"] li { color:inherit; }
   background:transparent; color:var(--orange);
   border:1.5px solid var(--orange);
 }
-.bl-tier.is-free .bl-cta:hover { background:rgba(255,45,150,.12); }
+.bl-tier.is-free .bl-cta:hover { background:rgba(255,107,44,.12); }
 
 .bl-footer-note {
   text-align:center; margin:48px auto 0; max-width:620px;
@@ -2655,7 +2645,7 @@ section[style*="--section-text"] li { color:inherit; }
 .bl-today { font-family:'Bebas Neue',sans-serif; letter-spacing:.12em; font-size:.92rem; color:rgba(35,25,5,.72); text-transform:uppercase; }
 .bl-price-big { font-family:'Inter',sans-serif; font-weight:800; font-size:clamp(2.8rem,5vw,3.8rem); line-height:1; color:#1C1405; margin:2px 0 12px; }
 .bl-tier.is-featured .bl-cta-dark { background:#13110B; color:#F3D98E; border:none; width:100%; justify-content:center; border-radius:14px; padding:14px 18px; }
-.bl-tier.is-featured .bl-cta-dark:hover { background:var(--petrol); transform:translateY(-2px); }
+.bl-tier.is-featured .bl-cta-dark:hover { background:#000; transform:translateY(-2px); }
 .bl-feat-scarcity { display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-size:.8rem; font-weight:700; color:rgba(35,25,5,.8); }
 .bl-bottom-note { background:#13110B; color:rgba(231,192,103,.88); text-align:center; padding:12px 20px; font-family:'Bebas Neue',sans-serif; letter-spacing:.07em; font-size:.82rem; }
 .bl-tier.is-featured .bl-features li .bl-check { color:#1C1405; border-color:#1C1405; }
@@ -2830,7 +2820,7 @@ section[style*="--section-text"] li { color:inherit; }
    (stesso fondo per tutte; premium = fondo scuro con bordo oro)
    ============================================================ */
 .booking-ladder.bl-columns .bl-row-paid .bl-tier:not(.is-featured){
-  background:var(--petrol);
+  background:#000;
   border:1px solid rgba(231,192,103,.6);
   box-shadow:0 0 0 1px rgba(231,192,103,.22), 0 0 12px 0 rgba(231,192,103,.30), inset 0 0 16px -6px rgba(231,192,103,.22);
 }
@@ -2840,7 +2830,7 @@ section[style*="--section-text"] li { color:inherit; }
 }
 /* Premium: da oro pieno a fondo scuro con bordo oro brillante */
 .booking-ladder.bl-columns .bl-row-paid .bl-tier.is-featured{
-  background:var(--petrol);
+  background:#000;
   border:1.5px solid #E7C067;
   box-shadow:0 0 0 1px rgba(231,192,103,.45), 0 0 18px 1px rgba(231,192,103,.42), inset 0 0 20px -6px rgba(231,192,103,.30);
   color:#F3EEE2;
@@ -3001,15 +2991,15 @@ section[style*="--section-text"] li { color:inherit; }
   position:absolute; top:42%; left:50%; transform:translate(-50%,-50%);
   width:88px; height:88px; border-radius:50%;
   border:0; padding:0; cursor:pointer;
-  background:#FF2D96; display:grid; place-items:center;
-  box-shadow:0 14px 36px -6px rgba(255,45,150,.6);
+  background:#FF6B2C; display:grid; place-items:center;
+  box-shadow:0 14px 36px -6px rgba(255,107,44,.6);
   transition:transform .2s ease, background .2s ease;
 }
 .hero-play svg{ width:34px; height:34px; fill:#fff; margin-left:4px; }
 .hero-play:hover{ transform:translate(-50%,-50%) scale(1.07); background:#FF7C42; }
 .hero-play-ring{
   position:absolute; inset:-12px; border-radius:50%;
-  border:2px solid rgba(255,45,150,.5);
+  border:2px solid rgba(255,107,44,.5);
   animation:heroPulse 2.4s ease-out infinite;
 }
 @keyframes heroPulse{ 0%{transform:scale(1);opacity:.75} 70%{transform:scale(1.4);opacity:0} 100%{opacity:0} }
@@ -3021,11 +3011,11 @@ section[style*="--section-text"] li { color:inherit; }
 }
 .hero-cta-btn{
   display:inline-flex; align-items:center; gap:12px;
-  background:#FF2D96; color:#fff; text-decoration:none;
+  background:#FF6B2C; color:#fff; text-decoration:none;
   font-family:var(--font-display); letter-spacing:.04em;
   font-size:clamp(1rem,1.5vw,1.2rem);
   padding:15px 34px; border-radius:999px;
-  box-shadow:0 14px 32px -8px rgba(255,45,150,.55);
+  box-shadow:0 14px 32px -8px rgba(255,107,44,.55);
   transition:transform .2s ease, filter .2s ease;
 }
 .hero-cta-btn:hover{ transform:translateY(-2px); filter:brightness(1.07); }
@@ -3163,10 +3153,10 @@ section[style*="--section-text"] li { color:inherit; }
 :root[data-theme="light"] .booking-ladder .bl-features li .bl-x{ color:rgba(27,36,51,.34); }
 :root[data-theme="light"] .booking-ladder.bl-columns .bl-row-paid .bl-tier:not(.is-featured) .bl-cta,
 :root[data-theme="light"] .booking-ladder .bl-cta-alt{
-  background:#FF2D96 !important; color:#FFFFFF !important; border:none !important;
+  background:#FF6B2C !important; color:#FFFFFF !important; border:none !important;
 }
 :root[data-theme="light"] .booking-ladder.bl-columns .bl-row-paid .bl-tier:not(.is-featured) .bl-cta:hover,
-:root[data-theme="light"] .booking-ladder .bl-cta-alt:hover{ background:#E01480 !important; color:#FFFFFF !important; }
+:root[data-theme="light"] .booking-ladder .bl-cta-alt:hover{ background:#E8520F !important; color:#FFFFFF !important; }
 
 
 /* Loghi: versione contrasto per tema chiaro (+ fallback automatico se manca) */
@@ -3233,13 +3223,13 @@ body.js-ready section.testimonials.fx-in .test-badge:nth-child(3) .tb-stars { an
 /* ===== PRENOTAZIONI: pulsanti arancio a pillola + contorni bianco (scuro) / arancio (chiaro) ===== */
 .booking-ladder .bl-cta,
 .booking-ladder .bl-cta-alt{
-  background:#FF2D96 !important; color:#FFFFFF !important; border:none !important;
+  background:#FF6B2C !important; color:#FFFFFF !important; border:none !important;
   border-radius:999px !important; box-shadow:none !important; filter:none !important;
 }
 .booking-ladder .bl-cta:hover,
-.booking-ladder .bl-cta-alt:hover{ background:#E01480 !important; color:#FFFFFF !important; }
+.booking-ladder .bl-cta-alt:hover{ background:#E8520F !important; color:#FFFFFF !important; }
 /* spunte cerchiate in arancio (entrambi i temi) */
-.booking-ladder .bl-features li .bl-check{ color:#FF2D96; }
+.booking-ladder .bl-features li .bl-check{ color:#FF6B2C; }
 /* tema scuro: contorni BIANCHI */
 .booking-ladder.bl-columns .bl-row-paid .bl-tier:not(.is-featured){
   border:1px solid rgba(255,255,255,.85);
@@ -3252,42 +3242,13 @@ body.js-ready section.testimonials.fx-in .test-badge:nth-child(3) .tb-stars { an
 /* tema chiaro: contorni ARANCIO */
 :root[data-theme="light"] .booking-ladder.bl-columns .bl-row-paid .bl-tier:not(.is-featured){
   background:#FFFFFF;
-  border:1px solid rgba(224,20,128,.55);
-  box-shadow:0 0 0 1px rgba(224,20,128,.10);
+  border:1px solid rgba(232,82,15,.55);
+  box-shadow:0 0 0 1px rgba(232,82,15,.10);
 }
-:root[data-theme="light"] .booking-ladder.bl-columns .bl-row-paid .bl-tier:not(.is-featured) .bl-value{ border:1px solid rgba(224,20,128,.35); }
+:root[data-theme="light"] .booking-ladder.bl-columns .bl-row-paid .bl-tier:not(.is-featured) .bl-value{ border:1px solid rgba(232,82,15,.35); }
 :root[data-theme="light"] .booking-ladder.bl-columns .bl-row-paid .bl-tier:not(.is-featured) .bl-icon{
-  border:1.5px solid rgba(224,20,128,.55); background:rgba(224,20,128,.07); color:#E01480;
+  border:1.5px solid rgba(232,82,15,.55); background:rgba(232,82,15,.07); color:#E8520F;
 }
-
-/* ===== MINI-FORM nella scheda prenotazioni (embed_form) ===== */
-.bl-lead-form{ display:flex; flex-direction:column; gap:10px; width:100%; text-align:left; }
-.bl-lead-form select,
-.bl-lead-form input[type="text"], .bl-lead-form input[type="email"], .bl-lead-form input[type="tel"]{
-  width:100%; box-sizing:border-box; padding:12px 14px; border-radius:10px;
-  border:1px solid rgba(255,255,255,.18); background:#1226B8; color:#EDEAE3;
-  font-family:inherit; font-size:.92rem;
-}
-.bl-lead-form select:invalid{ color:rgba(237,234,227,.45); }
-:root[data-theme="light"] .bl-lead-form select:invalid{ color:#9AA0AC; }
-.bl-lead-form input::placeholder{ color:rgba(237,234,227,.45); }
-.bl-lead-form input:focus{ outline:none; border-color:#FF2D96; }
-.bl-consent{ display:flex; align-items:flex-start; gap:8px; font-size:.72rem; line-height:1.45; opacity:.85; cursor:pointer; }
-.bl-consent input{ width:auto; margin:2px 0 0; flex:0 0 auto; accent-color:#FF2D96; }
-.bl-consent a{ color:inherit; text-decoration:underline; }
-.bl-lead-form .bl-cta{ border:none; cursor:pointer; font-family:inherit; }
-.bl-form-ok{ margin:6px 0 0; font-weight:700; color:#FF2D96; text-align:center; }
-.bl-lead-form.bl-form-sent{ display:flex; align-items:center; justify-content:center; min-height:120px; }
-.bl-lead-form.bl-form-sent .bl-form-ok{ margin:0; font-size:1.05rem; line-height:1.5; }
-.bl-lead-form.bl-form-sent .bl-form-ok::before{ content:'\2713'; display:block; font-size:1.8rem; margin-bottom:6px; }
-.booking-ladder.bl-columns .bl-tier-action-form{ min-height:0; }
-.booking-ladder.bl-columns .bl-has-form .bl-cta-pair{ min-height:0; }
-:root[data-theme="light"] .bl-lead-form input[type="text"],
-:root[data-theme="light"] .bl-lead-form input[type="email"],
-:root[data-theme="light"] .bl-lead-form input[type="tel"]{
-  background:#FFFFFF; border-color:#D9D4C8; color:#1B2433;
-}
-:root[data-theme="light"] .bl-lead-form input::placeholder{ color:#9AA0AC; }
 
 /* ===== WHATSAPP: bottone verde pieno + mini-form ===== */
 .booking-ladder .bl-button-wa{
@@ -3307,7 +3268,7 @@ body.js-ready section.testimonials.fx-in .test-badge:nth-child(3) .tb-stars { an
 }
 .wa-modal.is-open{ opacity:1; pointer-events:auto; }
 .wa-card{
-  width:100%; max-width:420px; background:#0A17A8; color:#EDEAE3;
+  width:100%; max-width:420px; background:#141414; color:#EDEAE3;
   border:1px solid rgba(255,255,255,.14); border-radius:16px; padding:22px;
   box-shadow:0 24px 60px -18px rgba(0,0,0,.6);
   transform:translateY(12px); transition:transform .25s ease;
@@ -3347,8 +3308,8 @@ body.js-ready section.testimonials.fx-in .test-badge:nth-child(3) .tb-stars { an
 .ck-banner{
   position:fixed; left:16px; bottom:16px; z-index:9000;
   max-width:340px; width:calc(100% - 32px);
-  background:#0A17A8; color:#EDEAE3;
-  border:1px solid rgba(255,45,150,.35);
+  background:#141414; color:#EDEAE3;
+  border:1px solid rgba(200,168,107,.35);
   border-radius:14px; padding:16px 18px;
   box-shadow:0 18px 44px -14px rgba(0,0,0,.55);
   font-size:.83rem; line-height:1.45;
@@ -3357,7 +3318,7 @@ body.js-ready section.testimonials.fx-in .test-badge:nth-child(3) .tb-stars { an
 }
 .ck-banner.is-open{ opacity:1; transform:none; pointer-events:auto; }
 .ck-banner p{ margin:0 0 12px; }
-.ck-banner a{ color:#FF2D96; text-decoration:underline; }
+.ck-banner a{ color:#C8A86B; text-decoration:underline; }
 .ck-actions{ display:flex; gap:8px; align-items:center; }
 .ck-btn{
   flex:1; padding:9px 12px; border-radius:9px; font-size:.82rem; font-weight:600;
@@ -3365,8 +3326,8 @@ body.js-ready section.testimonials.fx-in .test-badge:nth-child(3) .tb-stars { an
   transition:background .2s, color .2s, border-color .2s;
 }
 .ck-btn:hover{ border-color:rgba(255,255,255,.5); }
-.ck-btn.ck-accept{ background:#FF2D96; border-color:#FF2D96; color:#fff; }
-.ck-btn.ck-accept:hover{ background:#E01480; border-color:#E01480; }
+.ck-btn.ck-accept{ background:#FF6B2C; border-color:#FF6B2C; color:#fff; }
+.ck-btn.ck-accept:hover{ background:#E8520F; border-color:#E8520F; }
 :root[data-theme="light"] .ck-banner{ background:#FFFFFF; color:#1B2433; border-color:rgba(20,28,46,.15); box-shadow:0 18px 44px -18px rgba(20,28,46,.28); }
 :root[data-theme="light"] .ck-banner a{ color:#A66A45; }
 :root[data-theme="light"] .ck-btn{ border-color:rgba(20,28,46,.3); color:#1B2433; }
@@ -3382,9 +3343,9 @@ body.js-ready section.testimonials.fx-in .test-badge:nth-child(3) .tb-stars { an
   <input type="email" name="email">
   <input type="tel" name="phone">
   <input type="text" name="treatment">
-  <select name="fiale"><option value="1"></option></select>
-  <select name="sede"><option value="Napoli"></option></select>
-  <input type="text" name="trattamento">
+  <select name="intervento"><option value="Rinoplastica"></option></select>
+  <select name="budget"><option value="Fino a 3.000 €"></option></select>
+  <select name="tempistica"><option value="Il prima possibile"></option></select>
   <textarea name="message"></textarea>
   <input type="text" name="consenso">
   <input type="text" name="sito_web">
@@ -3434,9 +3395,11 @@ const I18N = SITE_LANG==='en' ? {
   fName:'First name', fSurname:'Last name', fEmail:'Email', fPhone:'Phone',
   fInterest:'What are you interested in', fSelect:'Select\u2026', fMessage:'What are you interested in?',
   fMsgPh:'Write your request or your needs here\u2026',
-  blSend:'Send request', blOk:'Request sent! We\u2019ll get back to you shortly.',
-  blVials:'How many vials would you like?', blCity:'Which clinic would you like?',
-  blTreat:'Which treatment are you interested in?', blTreatPh:'Write here',
+  qIntervento:'Which procedure are you interested in?',
+  qBudget:'What budget would you like to set aside for yourself?',
+  qQuando:'When would you like to have the procedure?',
+  optBudget:['Up to \u20ac3,000','\u20ac3,000 \u2013 6,000','\u20ac6,000 \u2013 10,000','Over \u20ac10,000','I\u2019d rather discuss it in consultation'],
+  optQuando:['As soon as possible','Within 3 months','Within 6 months','More than 6 months','Just gathering information'],
   fConsent:'I have read and accept the <a href="/privacy.html" target="_blank" rel="noopener">privacy policy</a> and consent to the processing of my data in order to be contacted.'
 } : {
   videoSoon:'Video in arrivo',
@@ -3451,75 +3414,13 @@ const I18N = SITE_LANG==='en' ? {
   fName:'Nome', fSurname:'Cognome', fEmail:'Email', fPhone:'Telefono',
   fInterest:'Cosa ti interessa', fSelect:'Seleziona\u2026', fMessage:'A cosa sei interessato/a?',
   fMsgPh:'Scrivi qui la tua richiesta o la tua esigenza..',
-  blSend:'Invia richiesta', blOk:'Richiesta inviata! Ti ricontatteremo a breve.',
-  blVials:'Quante fiale vuoi effettuare?', blCity:'In quale sede vuoi effettuare il trattamento?',
-  blTreat:'A quale trattamento sei interessata?', blTreatPh:'Scrivi qui',
+  qIntervento:'A quale intervento sei interessata/o?',
+  qBudget:'Quanto desideri destinare per investire su te stessa/o?',
+  qQuando:'Quando desidereresti effettuare l\u2019intervento?',
+  optBudget:['Fino a 3.000 \u20ac','3.000 \u2013 6.000 \u20ac','6.000 \u2013 10.000 \u20ac','Oltre 10.000 \u20ac','Preferisco parlarne in consulenza'],
+  optQuando:['Il prima possibile','Entro 3 mesi','Entro 6 mesi','Oltre 6 mesi','Sto raccogliendo informazioni'],
   fConsent:'Ho letto e accetto l\u2019<a href="/privacy.html" target="_blank" rel="noopener">informativa privacy</a> e acconsento al trattamento dei dati per essere ricontattato.'
 };
-
-/* ==========================================================
-   MAPPA VISO — dove agisce il filler / il botox.
-   Lineart femminile con etichette sul volto (stroke = currentColor,
-   quindi si adatta da solo a tema chiaro e scuro).
-   ========================================================== */
-const FACE_ART =
-  '<image class="fm-photo" href="/images/viso-lineart.webp" x="380" y="0" width="706" height="834" preserveAspectRatio="xMidYMid meet"/>';
-
-const FACE_GEO = {
-  filler: [
-    ['M593,344 L410,290 L360,290', [[605,342]], 350,290,'end'],
-    ['M561,389 L410,390 L360,390', [[573,387]], 350,390,'end'],
-    ['M608,422 L410,490 L360,490', [[620,420],[810,420]], 350,490,'end'],
-    ['M577,542 L410,590 L360,590', [[589,540]], 350,590,'end'],
-    ['M722,376 L1050,330 L1096,330', [[710,378]], 1106,330,'start'],
-    ['M801,475 L1050,470 L1096,470', [[789,475]], 1106,470,'start'],
-    ['M722,568 L1050,610 L1096,610', [[710,566]], 1106,610,'start']
-  ],
-  botox: [
-    ['M656,150 L410,130 L360,130', [[668,148]], 350,130,'end'],
-    ['M540,198 L410,230 L360,230', [[552,196],[872,196]], 350,230,'end'],
-    ['M512,303 L410,330 L360,330', [[524,301],[894,301]], 350,330,'end'],
-    ['M561,506 L410,520 L360,520', [[573,504],[852,504]], 350,520,'end'],
-    ['M722,223 L1050,190 L1096,190', [[710,225]], 1106,190,'start'],
-    ['M749,393 L1050,310 L1096,310', [[686,395],[737,395]], 1106,310,'start'],
-    ['M724,458 L1050,420 L1096,420', [[712,458]], 1106,420,'start'],
-    ['M792,470 L1050,530 L1096,530', [[780,468]], 1106,530,'start'],
-    ['M952,690 L1050,690 L1096,690', [[940,690]], 1106,690,'start']
-  ]
-};
-
-const FACE_TXT = (typeof SITE_LANG !== 'undefined' && SITE_LANG === 'en') ? {
-  note:'Illustrative image. Treatable areas vary from person to person and are always defined during the consultation.',
-  filler:{ title:'Filler', sub:'Where it works', extra:'Buttock filler: body area',
-    labels:['Tear trough','Cheeks','Skin texture','Jawline','Nose filler','Lips','Chin'] },
-  botox:{ title:'Botox', sub:'Where it works', extra:'Hyperhidrosis: body areas (underarms, hands)',
-    labels:['Forehead lines','Foxy eye',"Crow's feet",'Masseters','Glabella','Bunny lines','Lip flip','Gummy smile','Trap botox'] }
-} : {
-  note:'Immagine illustrativa. Le zone trattabili variano da persona a persona e vengono definite in sede di consulenza.',
-  filler:{ title:'Filler', sub:'Dove agisce', extra:'Filler glutei: zona corpo',
-    labels:['Occhiaie','Zigomi','Texture del viso','Jawline','Rinofiller','Labbra','Mento'] },
-  botox:{ title:'Botox', sub:'Dove agisce', extra:'Iperidrosi: zone corpo (ascelle, mani)',
-    labels:['Rughe fronte','Foxy eye','Zampe di gallina','Masseteri','Glabella','Rughe naso','Lip flip','Gummy smile','Trap botox'] }
-};
-
-function faceMapCard(key){
-  const c = FACE_TXT[key], geo = FACE_GEO[key];
-  const marks = geo.map((g, i) =>
-    `<path class="fm-lead" d="${g[0]}"/>` +
-    g[1].map(p => `<circle class="fm-dot" cx="${p[0]}" cy="${p[1]}" r="15"/>`).join('') +
-    `<text class="fm-lbl" x="${g[2]}" y="${g[3]}" dy=".33em" text-anchor="${g[4]}">${esc((c.labels[i]||'').toUpperCase())}</text>`
-  ).join('');
-  return `<figure class="fm-card">
-    <figcaption class="fm-head"><h3 class="fm-title">${esc(c.title)}</h3><p class="fm-sub">${esc(c.sub)}</p></figcaption>
-    <svg class="fm-svg" viewBox="0 0 1440 834" role="img" aria-label="${esc(c.title)}"><g class="fm-art">${FACE_ART}${marks}</g></svg>
-    ${c.extra?`<p class="fm-extra">+ ${esc(c.extra)}</p>`:''}
-  </figure>`;
-}
-function faceMapHtml(){
-  return `<div class="tl-facemap reveal">${faceMapCard('filler')}${faceMapCard('botox')}</div>
-    <p class="fm-note reveal">${esc(FACE_TXT.note)}</p>`;
-}
-
 
 /* richText: applica formattazione inline sicura su testo che potrebbe contenere
    markdown semplice o tag inline tipo <strong>, <em>, <br>, <a href="...">.
@@ -4102,7 +4003,7 @@ const templates = {
 
   cta_form(s){
     const perks = (s.perks||[]).map(p=>`<li>${richText(p)}</li>`).join('');
-    const treatments = (s.treatments||[]).map(t=>`<option>${esc(t)}</option>`).join('');
+    const treatments = (s.treatments||[]).map(t=>`<option value="${esc(t)}">${esc(t)}</option>`).join('');
     return `
       <section${sectionStyleAttr(s)} class="cta-section"${s.id?` id="${esc(s.id)}"`:''}>
         <div class="container">
@@ -4124,7 +4025,30 @@ const templates = {
                   <div class="field"><label>${I18N.fEmail}</label><input type="email" name="email" required></div>
                   <div class="field"><label>${I18N.fPhone}</label><input type="tel" name="phone" required></div>
                 </div>
-                <div class="field">
+                <div class="field-group3">
+                  <div class="field">
+                    <label>${I18N.qIntervento}</label>
+                    <select name="intervento" required>
+                      <option value="">${I18N.fSelect}</option>
+                      ${treatments}
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label>${I18N.qBudget}</label>
+                    <select name="budget" required>
+                      <option value="">${I18N.fSelect}</option>
+                      ${I18N.optBudget.map(o=>`<option value="${esc(o)}">${esc(o)}</option>`).join('')}
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label>${I18N.qQuando}</label>
+                    <select name="tempistica" required>
+                      <option value="">${I18N.fSelect}</option>
+                      ${I18N.optQuando.map(o=>`<option value="${esc(o)}">${esc(o)}</option>`).join('')}
+                    </select>
+                  </div>
+                </div>
+                <div class="field field-msg">
                   <label>${I18N.fMessage}</label>
                   <textarea name="message" placeholder="${I18N.fMsgPh}" required></textarea>
                 </div>
@@ -4224,8 +4148,7 @@ const templates = {
             <h2>${richText(s.title_a||'')} <span class="serif-italic">${richText(s.title_italic||'')}</span></h2>
             ${s.subtitle?`<p class="tl-subtitle">${richText(s.subtitle)}</p>`:''}
           </div>
-          ${s.hide_face_map ? '' : faceMapHtml()}
-          ${s.hide_accordion ? '' : `<div class="tl-accordion">${items}</div>`}
+          <div class="tl-accordion">${items}</div>
           ${s.footer_note?`<p class="tl-footer-note">${richText(s.footer_note)}</p>`:''}
         </div>
       </section>`;
@@ -4347,30 +4270,10 @@ const templates = {
           }).join('')}</ul>`
         : featUl(t);
       const tSlug = String(t.name||('tier-'+(idx+1))).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
-      const ctaA = t.cta_label?`<a class="bl-cta bl-cta--${tSlug}" data-tier="${esc(t.name||'')}" data-cta="primario" href="${esc(t.cta_href||'#contatti')}"${extAttr(t.cta_href)}>${esc(t.cta_label)}</a>`:'';
-      const ctaB = t.cta2_label?`<a class="bl-cta bl-cta-alt bl-cta--${tSlug}" data-tier="${esc(t.name||'')}" data-cta="secondario" href="${esc(t.cta2_href||'#contatti')}"${extAttr(t.cta2_href)}>${esc(t.cta2_label)}</a>`:'';
+      const ctaA = t.cta_label?`<a class="bl-cta bl-cta-${tSlug}${t.cta2_label?'-prenota-dal-vivo':''}" data-tier="${esc(t.name||'')}" data-cta="primario" href="${esc(t.cta_href||'#contatti')}"${extAttr(t.cta_href)}>${esc(t.cta_label)}</a>`:'';
+      const ctaB = t.cta2_label?`<a class="bl-cta bl-cta-alt bl-cta-${tSlug}-videoconsulenza" data-tier="${esc(t.name||'')}" data-cta="secondario" href="${esc(t.cta2_href||'#contatti')}"${extAttr(t.cta2_href)}>${esc(t.cta2_label)}</a>`:'';
       const ctaWrap = (ctaA||ctaB)?`<div class="bl-cta-pair">${ctaA}${ctaB}</div>`:'';
-      const formHtml = t.embed_form ? `
-        <form class="bl-lead-form bl-lead-form--${tSlug}" data-tier="${esc(t.name||'')}" name="contatti" method="POST">
-          <input type="text" name="firstName" placeholder="${I18N.fName}" required>
-          <input type="text" name="lastName" placeholder="${I18N.fSurname}" required>
-          <input type="email" name="email" placeholder="${I18N.fEmail}" required>
-          <input type="tel" name="phone" placeholder="${I18N.fPhone}" required>
-          <select name="fiale" required>
-            <option value="">${I18N.blVials}</option>
-            ${[1,2,3,4,5,6,7,8].map(n=>`<option value="${n}">${n}</option>`).join('')}
-          </select>
-          <select name="sede" required>
-            <option value="">${I18N.blCity}</option>
-            ${['Napoli','Milano','Bari','Catania'].map(c=>`<option value="${c}">${c}</option>`).join('')}
-          </select>
-          <input type="text" name="trattamento" placeholder="${I18N.blTreat} — ${I18N.blTreatPh}" required>
-          <label class="bl-consent"><input type="checkbox" name="consenso" value="true" required><span>${I18N.fConsent}</span></label>
-          <input type="text" name="sito_web" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
-          <button type="submit" class="bl-cta bl-cta--${tSlug}" data-tier="${esc(t.name||'')}" data-cta="form">${I18N.blSend}</button>
-          <p class="bl-form-ok" hidden>${I18N.blOk}</p>
-        </form>` : '';
-      return `<div class="${cls}${t.embed_form?' bl-has-form':''}">
+      return `<div class="${cls}">
         ${(compareMode&&t.photo) ? '' : (t.icon ? `<div class="bl-icon">${icon}</div>` : '')}
         <div class="bl-tier-body">
           ${t.badge?`<span class="bl-badge">${esc(t.badge)}</span>`:''}
@@ -4378,22 +4281,20 @@ const templates = {
           ${t.who?`<p class="bl-tier-who">${richText(t.who)}</p>`:''}
           ${t.format?`<p class="bl-tier-format">${richText(t.format)}</p>`:''}
           ${t.value_line?`<p class="bl-value">${richText(t.value_line)}</p>`:''}
-          ${t.embed_form ? '' : feats}
+          ${feats}
           ${t.scarcity?`<span class="bl-scarcity">${esc(t.scarcity)}</span>`:''}
         </div>
-        ${t.embed_form
-          ? `<div class="bl-tier-action bl-tier-action-form">${formHtml}</div>`
-          : `<div class="bl-tier-action">
+        <div class="bl-tier-action">
           <div class="bl-price${priceIsFree?' is-free':''}">${esc(priceRaw||'')}</div>
           ${ctaWrap}
-        </div>`}
+        </div>
       </div>`;
     };
     const renderButton = (t)=>{
       const isWa = (t.icon==='whatsapp');
       const bSlug = String(t.name||'button').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
       const sub = t.format || t.who || '';
-      return `<a class="bl-button ${isWa?'bl-button-wa':'bl-button-gold'} bl-button--${bSlug}" data-tier="${esc(t.name||'')}" href="${esc(t.cta_href||'#contatti')}"${/^https?:/i.test(t.cta_href||'')?' target="_blank" rel="noopener"':''}>
+      return `<a class="bl-button ${isWa?'bl-button-wa':'bl-button-gold'} bl-button-${bSlug}" data-tier="${esc(t.name||'')}" href="${esc(t.cta_href||'#contatti')}"${/^https?:/i.test(t.cta_href||'')?' target="_blank" rel="noopener"':''}>
         <span class="bl-button-ic">${bookingLadderIcon(t.icon||'chat')}</span>
         <span class="bl-button-tx"><strong>${esc(t.name||t.cta_label||'')}</strong>${sub?`<small>${richText(sub)}</small>`:''}</span>
         <span class="bl-button-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></span>
@@ -4539,7 +4440,7 @@ function renderNav(data){
       </a>
       <ul class="nav-links">${links}</ul>
       <div class="nav-cta">
-        ${nav.phone_label?`<a href="${esc(nav.phone_href||'#')}" class="login">${esc(nav.phone_label)}</a>`:''}
+        ${nav.phone_label?`<a href="${esc(nav.phone_href||'#')}" class="login" aria-label="${esc(nav.phone_label)}"><svg class="login-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="login-txt">${esc(nav.phone_label)}</span></a>`:''}
         ${nav.cta_label?`<a href="${esc(nav.cta_href||'#')}" class="btn btn-primary">${esc(nav.cta_label)}</a>`:''}
         <button class="theme-toggle lang-toggle" id="langToggle" type="button" aria-label="Cambia lingua / Change language" title="${SITE_LANG==='en'?'Passa all\'italiano':'Switch to English'}">${SITE_LANG==='en'?'IT':'EN'}</button>
         <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambia tema chiaro o scuro" title="Tema chiaro / scuro">
@@ -4991,6 +4892,53 @@ function initCookieBanner(){
    WHATSAPP — al click sui link wa.me si apre un mini-form:
    nome + messaggio -> apre WhatsApp con il testo precompilato
    ========================================================== */
+/* ==========================================================
+   CALENDLY — i link calendly.com si aprono in POPUP sulla pagina
+   (invece che in nuova scheda), così possiamo tracciare gli eventi:
+   dataLayer per GTM + GA4 + Pixel sulla prenotazione confermata.
+   ========================================================== */
+function initCalendlyPopup(){
+  function loadAssets(cb){
+    if(window.Calendly){ cb(); return; }
+    var l=document.createElement('link'); l.rel='stylesheet';
+    l.href='https://assets.calendly.com/assets/external/widget.css';
+    document.head.appendChild(l);
+    var s=document.createElement('script'); s.async=true;
+    s.src='https://assets.calendly.com/assets/external/widget.js';
+    s.onload=cb; document.head.appendChild(s);
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target && e.target.closest ? e.target.closest('a[href*="calendly.com"]') : null;
+    if(!a) return;
+    e.preventDefault();
+    var url = a.getAttribute('href');
+    loadAssets(function(){
+      try{ Calendly.initPopupWidget({ url:url }); }
+      catch(err){ window.open(url, '_blank', 'noopener'); }
+    });
+  });
+  var lastCalEvent='';
+  window.addEventListener('message', function(e){
+    var d = e.data || {};
+    if(typeof d.event === 'string' && d.event.indexOf('calendly') === 0){
+      var name = (d.event.split('.')[1]) || '';
+      var allowed = ['event_type_viewed','profile_page_viewed','date_and_time_selected','event_scheduled'];
+      if(allowed.indexOf(name) === -1 || name === lastCalEvent) return;
+      lastCalEvent = name;
+      window.dataLayer = window.dataLayer || [];
+      var obj = { event:'calendly', calendly_event:name };
+      if(name === 'event_scheduled' && d.payload && d.payload.invitee && d.payload.invitee.uri){
+        obj.invitee_uri = d.payload.invitee.uri;
+      }
+      window.dataLayer.push(obj);
+      try{ if(window.gtag) gtag('event', 'calendly_' + name, {}); }catch(err){}
+      if(name === 'event_scheduled'){
+        try{ if(window.fbq) fbq('trackCustom', 'CalendlyScheduled', {}); }catch(err){}
+      }
+    }
+  });
+}
+
 function initWaModal(){
   var modal=null, currentNum='';
   function build(){
@@ -5072,37 +5020,6 @@ function initBehaviors(){
   // ---- TREATMENTS TABS ----
   initTreatmentsTabs();
 
-  // ---- MINI-FORM nelle schede prenotazione ----
-  document.querySelectorAll('.bl-lead-form').forEach(function(f){
-    f.addEventListener('submit', async function(e){
-      e.preventDefault();
-      var btn = f.querySelector('button[type="submit"]');
-      var lb = btn ? btn.textContent : '';
-      if(btn){ btn.disabled = true; btn.textContent = '\u2026'; }
-      var fd = Object.fromEntries(new FormData(f).entries());
-      crmSend(fd, 'scheda_prenotazione:' + (f.getAttribute('data-tier') || ''));
-      try{
-        var res = await fetch('/', {
-          method:'POST',
-          headers:{ 'Content-Type':'application/x-www-form-urlencoded' },
-          body: new URLSearchParams({ 'form-name':'contatti', message:'', ...fd }).toString()
-        });
-        if(!res.ok) throw new Error('HTTP '+res.status);
-        /* nasconde TUTTI i campi (input, select, label, bottone), lascia solo il messaggio */
-        Array.prototype.forEach.call(f.children, function(el){
-          if(!el.classList || !el.classList.contains('bl-form-ok')) el.style.display = 'none';
-        });
-        f.classList.add('bl-form-sent');
-        var ok = f.querySelector('.bl-form-ok'); if(ok) ok.hidden = false;
-        try{ if(window.gtag) gtag('event','lead_submit',{ origin:'booking_card' }); }catch(err){}
-        try{ if(window.fbq) fbq('track','Lead'); }catch(err){}
-      }catch(err){
-        if(btn){ btn.disabled = false; btn.textContent = lb; }
-        alert('Invio non riuscito. Riprova tra qualche istante.');
-      }
-    });
-  });
-
   // ---- VIDEO YOUTUBE: autoplay muto in loop quando entrano nello schermo ----
   (function(){
     var boxes = document.querySelectorAll('.wv-yt');
@@ -5157,6 +5074,13 @@ function initBehaviors(){
     } else { boxes.forEach(load); }
   })();
 
+  // ---- LINGUA ----
+  var lt=document.getElementById('langToggle');
+  if(lt) lt.addEventListener('click', function(){
+    try{ localStorage.setItem('site_lang', SITE_LANG==='en' ? 'it' : 'en'); }catch(e){}
+    location.reload();
+  });
+
   // ---- VIDEO LAZY: i video partono (e si scaricano) solo quando visibili ----
   (function(){
     var vids = document.querySelectorAll('video[data-src]');
@@ -5173,15 +5097,13 @@ function initBehaviors(){
         entries.forEach(function(en){ if(en.isIntersecting){ start(en.target); io.unobserve(en.target); } });
       }, { rootMargin:'200px' });
       vids.forEach(function(v){ io.observe(v); });
-    } else { vids.forEach(start); }
+    } else {
+      vids.forEach(start);
+    }
   })();
 
-  // ---- LINGUA ----
-  var lt=document.getElementById('langToggle');
-  if(lt) lt.addEventListener('click', function(){
-    try{ localStorage.setItem('site_lang', SITE_LANG==='en' ? 'it' : 'en'); }catch(e){}
-    location.reload();
-  });
+  // ---- CALENDLY POPUP + TRACCIAMENTO ----
+  initCalendlyPopup();
 
   // ---- COOKIE BANNER ----
   initCookieBanner();
@@ -5299,7 +5221,6 @@ function initBehaviors(){
       const btnLabel = btn ? btn.textContent : '';
       if(btn){ btn.disabled = true; btn.textContent = 'Invio in corso…'; }
       const formData = Object.fromEntries(new FormData(form).entries());
-      crmSend(formData, 'form_contatti');
       try{
         const res = await fetch('/', {
           method:'POST',
@@ -5378,75 +5299,6 @@ function animateNumber(el){
   requestAnimationFrame(step);
 }
 
-/* ==========================================================
-   CRM — invio parallelo a endpoint esterno + attribuzione campagna
-   L'invio a Netlify Forms resta la fonte primaria: se il CRM non
-   risponde, il lead NON si perde e l'utente non vede errori.
-   ========================================================== */
-var CRM_ENDPOINT = 'https://clone-calendly.vercel.app/api/registrazione';
-var CRM_ENABLED  = true;   /* metti false per staccare l'invio senza toccare altro */
-
-function crmAttrib(){
-  var K = 'dc_attrib';
-  try{ var s = sessionStorage.getItem(K); if(s) return JSON.parse(s); }catch(e){}
-  var q;
-  try{ q = new URLSearchParams(location.search || ''); }catch(e){ q = null; }
-  function g(k){ try{ return (q && q.get(k)) || ''; }catch(e){ return ''; } }
-  var a = {
-    utm_source:   g('utm_source'),
-    utm_medium:   g('utm_medium'),
-    utm_campaign: g('utm_campaign'),
-    utm_content:  g('utm_content'),
-    utm_term:     g('utm_term'),
-    gclid:        g('gclid'),
-    fbclid:       g('fbclid'),
-    referrer:     (document.referrer || ''),
-    landing:      (location.hostname + location.pathname)
-  };
-  try{ sessionStorage.setItem(K, JSON.stringify(a)); }catch(e){}
-  return a;
-}
-
-function crmSend(fd, origine){
-  if(!CRM_ENABLED) return Promise.resolve(null);
-  try{
-    var a = crmAttrib();
-    var payload = {
-      nome:        fd.firstName || '',
-      cognome:     fd.lastName  || '',
-      email:       fd.email     || '',
-      telefono:    fd.phone     || '',
-      consenso:    (fd.consenso === 'true' || fd.consenso === 'on' || fd.consenso === true),
-      sito_web:    fd.sito_web  || '',
-      fiale:       fd.fiale     || '',
-      sede:        fd.sede      || '',
-      trattamento: fd.trattamento || fd.treatment || '',
-      messaggio:   fd.message   || '',
-      origine:     origine      || '',
-      lingua:      (document.documentElement.getAttribute('lang') || 'it')
-    };
-    for(var k in a){ if(Object.prototype.hasOwnProperty.call(a,k)) payload[k] = a[k]; }
-    return fetch(CRM_ENDPOINT, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify(payload),
-      keepalive: true
-    }).then(function(r){
-      return r.json().catch(function(){ return null; });
-    }).then(function(j){
-      if(!j || j.ok !== true) console.warn('[CRM] risposta inattesa:', j);
-      else console.log('[CRM] registrazione inviata, id:', j.id);
-      return j;
-    }).catch(function(err){
-      console.warn('[CRM] invio fallito:', err);
-      return null;
-    });
-  }catch(err){
-    console.warn('[CRM] errore:', err);
-    return Promise.resolve(null);
-  }
-}
-
 init();
 </script>
 <script>
@@ -5471,7 +5323,7 @@ init();
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TZ8PCD5Z');
+    })(window,document,'script','dataLayer','GTM-KP5RF48H');
   }
   /* Meta Pixel — solo dopo consenso */
   var fbLoaded=false;
