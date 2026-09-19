@@ -683,8 +683,72 @@ a { color:inherit; text-decoration:none; }
    CONFIG
    ===================================================================== */
 const REPO_OWNER = 'doc-campa';
-const REPO_NAME  = 'drcampa-landing-1';
+const REPO_NAME  = 'drcampa-landing-2';
 const BRANCH     = 'main';
+
+/* ==========================================================
+   MAPPA VISO — dove agisce il filler / il botox.
+   Lineart femminile con etichette sul volto (stroke = currentColor,
+   quindi si adatta da solo a tema chiaro e scuro).
+   ========================================================== */
+const FACE_ART =
+  '<image class="fm-photo" href="/images/viso-lineart.png" x="380" y="0" width="706" height="834" preserveAspectRatio="xMidYMid meet"/>';
+
+const FACE_GEO = {
+  filler: [
+    ['M593,344 L410,290 L360,290', [[605,342]], 350,290,'end'],
+    ['M561,389 L410,390 L360,390', [[573,387]], 350,390,'end'],
+    ['M608,422 L410,490 L360,490', [[620,420],[810,420]], 350,490,'end'],
+    ['M577,542 L410,590 L360,590', [[589,540]], 350,590,'end'],
+    ['M722,376 L1050,330 L1096,330', [[710,378]], 1106,330,'start'],
+    ['M801,475 L1050,470 L1096,470', [[789,475]], 1106,470,'start'],
+    ['M722,568 L1050,610 L1096,610', [[710,566]], 1106,610,'start']
+  ],
+  botox: [
+    ['M656,150 L410,130 L360,130', [[668,148]], 350,130,'end'],
+    ['M540,198 L410,230 L360,230', [[552,196],[872,196]], 350,230,'end'],
+    ['M512,303 L410,330 L360,330', [[524,301],[894,301]], 350,330,'end'],
+    ['M561,506 L410,520 L360,520', [[573,504],[852,504]], 350,520,'end'],
+    ['M722,223 L1050,190 L1096,190', [[710,225]], 1106,190,'start'],
+    ['M749,393 L1050,310 L1096,310', [[686,395],[737,395]], 1106,310,'start'],
+    ['M724,458 L1050,420 L1096,420', [[712,458]], 1106,420,'start'],
+    ['M792,470 L1050,530 L1096,530', [[780,468]], 1106,530,'start'],
+    ['M952,690 L1050,690 L1096,690', [[940,690]], 1106,690,'start']
+  ]
+};
+
+const FACE_TXT = (typeof SITE_LANG !== 'undefined' && SITE_LANG === 'en') ? {
+  note:'Illustrative image. Treatable areas vary from person to person and are always defined during the consultation.',
+  filler:{ title:'Filler', sub:'Where it works', extra:'Buttock filler: body area',
+    labels:['Tear trough','Cheeks','Skin texture','Jawline','Nose filler','Lips','Chin'] },
+  botox:{ title:'Botox', sub:'Where it works', extra:'Hyperhidrosis: body areas (underarms, hands)',
+    labels:['Forehead lines','Foxy eye',"Crow's feet",'Masseters','Glabella','Bunny lines','Lip flip','Gummy smile','Trap botox'] }
+} : {
+  note:'Immagine illustrativa. Le zone trattabili variano da persona a persona e vengono definite in sede di consulenza.',
+  filler:{ title:'Filler', sub:'Dove agisce', extra:'Filler glutei: zona corpo',
+    labels:['Occhiaie','Zigomi','Texture del viso','Jawline','Rinofiller','Labbra','Mento'] },
+  botox:{ title:'Botox', sub:'Dove agisce', extra:'Iperidrosi: zone corpo (ascelle, mani)',
+    labels:['Rughe fronte','Foxy eye','Zampe di gallina','Masseteri','Glabella','Rughe naso','Lip flip','Gummy smile','Trap botox'] }
+};
+
+function faceMapCard(key){
+  const c = FACE_TXT[key], geo = FACE_GEO[key];
+  const marks = geo.map((g, i) =>
+    `<path class="fm-lead" d="${g[0]}"/>` +
+    g[1].map(p => `<circle class="fm-dot" cx="${p[0]}" cy="${p[1]}" r="15"/>`).join('') +
+    `<text class="fm-lbl" x="${g[2]}" y="${g[3]}" dy=".33em" text-anchor="${g[4]}">${esc((c.labels[i]||'').toUpperCase())}</text>`
+  ).join('');
+  return `<figure class="fm-card">
+    <figcaption class="fm-head"><h3 class="fm-title">${esc(c.title)}</h3><p class="fm-sub">${esc(c.sub)}</p></figcaption>
+    <svg class="fm-svg" viewBox="0 0 1440 834" role="img" aria-label="${esc(c.title)}"><g class="fm-art">${FACE_ART}${marks}</g></svg>
+    ${c.extra?`<p class="fm-extra">+ ${esc(c.extra)}</p>`:''}
+  </figure>`;
+}
+function faceMapHtml(){
+  return `<div class="tl-facemap reveal">${faceMapCard('filler')}${faceMapCard('botox')}</div>
+    <p class="fm-note reveal">${esc(FACE_TXT.note)}</p>`;
+}
+
 
 /* =====================================================================
    SECTION SCHEMA — definition of all 13 section types with their fields
@@ -979,7 +1043,7 @@ const SECTION_SCHEMA = {
     ['perks', 'Bullet point con check petrol+gold', 'list-text'],
     ['form_title', 'Titolo del box del form', 'text'],
     ['form_subtitle', 'Sottotitolo del form', 'text'],
-    ['treatments', 'Opzioni del menu "A quale intervento sei interessata/o?"', 'list-text'],
+    ['treatments', 'Opzioni del menu "Cosa ti interessa"', 'list-text'],
     ['submit_label', 'Etichetta bottone invio', 'text'],
     ['success_title', 'Titolo schermata conferma', 'text'],
     ['success_body', 'Messaggio di conferma', 'textarea']
@@ -1012,6 +1076,8 @@ const SECTION_SCHEMA = {
     ['title_italic', 'Titolo - parte in corsivo', 'text', 'Es: "su misura"'],
     ['subtitle', 'Sottotitolo descrittivo', 'textarea'],
     ['footer_note', 'Nota a piè di sezione (opzionale)', 'textarea', 'Es: "Ogni trattamento è preceduto da consulenza personalizzata. Preventivo dettagliato dopo la visita."'],
+    ['hide_face_map', 'Nascondi la mappa viso (filler/botox)', 'boolean', 'La mappa mostra due volti in lineart con i punti in cui si interviene. Spunta per nasconderla.'],
+    ['hide_accordion', 'Nascondi l\'elenco a tendina dei trattamenti', 'boolean', 'Le categorie restano salvate: togli la spunta per rimostrarle.'],
     ['categories', 'Categorie di trattamenti', 'list-object', null, [
       ['name', 'Nome categoria (es. "Viso")', 'text'],
       ['icon', 'Icona della categoria', 'select', null, [
@@ -1091,6 +1157,7 @@ const SECTION_SCHEMA = {
       ['value_line', 'Frase di valore (perché sceglierlo)', 'textarea', 'La leva di vendita: cosa ottiene davvero la persona.'],
       ['social_proof', 'Prova sociale (opzionale)', 'text', 'Es: \"Scelto dal 78% dei pazienti\". Appare con 5 stelle nella card premium.'],
       ['features', 'Cosa include (un punto per riga)', 'textarea', 'Scrivi un vantaggio per ogni riga: diventano elenco con spunta ✓. Più punti = più valore percepito. Es:\nValutazione clinica completa\nPiano personalizzato\nPriorità in agenda'],
+      ['youtube','embed_form', 'Mini-form contatti nella scheda', 'boolean', 'Se attivo, la scheda mostra Nome, Cognome, Email e Telefono con invio diretto (al posto di prezzo e bottoni).'],
       ['price', 'Prezzo', 'text', 'Es: "300€" oppure "Gratis". Scrivendo "Gratis" il prezzo diventa verde.'],
       ['price_compare', 'Prezzo barrato / valore reale (opzionale)', 'text', 'Es: \"550€\". Appare sbarrato sopra il prezzo nella card premium.'],
       ['scarcity', 'Scarsità (opzionale)', 'text', 'Es: "Solo 8 posti questo mese". Appare solo nel livello in evidenza.'],
@@ -1312,8 +1379,8 @@ async function saveContent(){
    - Ricostruisce content.en.json e lo committa
    ===================================================================== */
 const TR_SKIP_KEYS = new Set(['href','src','image','poster','photo','logo_url','bg_image','video','icon','id','type',
-  'youtube','layout','service','style','colors','new_tab','google_brand','featured','free','autoplay','loop','muted','controls',
-  'c1','c2','c3','mission_percent','mobile_title_gap','title_offset','bg_position','bg_position_mobile','bg_zoom',
+  'layout','service','style','colors','new_tab','google_brand','featured','free','autoplay','loop','muted','controls',
+  'embed_form','hide_face_map','hide_accordion','c1','c2','c3','mission_percent','mobile_title_gap','title_offset','bg_position','bg_position_mobile','bg_zoom',
   'bg_zoom_mobile','play_x','play_y','player_width','player_ratio','label_size','intro_size','scale','number',
   'prefix','suffix','strong_part','enabled','watermark']);
 function trSkipKey(k){ return TR_SKIP_KEYS.has(k) || /(_href|_link)$/.test(k); }
@@ -1382,41 +1449,27 @@ async function trTranslateMissing(strings, tm){
   }
   return missing.length;
 }
-/* Prepara il JSON inglese (traduzione con memoria) SENZA committare */
-async function prepareEnglish(){
-  let tm = {};
+async function saveEnglish(){
+  // 1. Carica EN esistente (per sha e memoria di traduzione)
+  let enSha = null, tm = {};
   try{
     const r = await gh(`/repos/${REPO_OWNER}/${REPO_NAME}/contents/content.en.json?ref=${BRANCH}`);
+    enSha = r.sha;
     try{ const old = JSON.parse(b64decode(r.content.replace(/\n/g, ''))); tm = old._tm || {}; }catch(e){}
   }catch(e){ /* prima volta: il file non esiste ancora */ }
-  await trTranslateMissing(trCollect(data), tm);
+  // 2. Traduce solo le frasi nuove
+  const nuove = await trTranslateMissing(trCollect(data), tm);
+  // 3. Ricostruisce l'inglese e committa
   const en = trBuildEn(data, tm);
   en._tm = tm;
-  return JSON.stringify(en, null, 2);
-}
-
-/* UN SOLO commit per piu' file = UN SOLO deploy Netlify (risparmio crediti) */
-async function commitFiles(files, message){
-  const ref = await gh(`/repos/${REPO_OWNER}/${REPO_NAME}/git/ref/heads/${BRANCH}`);
-  const baseSha = ref.object.sha;
-  const baseCommit = await gh(`/repos/${REPO_OWNER}/${REPO_NAME}/git/commits/${baseSha}`);
-  const treeItems = [];
-  for(const f of files){
-    const blob = await gh(`/repos/${REPO_OWNER}/${REPO_NAME}/git/blobs`, {
-      method:'POST', body:{ content: b64encode(f.content), encoding:'base64' }
-    });
-    treeItems.push({ path: f.path, mode: '100644', type: 'blob', sha: blob.sha });
-  }
-  const tree = await gh(`/repos/${REPO_OWNER}/${REPO_NAME}/git/trees`, {
-    method:'POST', body:{ base_tree: baseCommit.tree.sha, tree: treeItems }
-  });
-  const commit = await gh(`/repos/${REPO_OWNER}/${REPO_NAME}/git/commits`, {
-    method:'POST', body:{ message, tree: tree.sha, parents:[baseSha] }
-  });
-  await gh(`/repos/${REPO_OWNER}/${REPO_NAME}/git/refs/heads/${BRANCH}`, {
-    method:'PATCH', body:{ sha: commit.sha }
-  });
-  return commit.sha;
+  const body = {
+    message: 'Auto-translate content.en.json' + (nuove ? ` (+${nuove} frasi)` : ''),
+    content: b64encode(JSON.stringify(en, null, 2)),
+    branch: BRANCH
+  };
+  if(enSha) body.sha = enSha;
+  await gh(`/repos/${REPO_OWNER}/${REPO_NAME}/contents/content.en.json`, { method: 'PUT', body });
+  return nuove;
 }
 
 async function uploadImage(file){
@@ -2154,7 +2207,8 @@ const previewTemplates = {
           <h2>${richText(s.title_a||'')} <span class="serif-italic">${richText(s.title_italic||'')}</span></h2>
           ${s.subtitle?`<p class="tl-subtitle">${richText(s.subtitle)}</p>`:''}
         </div>
-        <div class="tl-accordion">${items}</div>
+        ${s.hide_face_map ? '' : faceMapHtml()}
+        ${s.hide_accordion ? '' : `<div class="tl-accordion">${items}</div>`}
         ${s.footer_note?`<p class="tl-footer-note">${richText(s.footer_note)}</p>`:''}
       </div>
     </section>`;
@@ -2267,7 +2321,19 @@ const previewTemplates = {
       const ctaA = t.cta_label?`<span class="bl-cta">${esc(t.cta_label)}</span>`:'';
       const ctaB = t.cta2_label?`<span class="bl-cta bl-cta-alt">${esc(t.cta2_label)}</span>`:'';
       const ctaWrap = (ctaA||ctaB)?`<div class="bl-cta-pair">${ctaA}${ctaB}</div>`:'';
-      return `<div class="${cls}">
+      const formHtml = t.embed_form ? `
+        <form class="bl-lead-form">
+          <input type="text" placeholder="Nome" disabled>
+          <input type="text" placeholder="Cognome" disabled>
+          <input type="email" placeholder="Email" disabled>
+          <input type="tel" placeholder="Telefono" disabled>
+          <select disabled><option>Quante fiale vuoi effettuare?</option></select>
+          <select disabled><option>In quale sede vuoi effettuare il trattamento?</option></select>
+          <input type="text" placeholder="A quale trattamento sei interessata? \u2014 Scrivi qui" disabled>
+          <label class="bl-consent"><input type="checkbox" disabled><span>Ho letto e accetto l\u2019informativa privacy\u2026</span></label>
+          <span class="bl-cta">Invia richiesta</span>
+        </form>` : '';
+      return `<div class="${cls}${t.embed_form?' bl-has-form':''}">
         ${(compareMode&&t.photo) ? '' : (t.icon ? `<div class="bl-icon">${icon}</div>` : '')}
         <div class="bl-tier-body">
           ${t.badge?`<span class="bl-badge">${esc(t.badge)}</span>`:''}
@@ -2275,13 +2341,15 @@ const previewTemplates = {
           ${t.who?`<p class="bl-tier-who">${richText(t.who)}</p>`:''}
           ${t.format?`<p class="bl-tier-format">${richText(t.format)}</p>`:''}
           ${t.value_line?`<p class="bl-value">${richText(t.value_line)}</p>`:''}
-          ${feats}
+          ${t.embed_form ? '' : feats}
           ${t.scarcity?`<span class="bl-scarcity">${esc(t.scarcity)}</span>`:''}
         </div>
-        <div class="bl-tier-action">
+        ${t.embed_form
+          ? `<div class="bl-tier-action bl-tier-action-form">${formHtml}</div>`
+          : `<div class="bl-tier-action">
           <div class="bl-price${priceIsFree?' is-free':''}">${esc(priceRaw||'')}</div>
           ${ctaWrap}
-        </div>
+        </div>`}
       </div>`;
     };
     const renderButton = (t)=>{
@@ -3665,17 +3733,14 @@ async function doSave(){
   document.querySelector('#saveBtn').disabled = true;
   document.querySelector('#saveBtn').innerHTML = '<span class="spinner"></span> Pubblico…';
   try {
-    // Prima preparo la traduzione EN, poi UN UNICO commit IT+EN => un solo deploy
-    let enStr = null, enOk = true, enErr = '';
+    await saveContent();
+    ui.isDirty = false;
+    // Traduzione inglese automatica (non blocca la pubblicazione italiana)
+    let enOk = true, enErr = '';
     try {
       document.querySelector('#saveBtn').innerHTML = '<span class="spinner"></span> Traduco EN…';
-      enStr = await prepareEnglish();
+      await saveEnglish();
     } catch(e){ enOk = false; enErr = e.message || String(e); }
-    document.querySelector('#saveBtn').innerHTML = '<span class="spinner"></span> Pubblico…';
-    const files = [{ path:'content.json', content: JSON.stringify(data, null, 2) }];
-    if(enStr) files.push({ path:'content.en.json', content: enStr });
-    await commitFiles(files, enStr ? 'Publish content IT+EN (single deploy)' : 'Publish content');
-    ui.isDirty = false;
     ui.isSaving = false;
     document.querySelector('#saveBtn').disabled = false;
     document.querySelector('#saveBtn').textContent = 'Pubblica';
