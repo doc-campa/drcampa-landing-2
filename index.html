@@ -5383,8 +5383,20 @@ function animateNumber(el){
    L'invio a Netlify Forms resta la fonte primaria: se il CRM non
    risponde, il lead NON si perde e l'utente non vede errori.
    ========================================================== */
-var CRM_ENDPOINT = 'https://clone-calendly.vercel.app/api/registrazione';
+var CRM_ENDPOINT = '/.netlify/functions/lead';   /* ponte server-side verso GEMA: il token resta sul server */
 var CRM_ENABLED  = true;   /* metti false per staccare l'invio senza toccare altro */
+
+/* ID univoco e stabile della compilazione (richiesto da GEMA per evitare doppioni).
+   Generato una sola volta per invio: se si ritenta, l'ID resta lo stesso. */
+function crmExternalId(){
+  try{
+    var r = (window.crypto && crypto.randomUUID) ? crypto.randomUUID()
+          : (Date.now().toString(36) + '-' + Math.random().toString(36).slice(2,10));
+    return 'form-' + location.hostname.split('.')[0] + '-' + r;
+  }catch(e){
+    return 'form-' + Date.now();
+  }
+}
 
 function crmAttrib(){
   var K = 'dc_attrib';
@@ -5416,6 +5428,7 @@ function crmSend(fd, origine){
       cognome:     fd.lastName  || '',
       email:       fd.email     || '',
       telefono:    fd.phone     || '',
+      externalId:  crmExternalId(),
       consenso:    (fd.consenso === 'true' || fd.consenso === 'on' || fd.consenso === true),
       sito_web:    fd.sito_web  || '',
       fiale:       fd.fiale     || '',
