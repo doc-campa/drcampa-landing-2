@@ -5423,20 +5423,17 @@ function crmSend(fd, origine){
   if(!CRM_ENABLED) return Promise.resolve(null);
   try{
     var a = crmAttrib();
+    /* nomi dei campi come li attende la function (schema GEMA) */
     var payload = {
-      nome:        fd.firstName || '',
-      cognome:     fd.lastName  || '',
-      email:       fd.email     || '',
-      telefono:    fd.phone     || '',
       externalId:  crmExternalId(),
-      consenso:    (fd.consenso === 'true' || fd.consenso === 'on' || fd.consenso === true),
-      sito_web:    fd.sito_web  || '',
+      firstName:   fd.firstName || '',
+      lastName:    fd.lastName  || '',
+      email:       fd.email     || '',
+      phone:       fd.phone     || '',
       fiale:       fd.fiale     || '',
       sede:        fd.sede      || '',
       trattamento: fd.trattamento || fd.treatment || '',
-      messaggio:   fd.message   || '',
-      origine:     origine      || '',
-      lingua:      (document.documentElement.getAttribute('lang') || 'it')
+      origine:     origine      || ''
     };
     for(var k in a){ if(Object.prototype.hasOwnProperty.call(a,k)) payload[k] = a[k]; }
     return fetch(CRM_ENDPOINT, {
